@@ -47,3 +47,11 @@ All motion turns off when the visitor's device asks for reduced motion.
 ## Before each deploy
 
 Run `scripts/bump-version.sh` so browsers load the new CSS and JS instead of cached copies. If a custom domain is added later, update the URLs in `sitemap.xml`, `robots.txt`, the `og:`/canonical tags and the `<base>` in `404.html`.
+
+## Languages (English, Greek, Swedish)
+
+The site is written in English; `assets/js/i18n.js` translates the page on the fly from `assets/js/i18n-dict.js`. Visitors get their device language on the first visit and can switch with EN · EL · SV in the header (`?lang=el` also works).
+
+To change or add a translation, edit `i18n/strings.txt` (blocks of three lines: English, Greek, Swedish) and run `python3 i18n/build.py`. The English line must match the text on the page exactly. Use `{n}` for numbers and `{name}` for text that should itself be translated, e.g. `{n} in stock`.
+
+New works only need their description added there if it should be translated; titles stay as they are.

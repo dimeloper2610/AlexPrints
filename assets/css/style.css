@@ -915,3 +915,11 @@ html.pt::after { left: 0; animation: roller-pass .7s cubic-bezier(.65,0,.25,1) .
 .skip { position: fixed; left: 12px; top: -60px; z-index: 2000; background: var(--ink); color: var(--paper); padding: 10px 14px; border-radius: 999px; text-decoration: none; transition: top .2s; }
 .skip:focus { top: 12px; }
 .ink-stage:focus-visible { outline: 2px solid var(--red); outline-offset: 4px; }
+.xsec-fig .cap { text-transform: uppercase; }
+/* language switch */
+.lang { display: inline-flex; padding: 4px; gap: 2px; border-radius: 999px; background: color-mix(in srgb, var(--paper-2) 70%, transparent); border: 1px solid var(--rule); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.lang button { background: none; border: 0; border-radius: 999px; padding: 6px 9px; font: 500 .72rem/1 var(--mono); letter-spacing: .04em; color: var(--ink-3); }
+.lang button:hover { color: var(--ink); }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+@media (max-width: 420px) { .lang button { padding: 6px 7px; font-size: .66rem; } .cart-btn { padding-left: 12px; } }
+html[lang="el"] .h3-head h1, html[lang="sv"] .h3-head h1 { max-width: 14ch; font-size: clamp(2.8rem, 7.2vw, 8rem); }

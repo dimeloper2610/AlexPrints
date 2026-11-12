@@ -452,7 +452,7 @@
       list = list.slice().sort(sorters[state.sort] || sorters.newest);
 
       const t = T[state.technique];
-      $("#technique-note").innerHTML = t ? `<strong>${t.name}.</strong> ${esc(t.short)} ${t.look ? esc(t.look) : ""} <a href="process.html#techniques">More on techniques</a>` : "";
+      $("#technique-note").innerHTML = t ? `<strong>${t.name}</strong> <span>${esc(t.short)}</span> ${t.look ? `<span>${esc(t.look)}</span>` : ""} <a href="process.html#techniques">More on techniques</a>` : "";
       $("#result-count").textContent = `${list.length} ${list.length === 1 ? "work" : "works"}`;
       $("#grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">Nothing here right now. <a href="works.html">See all works</a></p>`;
       $("#avail").checked = state.available;

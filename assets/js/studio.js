@@ -273,15 +273,15 @@
       $(".xsec-replay", root).onclick = () => show(k, true);
       const n = D.phases.length, dur = 1500, hold = 450;
       const ph = $(`#ph${id}`);
-      if (!autoplay) { D.update(id, 0, 0); ph.textContent = `1 / ${n} — ${D.phases[0].toUpperCase()}`; return; }
-      if (reduce) { D.update(id, n - 1, 1); ph.textContent = `${n} / ${n} — ${D.phases[n - 1].toUpperCase()}`; return; }
+      if (!autoplay) { D.update(id, 0, 0); ph.textContent = `1 / ${n} — ${D.phases[0]}`; return; }
+      if (reduce) { D.update(id, n - 1, 1); ph.textContent = `${n} / ${n} — ${D.phases[n - 1]}`; return; }
       const start = performance.now();
       const step = (now) => {
         const el = Math.max(0, now - start), seg = dur + hold;
         const i = Math.min(n - 1, Math.floor(el / seg));
         const t = clamp01((el - i * seg) / dur);
         D.update(id, i, t);
-        ph.textContent = `${i + 1} / ${n} — ${D.phases[i].toUpperCase()}`;
+        ph.textContent = `${i + 1} / ${n} — ${D.phases[i]}`;
         if (el < n * seg) raf = requestAnimationFrame(step);
       };
       raf = requestAnimationFrame(step);

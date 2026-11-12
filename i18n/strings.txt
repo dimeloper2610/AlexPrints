@@ -1,0 +1,1786 @@
+# AlexPrints translations. Source for assets/js/i18n-dict.js (build with: python3 i18n/build.py)
+# Each entry is a block of three lines: English (exact, as on the page), Greek, Swedish.
+# {n}, {n1}, {n2} match numbers; any other {name} matches text and is translated itself.
+# Lines starting with # are comments; blank lines separate entries.
+
+# ---------------- navigation, header, footer ----------------
+Prints
+Χαρακτικά
+Grafik
+
+Paintings
+Ζωγραφική
+Måleri
+
+All works
+Όλα τα έργα
+Alla verk
+
+Process
+Διαδικασία
+Process
+
+About
+Σχετικά
+Om
+
+Cart
+Καλάθι
+Varukorg
+
+Open cart
+Άνοιγμα καλαθιού
+Öppna varukorgen
+
+Menu
+Μενού
+Meny
+
+Main
+Κύριο μενού
+Huvudmeny
+
+Language
+Γλώσσα
+Språk
+
+Skip to content
+Μετάβαση στο περιεχόμενο
+Hoppa till innehållet
+
+Preview — sample works, names and prices
+Προεπισκόπηση — δείγματα έργων, ονομάτων και τιμών
+Förhandsvisning — exempelverk, namn och priser
+
+Ask about<br>a <em>print</em>.
+Ρωτήστε για<br>ένα <em>χαρακτικό</em>.
+Fråga om<br>ett <em>tryck</em>.
+
+Write to Alex
+Γράψτε στον Alex
+Skriv till Alex
+
+Woodcuts, drypoints and monotypes, cut and printed by hand. Based in Stockholm.
+Ξυλογραφίες, ξηρές χαράξεις και μονοτυπίες, χαραγμένες και τυπωμένες στο χέρι. Με έδρα τη Στοκχόλμη.
+Träsnitt, torrnålsgravyrer och monotypier, skurna och tryckta för hand. Baserad i Stockholm.
+
+Works
+Έργα
+Verk
+
+Proofs & studies
+Δοκίμια & σπουδές
+Provtryck & studier
+
+Available now
+Διαθέσιμα τώρα
+Tillgängligt nu
+
+Studio
+Εργαστήριο
+Ateljé
+
+Reading a print
+Πώς διαβάζεται ένα χαρακτικό
+Att läsa ett tryck
+
+Commissions
+Παραγγελίες έργων
+Beställningar
+
+Help
+Βοήθεια
+Hjälp
+
+Shipping & returns
+Αποστολές & επιστροφές
+Frakt & returer
+
+Terms of sale
+Όροι πώλησης
+Köpvillkor
+
+Privacy
+Απόρρητο
+Integritet
+
+Stockholm · Printed by hand
+Στοκχόλμη · Τυπωμένο στο χέρι
+Stockholm · Tryckt för hand
+
+# ---------------- home ----------------
+<span class="ln" aria-hidden="true"><span>Carved, inked</span></span> <span class="ln" aria-hidden="true"><span>and pressed by hand.</span></span>
+<span class="ln" aria-hidden="true"><span>Χαραγμένο, μελανωμένο</span></span> <span class="ln" aria-hidden="true"><span>και τυπωμένο στο χέρι.</span></span>
+<span class="ln" aria-hidden="true"><span>Skuret, infärgat</span></span> <span class="ln" aria-hidden="true"><span>och tryckt för hand.</span></span>
+
+Carved, inked and pressed by hand.
+Χαραγμένο, μελανωμένο και τυπωμένο στο χέρι.
+Skuret, infärgat och tryckt för hand.
+
+Woodcuts, drypoints and monotypes by Alex Fragoulis, a Greek printmaker in Stockholm. Small numbered editions.
+Ξυλογραφίες, ξηρές χαράξεις και μονοτυπίες του Alex Fragoulis, Έλληνα χαράκτη στη Στοκχόλμη. Μικρές αριθμημένες εκδόσεις.
+Träsnitt, torrnålsgravyrer och monotypier av Alex Fragoulis, grekisk grafiker i Stockholm. Små numrerade upplagor.
+
+<a class="btn" href="works.html?category=print">Shop prints</a><a class="btn ghost" href="#matrix">The process</a>
+<a class="btn" href="works.html?category=print">Αγορά χαρακτικών</a><a class="btn ghost" href="#matrix">Η διαδικασία</a>
+<a class="btn" href="works.html?category=print">Köp grafik</a><a class="btn ghost" href="#matrix">Processen</a>
+
+Shop prints
+Αγορά χαρακτικών
+Köp grafik
+
+The process
+Η διαδικασία
+Processen
+
+<b>00</b>The studio
+<b>00</b>Το εργαστήριο
+<b>00</b>Ateljén
+
+Every print here starts as a block of wood or a plate, cut by hand and mirrored. Each sheet is inked, pressed and pulled one at a time, then signed and numbered in pencil.
+Κάθε χαρακτικό εδώ ξεκινά ως ένα κομμάτι ξύλο ή μια πλάκα, χαραγμένη στο χέρι και καθρεφτισμένη. Κάθε φύλλο μελανώνεται, πιέζεται και τραβιέται ένα-ένα, και μετά υπογράφεται και αριθμείται με μολύβι.
+Varje tryck här börjar som en träskiva eller en plåt, skuren för hand och spegelvänd. Varje ark färgas in, pressas och dras ett i taget och signeras och numreras sedan med blyerts.
+
+<b>01</b>Selected works
+<b>01</b>Επιλεγμένα έργα
+<b>01</b>Utvalda verk
+
+Selected works
+Επιλεγμένα έργα
+Utvalda verk
+
+Prints & works
+Χαρακτικά & έργα
+Grafik & verk
+
+<b>02</b>The matrix
+<b>02</b>Η μήτρα
+<b>02</b>Tryckformen
+
+Every print starts <em>backwards.</em>
+Κάθε χαρακτικό ξεκινά <em>ανάποδα.</em>
+Varje tryck börjar <em>spegelvänt.</em>
+
+The image is cut into the block as a mirror of itself. Ink sits only on what is left uncut, and the paper pressed onto it turns the picture the right way round.
+Η εικόνα χαράζεται στη μήτρα σαν καθρέφτης του εαυτού της. Το μελάνι μένει μόνο σε ό,τι δεν έχει χαραχτεί, και το χαρτί που πιέζεται πάνω της γυρίζει την εικόνα στη σωστή φορά.
+Bilden skärs in i blocket spegelvänd. Färgen hamnar bara på det som lämnats orört, och papperet som pressas mot det vänder bilden rätt.
+
+Carve
+Χάραξη
+Skär
+
+The drawing is cut into the wood with knives and gouges. Everything carved away will stay white.
+Το σχέδιο χαράζεται στο ξύλο με μαχαιράκια και κοπίδια. Ό,τι αφαιρείται θα μείνει λευκό.
+Teckningen skärs in i träet med knivar och järn. Allt som skärs bort förblir vitt.
+
+Ink
+Μελάνι
+Färg
+
+A roller lays a thin, even film of ink over the surface that remains. The grooves stay clean.
+Ένα ρολό απλώνει ένα λεπτό, ομοιόμορφο στρώμα μελανιού στην επιφάνεια που έμεινε. Τα αυλάκια μένουν καθαρά.
+En vals lägger ett tunt, jämnt lager färg på ytan som är kvar. Skårorna förblir rena.
+
+Pull
+Τύπωμα
+Tryck
+
+Paper is laid on the block and pressed. Peeled away, the image is reversed, ready to be signed and numbered.
+Το χαρτί τοποθετείται πάνω στη μήτρα και πιέζεται. Όταν ξεκολλήσει, η εικόνα έχει αντιστραφεί, έτοιμη να υπογραφεί και να αριθμηθεί.
+Papperet läggs på blocket och pressas. När det dras av är bilden omvänd, redo att signeras och numreras.
+
+The block, carved and mirrored
+Η μήτρα, χαραγμένη και καθρεφτισμένη
+Blocket, skuret och spegelvänt
+
+The block, inked
+Η μήτρα, μελανωμένη
+Blocket, infärgat
+
+The print, pulled from the block
+Το χαρακτικό, τυπωμένο από τη μήτρα
+Trycket, draget från blocket
+
+The block, mirrored
+Η μήτρα, καθρεφτισμένη
+Blocket, spegelvänt
+
+{x}, detail
+{x}, λεπτομέρεια
+{x}, detalj
+
+<b>03</b>Where the ink sits
+<b>03</b>Πού κάθεται το μελάνι
+<b>03</b>Var färgen sitter
+
+Three ways to<br>hold <em>ink</em>.
+Τρεις τρόποι να<br>κρατηθεί το <em>μελάνι</em>.
+Tre sätt att<br>hålla <em>färg</em>.
+
+Every printmaking technique is a different answer to one question: where on the matrix does the ink go? Pick one and watch it print.
+Κάθε τεχνική χαρακτικής είναι μια διαφορετική απάντηση στο ίδιο ερώτημα: πού πάει το μελάνι πάνω στη μήτρα; Διαλέξτε μία και δείτε πώς τυπώνει.
+Varje grafisk teknik är ett annat svar på samma fråga: var på tryckformen hamnar färgen? Välj en och se den tryckas.
+
+<b>04</b>Tools and marks
+<b>04</b>Εργαλεία και ίχνη
+<b>04</b>Verktyg och spår
+
+Every tool leaves<br>its own <em>line</em>.
+Κάθε εργαλείο αφήνει<br>τη δική του <em>γραμμή</em>.
+Varje verktyg lämnar<br>sin egen <em>linje</em>.
+
+More on the process
+Περισσότερα για τη διαδικασία
+Mer om processen
+
+<b>05</b>The edition
+<b>05</b>Η έκδοση
+<b>05</b>Upplagan
+
+Ten sheets.<br>Each one <em>numbered</em>.
+Δέκα φύλλα.<br>Το καθένα <em>αριθμημένο</em>.
+Tio ark.<br>Vart och ett <em>numrerat</em>.
+
+An edition is the set of identical impressions pulled from one block or plate. Each sheet is signed and numbered in pencil, in the margin, by hand.
+Έκδοση είναι το σύνολο των ίδιων αντιτύπων που τυπώνονται από μία μήτρα ή πλάκα. Κάθε φύλλο υπογράφεται και αριθμείται με μολύβι, στο περιθώριο, με το χέρι.
+En upplaga är de likadana avdrag som dras från ett block eller en plåt. Varje ark signeras och numreras för hand med blyerts i marginalen.
+
+The fourth sheet of an edition of ten.
+Το τέταρτο φύλλο μιας έκδοσης δέκα αντιτύπων.
+Det fjärde arket i en upplaga om tio.
+
+Artist's proof. A few kept outside the edition, the same as the edition prints.
+Δοκίμιο καλλιτέχνη. Λίγα αντίτυπα εκτός έκδοσης, ίδια με τα αντίτυπα της έκδοσης.
+Konstnärsexemplar. Några få utanför upplagan, likadana som upplagans tryck.
+
+Trial proof. Pulled while the block was still being cut.
+Δοκιμαστικό τύπωμα. Τυπώθηκε ενώ η μήτρα χαρασσόταν ακόμα.
+Provtryck. Draget medan blocket fortfarande skars.
+
+An edition of {n}
+Έκδοση {n} αντιτύπων
+En upplaga om {n}
+
+<b>06</b>Workshops
+<b>06</b>Εργαστήρια
+<b>06</b>Workshops
+
+mikroi <em>CHARAKTES</em>
+μικροί <em>ΧΑΡΑΚΤΕΣ</em>
+mikroi <em>CHARAKTES</em>
+
+A mobile printmaking workshop for children. Each session introduces one technique and lets children work with its tools and materials, beyond brush and pencil, to make an original print of their own. Run in Greece, and since 2025 in Stockholm.
+Ένα κινητό εργαστήρι χαρακτικής για παιδιά. Κάθε συνάντηση γνωρίζει στα παιδιά μία τεχνική και τα αφήνει να δουλέψουν με τα εργαλεία και τα υλικά της, πέρα από το πινέλο και το μολύβι, για να φτιάξουν το δικό τους πρωτότυπο χαρακτικό. Στην Ελλάδα, και από το 2025 στη Στοκχόλμη.
+En mobil grafikverkstad för barn. Varje tillfälle introducerar en teknik och låter barnen arbeta med dess verktyg och material, bortom pensel och penna, för att göra ett eget originaltryck. I Grekland och sedan 2025 i Stockholm.
+
+<a class="btn" href="about.html#contact">Book a workshop</a> <a class="btn ghost" href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+<a class="btn" href="about.html#contact">Κλείστε εργαστήρι</a> <a class="btn ghost" href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+<a class="btn" href="about.html#contact">Boka en workshop</a> <a class="btn ghost" href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+
+Book a workshop
+Κλείστε εργαστήρι
+Boka en workshop
+
+<b>07</b>Buying a print
+<b>07</b>Αγορά χαρακτικού
+<b>07</b>Att köpa ett tryck
+
+From the studio<br>to your wall
+Από το εργαστήριο<br>στον τοίχο σας
+Från ateljén<br>till din vägg
+
+Small editions
+Μικρές εκδόσεις
+Små upplagor
+
+Each edition is limited and numbered by hand.
+Κάθε έκδοση είναι περιορισμένη και αριθμημένη με το χέρι.
+Varje upplaga är begränsad och numrerad för hand.
+
+Signed in pencil
+Υπογραφή με μολύβι
+Signerat med blyerts
+
+Every impression is signed, titled and numbered in the margin.
+Κάθε αντίτυπο έχει υπογραφή, τίτλο και αρίθμηση στο περιθώριο.
+Varje avdrag är signerat, betitlat och numrerat i marginalen.
+
+Ask anything
+Ρωτήστε ό,τι θέλετε
+Fråga vad du vill
+
+Size, paper, framing: every work page has a direct line to the artist.
+Διάσταση, χαρτί, κορνίζα: κάθε σελίδα έργου έχει απευθείας επαφή με τον καλλιτέχνη.
+Storlek, papper, inramning: varje verksida har en direkt kontakt med konstnären.
+
+Order request
+Αίτημα παραγγελίας
+Beställningsförfrågan
+
+Send your selection, get a reply with shipping and a payment link. Nothing is charged upfront.
+Στείλτε την επιλογή σας και θα λάβετε απάντηση με το κόστος αποστολής και ένα link πληρωμής. Δεν χρεώνεται τίποτα εκ των προτέρων.
+Skicka ditt urval och få svar med frakt och en betallänk. Inget debiteras i förväg.
+
+# ---------------- ink hero ----------------
+The block · mirrored
+Η μήτρα · καθρεφτισμένη
+Blocket · spegelvänt
+
+Your impression · 1/1
+Το αντίτυπό σας · 1/1
+Ditt avdrag · 1/1
+
+Move across the block to roll ink onto it
+Περάστε πάνω από τη μήτρα για να τη μελανώσετε
+För pekaren över blocket för att färga in det
+
+Drag sideways to ink the block
+Σύρετε πλάγια για να μελανώσετε τη μήτρα
+Dra i sidled för att färga in blocket
+
+Roll more ink for a fuller impression
+Βάλτε περισσότερο μελάνι για πληρέστερο αντίτυπο
+Rulla på mer färg för ett fylligare avdrag
+
+Pull a print
+Τυπώστε ένα αντίτυπο
+Dra ett tryck
+
+Back to the block
+Πίσω στη μήτρα
+Tillbaka till blocket
+
+Clean the block
+Καθαρίστε τη μήτρα
+Rengör blocket
+
+View the print
+Δείτε το έργο
+Se trycket
+
+Woodblock. Use the arrow keys to roll ink, Enter to pull a print.
+Ξύλινη μήτρα. Με τα βελάκια περνάτε μελάνι, με το Enter τυπώνετε.
+Träblock. Använd piltangenterna för att rulla färg och Enter för att dra ett tryck.
+
+{x}: the woodblock, which you can ink with the pointer
+{x}: η ξύλινη μήτρα, που μπορείτε να μελανώσετε με τον κέρσορα
+{x}: träblocket, som du kan färga in med pekaren
+
+Edition of {n}
+Έκδοση {n} αντιτύπων
+Upplaga om {n}
+
+# ---------------- cross-sections ----------------
+Relief
+Υψιτυπία
+Högtryck
+
+Intaglio
+Βαθυτυπία
+Djuptryck
+
+Monotype
+Μονοτυπία
+Monotypi
+
+Planographic
+Επιπεδοτυπία
+Plantryck
+
+Ink on the surface
+Μελάνι στην επιφάνεια
+Färg på ytan
+
+In a woodcut or linocut the ink sits on top. What the artist cuts away stays the colour of the paper, so the image is made by removing everything that should not print.
+Στην ξυλογραφία και τη λινογραφία το μελάνι κάθεται από πάνω. Ό,τι αφαιρεί ο καλλιτέχνης μένει στο χρώμα του χαρτιού, οπότε η εικόνα γεννιέται αφαιρώντας ό,τι δεν πρέπει να τυπωθεί.
+I träsnitt och linoleumsnitt ligger färgen ovanpå. Det konstnären skär bort får papperets färg, så bilden uppstår genom att allt som inte ska tryckas tas bort.
+
+Techniques
+Τεχνικές
+Tekniker
+
+Woodcut, linocut, wood engraving
+Ξυλογραφία, λινογραφία, ξυλογλυπτική χάραξη
+Träsnitt, linoleumsnitt, trägravyr
+
+Matrix
+Μήτρα
+Tryckform
+
+Wood or linoleum block
+Ξύλο ή λινόλεουμ
+Trä- eller linoleumblock
+
+Look for
+Προσέξτε
+Titta efter
+
+Crisp edges, solid blacks, the grain of the wood
+Καθαρές άκρες, πυκνά μαύρα, τα νερά του ξύλου
+Skarpa kanter, täta svarta ytor, träets ådring
+
+Inking the block
+Μελάνωμα της μήτρας
+Blocket färgas in
+
+Paper laid on and pressed
+Το χαρτί τοποθετείται και πιέζεται
+Papperet läggs på och pressas
+
+Lifted: the print
+Ξεκόλλημα: το χαρακτικό
+Lyft: trycket
+
+Carved away: stays white
+Αφαιρεμένο: μένει λευκό
+Bortskuret: förblir vitt
+
+Uncut surface: takes the ink
+Άκοφτη επιφάνεια: παίρνει μελάνι
+Orörd yta: tar färg
+
+Ink in the grooves
+Μελάνι στα αυλάκια
+Färg i skårorna
+
+Drypoint and etching work the other way round. Lines are scratched or bitten into a plate, ink is pushed into them, and the surface is wiped clean. Damp paper under heavy pressure is forced into the lines to lift the ink out.
+Η ξηρά χάραξη και η χαλκογραφία λειτουργούν ανάποδα. Οι γραμμές χαράζονται ή τρώγονται με οξύ σε μια πλάκα, το μελάνι μπαίνει μέσα τους και η επιφάνεια σκουπίζεται. Υγρό χαρτί, κάτω από μεγάλη πίεση, μπαίνει στις γραμμές και τραβάει το μελάνι έξω.
+Torrnål och etsning fungerar tvärtom. Linjer ristas eller etsas in i en plåt, färg pressas ner i dem och ytan torkas ren. Fuktat papper pressas under högt tryck ner i linjerna och lyfter ut färgen.
+
+Drypoint, etching, aquatint, engraving
+Ξηρά χάραξη, χαλκογραφία, ακουατίντα, γλυπτογραφία
+Torrnål, etsning, akvatint, kopparstick
+
+Metal or plexiglass plate
+Πλάκα μετάλλου ή πλεξιγκλάς
+Metall- eller plexiglasplåt
+
+Velvety or fine lines, a plate mark pressed into the paper
+Βελούδινες ή λεπτές γραμμές, το αποτύπωμα της πλάκας στο χαρτί
+Sammetslena eller fina linjer, ett plåtmärke intryckt i papperet
+
+Ink pushed into the lines
+Το μελάνι μπαίνει στις γραμμές
+Färg pressas ner i linjerna
+
+Surface wiped clean
+Η επιφάνεια σκουπίζεται
+Ytan torkas ren
+
+Damp paper pressed in
+Το υγρό χαρτί πιέζεται
+Fuktat papper pressas ner
+
+Ink held in the lines
+Μελάνι μέσα στις γραμμές
+Färg i linjerna
+
+Plate
+Πλάκα
+Plåt
+
+Ink painted on a flat plate
+Μελάνι ζωγραφισμένο σε επίπεδη πλάκα
+Färg målad på en slät plåt
+
+For a monotype the plate is not cut at all. Ink is brushed, rolled or wiped straight onto a smooth surface and printed once. A second, fainter pull, the ghost, is sometimes taken from what remains.
+Στη μονοτυπία η πλάκα δεν χαράζεται καθόλου. Το μελάνι απλώνεται με πινέλο, ρολό ή πανί πάνω σε λεία επιφάνεια και τυπώνεται μία φορά. Μερικές φορές τραβιέται και ένα δεύτερο, πιο αχνό αντίτυπο από ό,τι έμεινε, το «φάντασμα».
+I en monotypi skärs plåten inte alls. Färgen penslas, rullas eller torkas direkt på en slät yta och trycks en gång. Ibland dras ett andra, blekare tryck av det som blir kvar, ”spöket”.
+
+Monotype, monoprint
+Μονοτυπία, μονοτύπωμα
+Monotypi, monoprint
+
+Smooth plate: glass, plexiglass, metal
+Λεία πλάκα: γυαλί, πλεξιγκλάς, μέταλλο
+Slät plåt: glas, plexiglas, metall
+
+Painterly marks, soft edges, one of one
+Ζωγραφικές πινελιές, μαλακές άκρες, μοναδικό
+Måleriska spår, mjuka kanter, ett unikt exemplar
+
+Ink painted onto the plate
+Το μελάνι ζωγραφίζεται στην πλάκα
+Färg målas på plåten
+
+Lifted: one of a kind
+Ξεκόλλημα: μοναδικό
+Lyft: ett unikt exemplar
+
+Ink painted on a smooth plate
+Μελάνι ζωγραφισμένο σε λεία πλάκα
+Färg målad på en slät plåt
+
+Plate, not cut
+Πλάκα, χωρίς χάραξη
+Plåt, inte skuren
+
+Cross-section: {x}
+Τομή: {x}
+Genomskärning: {x}
+
+{n1} / {n2} — {x}
+{n1} / {n2} — {x}
+{n1} / {n2} — {x}
+
+Play again
+Ξανά
+Spela igen
+
+# ---------------- tools ----------------
+V-gouge
+Κοπίδι V
+V-järn
+
+U-gouge
+Κοπίδι U
+U-järn
+
+Knife
+Μαχαιράκι
+Kniv
+
+Drypoint needle
+Βελόνα ξηράς χάραξης
+Torrnål
+
+Woodcut · linocut
+Ξυλογραφία · λινογραφία
+Träsnitt · linoleumsnitt
+
+Cuts a fine, sharp channel. Used for detail: hatching, texture, the edge of a cloud.
+Ανοίγει ένα λεπτό, κοφτερό αυλάκι. Για λεπτομέρειες: διαγραμμίσεις, υφές, την άκρη ενός σύννεφου.
+Skär en fin, skarp ränna. För detaljer: skraffering, textur, kanten på ett moln.
+
+A rounded scoop that clears wider areas and leaves soft-ended marks.
+Ένα στρογγυλό κοπίδι που καθαρίζει μεγαλύτερες επιφάνειες και αφήνει ίχνη με μαλακές άκρες.
+Ett rundat järn som tar bort större ytor och lämnar spår med mjuka ändar.
+
+Outlines shapes with two angled cuts, before the gouges clear around them.
+Περιγράφει τα σχήματα με δύο λοξές τομές, πριν τα κοπίδια καθαρίσουν γύρω τους.
+Ritar upp former med två vinklade snitt innan järnen tar bort runt dem.
+
+Scratches straight into the plate. The ridge it throws up, the burr, holds ink and prints a soft, velvety line.
+Χαράζει κατευθείαν στην πλάκα. Το γρέζι που σηκώνει κρατά μελάνι και τυπώνει μια μαλακή, βελούδινη γραμμή.
+Ristar direkt i plåten. Kanten den kastar upp, graden, håller färg och ger en mjuk, sammetslen linje.
+
+# ---------------- edition terms, process page ----------------
+From a drawing<br>to an <em>edition</em>.
+Από το σχέδιο<br>στην <em>έκδοση</em>.
+Från teckning<br>till <em>upplaga</em>.
+
+A print is not a copy of an image. The block or plate is the work's matrix, and each sheet pulled from it is an original. Here is how that happens, and what to look for when you hold one.
+Ένα χαρακτικό δεν είναι αντίγραφο μιας εικόνας. Η μήτρα ή η πλάκα είναι η πηγή του έργου, και κάθε φύλλο που τυπώνεται από αυτήν είναι πρωτότυπο. Δείτε πώς γίνεται και τι να προσέξετε όταν κρατάτε ένα.
+Ett grafiskt tryck är ingen kopia av en bild. Blocket eller plåten är verkets tryckform, och varje ark som dras från den är ett original. Så här går det till, och vad du ska titta efter när du håller ett.
+
+Drawing
+Σχέδιο
+Teckning
+
+Ideas start in the sketchbook. The drawing is reversed onto the plate or block, since everything prints as a mirror image.
+Οι ιδέες ξεκινούν στο μπλοκ σχεδίων. Το σχέδιο μεταφέρεται ανάποδα στην πλάκα ή στη μήτρα, αφού όλα τυπώνονται σαν καθρέφτης.
+Idéerna börjar i skissboken. Teckningen förs över spegelvänd till plåten eller blocket, eftersom allt trycks spegelvänt.
+
+Making the matrix
+Η δημιουργία της μήτρας
+Att göra tryckformen
+
+Lino and wood are carved with gouges. Copper and zinc are drawn through a wax ground and bitten in acid, or scratched directly with a needle.
+Το λινόλεουμ και το ξύλο χαράζονται με κοπίδια. Ο χαλκός και ο ψευδάργυρος σχεδιάζονται μέσα από βερνίκι και τρώγονται με οξύ, ή χαράζονται απευθείας με βελόνα.
+Linoleum och trä skärs med järn. Koppar och zink tecknas genom en etsgrund och etsas i syra, eller ristas direkt med en nål.
+
+Proofing
+Δοκιμαστικά τυπώματα
+Provtryckning
+
+Trial proofs show what the plate is doing. The image is reworked and proofed again until it's right. These states are sometimes offered as proofs &amp; studies.
+Τα δοκιμαστικά δείχνουν τι κάνει η πλάκα. Η εικόνα δουλεύεται ξανά και τυπώνεται δοκιμαστικά μέχρι να είναι σωστή. Αυτά τα στάδια διατίθενται μερικές φορές ως δοκίμια &amp; σπουδές.
+Provtryck visar vad plåten gör. Bilden bearbetas och provtrycks igen tills den sitter. De här tillstånden erbjuds ibland som provtryck &amp; studier.
+
+Printing the edition
+Τύπωμα της έκδοσης
+Att trycka upplagan
+
+Each sheet is inked and printed by hand, on dampened cotton paper for intaglio or dry Japanese paper for relief. Small differences between impressions are part of the process.
+Κάθε φύλλο μελανώνεται και τυπώνεται στο χέρι, σε νωπό βαμβακερό χαρτί για τη βαθυτυπία ή σε στεγνό ιαπωνικό χαρτί για την υψιτυπία. Μικρές διαφορές ανάμεσα στα αντίτυπα είναι μέρος της διαδικασίας.
+Varje ark färgas in och trycks för hand, på fuktat bomullspapper för djuptryck eller torrt japanpapper för högtryck. Små skillnader mellan avdragen är en del av processen.
+
+Signing
+Υπογραφή
+Signering
+
+Once dry, every impression is checked, signed, titled and numbered in pencil. The edition size is fixed and is not reprinted.
+Όταν στεγνώσει, κάθε αντίτυπο ελέγχεται, υπογράφεται, τιτλοφορείται και αριθμείται με μολύβι. Το μέγεθος της έκδοσης είναι σταθερό και δεν ξανατυπώνεται.
+När det torkat kontrolleras varje avdrag och signeras, betitlas och numreras med blyerts. Upplagans storlek är fast och trycks inte om.
+
+<b>A</b> Where the ink sits
+<b>A</b> Πού κάθεται το μελάνι
+<b>A</b> Var färgen sitter
+
+Relief, intaglio,<br><em>monotype</em>.
+Υψιτυπία, βαθυτυπία,<br><em>μονοτυπία</em>.
+Högtryck, djuptryck,<br><em>monotypi</em>.
+
+Each family of techniques puts the ink somewhere different. Pick one to see the plate in cross-section as it prints.
+Κάθε οικογένεια τεχνικών βάζει το μελάνι σε διαφορετικό σημείο. Διαλέξτε μία για να δείτε την πλάκα σε τομή την ώρα που τυπώνει.
+Varje teknikfamilj lägger färgen på olika ställen. Välj en för att se plåten i genomskärning när den trycks.
+
+What the margins tell you
+Τι λένε τα περιθώρια
+Vad marginalerna berättar
+
+Point at the numbers to see where each mark sits on the sheet.
+Δείξτε τους αριθμούς για να δείτε πού βρίσκεται κάθε σημάδι στο φύλλο.
+Peka på siffrorna för att se var varje markering sitter på arket.
+
+<strong>Image</strong><span>The printed area, taken from the plate or block.</span>
+<strong>Εικόνα</strong><span>Η τυπωμένη επιφάνεια, από την πλάκα ή τη μήτρα.</span>
+<strong>Bild</strong><span>Den tryckta ytan, från plåten eller blocket.</span>
+
+<strong>Plate mark</strong><span>The edge of a metal plate, pressed into the paper. Only intaglio prints have it.</span>
+<strong>Αποτύπωμα πλάκας</strong><span>Η άκρη της μεταλλικής πλάκας, πιεσμένη στο χαρτί. Υπάρχει μόνο στη βαθυτυπία.</span>
+<strong>Plåtmärke</strong><span>Kanten av en metallplåt, intryckt i papperet. Finns bara på djuptryck.</span>
+
+<strong>Edition number</strong><span>13/20 means the 13th sheet signed from an edition of 20. A.P. marks an artist's proof, T.P. a trial proof.</span>
+<strong>Αριθμός έκδοσης</strong><span>13/20 σημαίνει το 13ο υπογεγραμμένο φύλλο από έκδοση 20 αντιτύπων. A.P. είναι δοκίμιο καλλιτέχνη, T.P. δοκιμαστικό τύπωμα.</span>
+<strong>Upplagenummer</strong><span>13/20 betyder det 13:e signerade arket i en upplaga om 20. A.P. betyder konstnärsexemplar, T.P. provtryck.</span>
+
+<strong>Title</strong><span>Written by hand, usually centred under the image.</span>
+<strong>Τίτλος</strong><span>Γραμμένος με το χέρι, συνήθως στο κέντρο κάτω από την εικόνα.</span>
+<strong>Titel</strong><span>Handskriven, oftast centrerad under bilden.</span>
+
+<strong>Signature</strong><span>In pencil, bottom right. Pencil can't be reproduced by a printing process.</span>
+<strong>Υπογραφή</strong><span>Με μολύβι, κάτω δεξιά. Το μολύβι δεν αναπαράγεται με εκτύπωση.</span>
+<strong>Signatur</strong><span>Med blyerts, nere till höger. Blyerts kan inte återges med tryckteknik.</span>
+
+<strong>Margin</strong><span>The untouched paper around the image. Keep it when framing; it's part of the work.</span>
+<strong>Περιθώριο</strong><span>Το άθικτο χαρτί γύρω από την εικόνα. Κρατήστε το στην κορνίζα· είναι μέρος του έργου.</span>
+<strong>Marginal</strong><span>Det orörda papperet runt bilden. Behåll det vid inramning; det är en del av verket.</span>
+
+Relief, intaglio, monotype
+Υψιτυπία, βαθυτυπία, μονοτυπία
+Högtryck, djuptryck, monotypi
+
+See the prints
+Δείτε τα χαρακτικά
+Se grafiken
+
+<b>B</b> Tools and marks
+<b>B</b> Εργαλεία και ίχνη
+<b>B</b> Verktyg och spår
+
+Glossary
+Γλωσσάρι
+Ordlista
+
+A few words you'll see
+Μερικές λέξεις που θα συναντήσετε
+Några ord du kommer att se
+
+Edition
+Έκδοση
+Upplaga
+
+The total number of signed impressions printed from one matrix.
+Ο συνολικός αριθμός υπογεγραμμένων αντιτύπων από μία μήτρα.
+Det totala antalet signerade avdrag från en tryckform.
+
+Artist's proof. A small number kept outside the edition, identical to it.
+Δοκίμιο καλλιτέχνη. Λίγα αντίτυπα εκτός έκδοσης, ίδια με αυτήν.
+Konstnärsexemplar. Ett litet antal utanför upplagan, identiska med den.
+
+Trial proof. Pulled while the image was still being worked; often differs from the final.
+Δοκιμαστικό τύπωμα. Τυπώθηκε ενώ η εικόνα δουλευόταν ακόμα· συχνά διαφέρει από το τελικό.
+Provtryck. Draget medan bilden fortfarande bearbetades; skiljer sig ofta från slutresultatet.
+
+State
+Στάδιο
+Tillstånd
+
+A stage of the plate. A print may exist in several states before the edition.
+Ένα στάδιο της πλάκας. Ένα χαρακτικό μπορεί να υπάρχει σε πολλά στάδια πριν από την έκδοση.
+Ett stadium av plåten. Ett tryck kan finnas i flera tillstånd före upplagan.
+
+Impression
+Αντίτυπο
+Avdrag
+
+A single sheet printed from the matrix.
+Ένα φύλλο τυπωμένο από τη μήτρα.
+Ett enskilt ark tryckt från tryckformen.
+
+Thin paper glued onto the sheet during printing, adding a tone behind the image.
+Λεπτό χαρτί που κολλιέται στο φύλλο κατά το τύπωμα και προσθέτει έναν τόνο πίσω από την εικόνα.
+Tunt papper som limmas på arket vid tryckningen och ger en ton bakom bilden.
+
+Image
+Εικόνα
+Bild
+
+Plate mark
+Αποτύπωμα πλάκας
+Plåtmärke
+
+Edition number
+Αριθμός έκδοσης
+Upplagenummer
+
+Title
+Τίτλος
+Titel
+
+Signature
+Υπογραφή
+Signatur
+
+Margin
+Περιθώριο
+Marginal
+
+Point {n}
+Σημείο {n}
+Punkt {n}
+
+{n} work
+{n} έργο
+{n} verk
+
+{n} works
+{n} έργα
+{n} verk
+
+· {x}
+· {x}
+· {x}
+
+# ---------------- techniques & categories (data) ----------------
+Etching
+Χαλκογραφία
+Etsning
+
+Drypoint
+Ξηρά χάραξη
+Torrnål
+
+Aquatint
+Ακουατίντα
+Akvatint
+
+Linocut
+Λινογραφία
+Linoleumsnitt
+
+Woodcut
+Ξυλογραφία
+Träsnitt
+
+Oil
+Λάδι
+Olja
+
+Acrylic
+Ακρυλικό
+Akryl
+
+Watercolour
+Ακουαρέλα
+Akvarell
+
+Painting
+Ζωγραφική
+Målning
+
+Print
+Χαρακτικό
+Grafik
+
+Proof
+Δοκίμιο
+Provtryck
+
+Lines bitten into a copper or zinc plate with acid, inked into the grooves and printed under heavy pressure.
+Γραμμές που τρώγονται με οξύ σε πλάκα χαλκού ή ψευδαργύρου, μελανώνονται μέσα στα αυλάκια και τυπώνονται με μεγάλη πίεση.
+Linjer etsade med syra i en koppar- eller zinkplåt, infärgade i skårorna och tryckta under högt tryck.
+
+Fine, crisp lines and a raised plate mark around the image.
+Λεπτές, καθαρές γραμμές και ανάγλυφο αποτύπωμα πλάκας γύρω από την εικόνα.
+Fina, skarpa linjer och ett upphöjt plåtmärke runt bilden.
+
+Lines scratched directly into a metal or plexiglass plate with a steel needle. The raised burr holds ink and gives a soft, velvety line.
+Γραμμές χαραγμένες απευθείας σε πλάκα μετάλλου ή πλεξιγκλάς με ατσάλινη βελόνα. Το γρέζι που σηκώνεται κρατά μελάνι και δίνει μια μαλακή, βελούδινη γραμμή.
+Linjer ristade direkt i en metall- eller plexiglasplåt med en stålnål. Den upphöjda graden håller färg och ger en mjuk, sammetslen linje.
+
+Warm, slightly blurred lines. Editions are small because the burr wears down.
+Ζεστές, ελαφρώς θολές γραμμές. Οι εκδόσεις είναι μικρές γιατί το γρέζι φθείρεται.
+Varma, lätt suddiga linjer. Upplagorna är små eftersom graden slits.
+
+Rosin dust is fused to the plate and etched, creating areas of tone rather than line.
+Σκόνη κολοφωνίου λιώνει πάνω στην πλάκα και τρώγεται με οξύ, δημιουργώντας τονικές επιφάνειες αντί για γραμμές.
+Kolofoniumpulver smälts fast på plåten och etsas, så att det blir tonytor i stället för linjer.
+
+Grainy, watercolour-like tonal fields.
+Κοκκώδεις τονικές επιφάνειες, σαν ακουαρέλα.
+Korniga, akvarellika tonytor.
+
+The image is carved into linoleum. Ink sits on the uncut surface and is pressed onto paper.
+Η εικόνα χαράζεται στο λινόλεουμ. Το μελάνι μένει στην άκοφτη επιφάνεια και πιέζεται στο χαρτί.
+Bilden skärs in i linoleum. Färgen ligger på den orörda ytan och pressas mot papperet.
+
+Bold contrast, visible gouge marks, flat areas of colour.
+Έντονη αντίθεση, ορατά ίχνη κοπιδιού, επίπεδες χρωματικές επιφάνειες.
+Stark kontrast, synliga spår av järnen, plana färgytor.
+
+Carved along the plank of a wood block. The grain of the wood often prints with the image.
+Χαράζεται κατά μήκος της σανίδας. Τα νερά του ξύλου συχνά τυπώνονται μαζί με την εικόνα.
+Skuret längs fibrerna i en träskiva. Träets ådring trycks ofta med i bilden.
+
+Strong shapes with the texture of the grain.
+Δυνατά σχήματα με την υφή των νερών του ξύλου.
+Kraftfulla former med ådringens struktur.
+
+Ink is painted onto a smooth plate and transferred once. Every monotype is unique.
+Το μελάνι ζωγραφίζεται σε λεία πλάκα και μεταφέρεται μία φορά. Κάθε μονοτυπία είναι μοναδική.
+Färgen målas på en slät plåt och överförs en gång. Varje monotypi är unik.
+
+Painterly, soft edges. One impression only.
+Ζωγραφική αίσθηση, μαλακές άκρες. Ένα μόνο αντίτυπο.
+Måleriskt, mjuka kanter. Bara ett avdrag.
+
+Oil on canvas or board.
+Λάδι σε καμβά ή ξύλο.
+Olja på duk eller skiva.
+
+Acrylic on canvas or paper.
+Ακρυλικό σε καμβά ή χαρτί.
+Akryl på duk eller papper.
+
+Watercolour on paper.
+Ακουαρέλα σε χαρτί.
+Akvarell på papper.
+
+Neoclassical houses of the old town of Patras under a dark, cloudy sky. Carved in wood and printed by hand, in a limited edition of 10.
+Νεοκλασικά σπίτια της παλιάς πόλης της Πάτρας κάτω από σκοτεινό, συννεφιασμένο ουρανό. Χαραγμένο σε ξύλο και τυπωμένο στο χέρι, σε περιορισμένη έκδοση 10 αντιτύπων.
+Nyklassicistiska hus i Patras gamla stad under en mörk, molnig himmel. Skuret i trä och tryckt för hand i en begränsad upplaga om 10.
+
+Sample description. Replace with a few lines about the work: the subject, where the idea came from, how the plate was made.
+Δείγμα περιγραφής. Θα αντικατασταθεί με λίγες γραμμές για το έργο: το θέμα, από πού ήρθε η ιδέα, πώς φτιάχτηκε η πλάκα.
+Exempeltext. Ersätts med några rader om verket: motivet, var idén kom ifrån, hur plåten gjordes.
+
+Sample description. Replace with the real text.
+Δείγμα περιγραφής. Θα αντικατασταθεί με το πραγματικό κείμενο.
+Exempeltext. Ersätts med den riktiga texten.
+
+A trial proof pulled while the plate was still being worked. It shows an earlier state of Untitled I.
+Δοκιμαστικό τύπωμα από την περίοδο που η πλάκα δουλευόταν ακόμα. Δείχνει ένα προηγούμενο στάδιο του Untitled I.
+Ett provtryck draget medan plåten fortfarande bearbetades. Det visar ett tidigare tillstånd av Untitled I.
+
+Linen canvas
+Λινός καμβάς
+Linneduk
+
+Cotton canvas
+Βαμβακερός καμβάς
+Bomullsduk
+
+Proofing paper
+Χαρτί δοκιμαστικών
+Provtryckspapper
+
+Study I (trial proof)
+Σπουδή I (δοκιμαστικό)
+Studie I (provtryck)
+
+Study II (artist's proof)
+Σπουδή II (δοκίμιο καλλιτέχνη)
+Studie II (konstnärsexemplar)
+
+# ---------------- shop: list, filters ----------------
+Shop
+Κατάστημα
+Butik
+
+All
+Όλα
+Alla
+
+Any technique
+Κάθε τεχνική
+Alla tekniker
+
+Available only
+Μόνο διαθέσιμα
+Endast tillgängliga
+
+Sort
+Ταξινόμηση
+Sortera
+
+Newest
+Νεότερα
+Nyaste
+
+Price, low to high
+Τιμή, από χαμηλή
+Pris, lägst först
+
+Price, high to low
+Τιμή, από υψηλή
+Pris, högst först
+
+Largest first
+Μεγαλύτερα πρώτα
+Största först
+
+Category
+Κατηγορία
+Kategori
+
+Technique
+Τεχνική
+Teknik
+
+Prints, paintings, proofs and studies. Every print is inked and pulled by hand, in small numbered editions.
+Χαρακτικά, ζωγραφική, δοκίμια και σπουδές. Κάθε χαρακτικό μελανώνεται και τυπώνεται στο χέρι, σε μικρές αριθμημένες εκδόσεις.
+Grafik, måleri, provtryck och studier. Varje tryck färgas in och dras för hand i små numrerade upplagor.
+
+Etchings, linocuts, woodcuts and monotypes, printed by hand in the studio in small numbered editions.
+Χαλκογραφίες, λινογραφίες, ξυλογραφίες και μονοτυπίες, τυπωμένες στο χέρι στο εργαστήριο σε μικρές αριθμημένες εκδόσεις.
+Etsningar, linoleumsnitt, träsnitt och monotypier, tryckta för hand i ateljén i små numrerade upplagor.
+
+Original paintings. Each one is unique.
+Πρωτότυπα έργα ζωγραφικής. Το καθένα είναι μοναδικό.
+Originalmålningar. Var och en är unik.
+
+Trial proofs, artist's proofs and working states. Outside the edition, often one of a kind.
+Δοκιμαστικά, δοκίμια καλλιτέχνη και στάδια εργασίας. Εκτός έκδοσης, συχνά μοναδικά.
+Provtryck, konstnärsexemplar och arbetstillstånd. Utanför upplagan, ofta unika.
+
+More on techniques
+Περισσότερα για τις τεχνικές
+Mer om teknikerna
+
+Nothing here right now.
+Τίποτα εδώ προς το παρόν.
+Inget här just nu.
+
+See all works
+Δείτε όλα τα έργα
+Se alla verk
+
+View
+Προβολή
+Visa
+
+Zoom
+Μεγέθυνση
+Zooma
+
+On request
+Κατόπιν ερωτήματος
+På förfrågan
+
+Sold
+Πουλήθηκε
+Såld
+
+Available
+Διαθέσιμο
+Tillgänglig
+
+In stock
+Σε απόθεμα
+I lager
+
+{n} left
+Απομένουν {n}
+{n} kvar
+
+{a} · {b} · Ed. {n}
+{a} · {b} · Έκδ. {n}
+{a} · {b} · Uppl. {n}
+
+{a} · edition of {n}
+{a} · έκδοση {n} αντιτύπων
+{a} · upplaga om {n}
+
+{a} · {b}
+{a} · {b}
+{a} · {b}
+
+{a}, {n}
+{a}, {n}
+{a}, {n}
+
+{a}, {n} · {n1} × {n2} cm
+{a}, {n} · {n1} × {n2} εκ.
+{a}, {n} · {n1} × {n2} cm
+
+{x} — AlexPrints
+{x} — AlexPrints
+{x} — AlexPrints
+
+# ---------------- work page ----------------
+Artwork
+Έργο
+Verk
+
+The block
+Η μήτρα
+Blocket
+
+To scale
+Σε κλίμακα
+I skala
+
+Hover to look closer · click to enlarge
+Περάστε τον κέρσορα για λεπτομέρεια · κλικ για μεγέθυνση
+Hovra för att se närmare · klicka för att förstora
+
+Tap to enlarge
+Πατήστε για μεγέθυνση
+Tryck för att förstora
+
+Shown to scale
+Σε πραγματική κλίμακα
+Visas i skala
+
+The block: mirrored, inked on the uncut surface (illustration)
+Η μήτρα: καθρεφτισμένη, με μελάνι στην άκοφτη επιφάνεια (εικονογράφηση)
+Blocket: spegelvänt, infärgat på den orörda ytan (illustration)
+
+The block, mirrored (illustration)
+Η μήτρα, καθρεφτισμένη (εικονογράφηση)
+Blocket, spegelvänt (illustration)
+
+Price on request
+Τιμή κατόπιν ερωτήματος
+Pris på förfrågan
+
+{n} in stock
+{n} σε απόθεμα
+{n} i lager
+
+Ask for availability
+Ρωτήστε για διαθεσιμότητα
+Fråga om tillgänglighet
+
+Framing
+Κορνίζα
+Inramning
+
+Unframed
+Χωρίς κορνίζα
+Oinramad
+
+Framed, natural wood, glazed
+Με κορνίζα, φυσικό ξύλο, τζάμι
+Inramad, naturträ, glas
+
+Add to cart
+Στο καλάθι
+Lägg i varukorgen
+
+Ask a question
+Κάντε μια ερώτηση
+Ställ en fråga
+
+Buy now · card or wallet
+Αγορά τώρα · κάρτα ή wallet
+Köp nu · kort eller plånbok
+
+Ask about similar works
+Ρωτήστε για παρόμοια έργα
+Fråga om liknande verk
+
+Enquire about price
+Ρωτήστε για την τιμή
+Fråga om priset
+
+Ask about it
+Ρωτήστε γι' αυτό
+Fråga om det
+
+Enquire
+Ερώτηση
+Fråga
+
+Size
+Διάσταση
+Storlek
+
+Sheet
+Φύλλο
+Ark
+
+Paper
+Χαρτί
+Papper
+
+Support
+Υπόστρωμα
+Underlag
+
+Year
+Έτος
+År
+
+Signed
+Υπογραφή
+Signerad
+
+{n} impressions
+{n} αντίτυπα
+{n} avdrag
+
+Outside the edition, unique
+Εκτός έκδοσης, μοναδικό
+Utanför upplagan, unik
+
+Unique
+Μοναδικό
+Unik
+
+Signed, titled and numbered in pencil
+Υπογεγραμμένο, με τίτλο και αρίθμηση με μολύβι
+Signerad, betitlad och numrerad med blyerts
+
+Signed, titled and inscribed in pencil
+Υπογεγραμμένο, με τίτλο και σημειώσεις με μολύβι
+Signerad, betitlad och påskriven med blyerts
+
+Printed from the plate on a hand-turned etching press. Look for the plate mark pressed into the paper around the image.
+Τυπωμένο από την πλάκα σε χειροκίνητη πρέσα χαρακτικής. Προσέξτε το αποτύπωμα της πλάκας στο χαρτί γύρω από την εικόνα.
+Tryckt från plåten i en handdriven tryckpress. Titta efter plåtmärket som pressats in i papperet runt bilden.
+
+Printed from the carved block. Small variations in inking make each impression slightly different.
+Τυπωμένο από τη χαραγμένη μήτρα. Μικρές διαφορές στο μελάνωμα κάνουν κάθε αντίτυπο λίγο διαφορετικό.
+Tryckt från det skurna blocket. Små skillnader i infärgningen gör varje avdrag lite olika.
+
+A single impression from a painted plate. It cannot be repeated.
+Ένα μόνο αντίτυπο από ζωγραφισμένη πλάκα. Δεν μπορεί να επαναληφθεί.
+Ett enda avdrag från en målad plåt. Det kan inte upprepas.
+
+Shipped flat between boards, or rolled for large sheets. Shipping is quoted with your order.
+Αποστέλλεται επίπεδο ανάμεσα σε χαρτόνια ή σε ρολό για μεγάλα φύλλα. Το κόστος αποστολής υπολογίζεται με την παραγγελία.
+Skickas plant mellan skivor, eller rullat för stora ark. Frakten anges med din beställning.
+
+Shipped wrapped and boxed. Shipping is quoted with your order.
+Αποστέλλεται τυλιγμένο σε κουτί. Το κόστος αποστολής υπολογίζεται με την παραγγελία.
+Skickas inslaget i kartong. Frakten anges med din beställning.
+
+Not sure about size? Switch to “To scale” to see it above a sofa.
+Δεν είστε σίγουροι για το μέγεθος; Πατήστε «Σε κλίμακα» για να το δείτε πάνω από έναν καναπέ.
+Osäker på storleken? Välj ”I skala” för att se det ovanför en soffa.
+
+More to look at
+Δείτε ακόμα
+Mer att titta på
+
+More paintings
+Περισσότερη ζωγραφική
+Fler målningar
+
+All prints
+Όλα τα χαρακτικά
+All grafik
+
+All paintings
+Όλη η ζωγραφική
+Alla målningar
+
+All proofs & studies
+Όλα τα δοκίμια & σπουδές
+Alla provtryck & studier
+
+More works
+Περισσότερα έργα
+Fler verk
+
+Previous
+Προηγούμενο
+Föregående
+
+Next
+Επόμενο
+Nästa
+
+{x} added to cart
+Το «{x}» μπήκε στο καλάθι
+{x} har lagts i varukorgen
+
+View cart
+Δείτε το καλάθι
+Visa varukorgen
+
+Only {n} impressions available
+Διαθέσιμα μόνο {n} αντίτυπα
+Bara {n} avdrag tillgängliga
+
+This is a unique work, already in your cart
+Είναι μοναδικό έργο και είναι ήδη στο καλάθι σας
+Detta är ett unikt verk som redan finns i din varukorg
+
+{x} shown to scale above a {n} cm sofa
+Το «{x}» σε κλίμακα πάνω από καναπέ {n} εκ.
+{x} i skala ovanför en soffa på {n} cm
+
+Sofa {n} cm wide
+Καναπές πλάτους {n} εκ.
+Soffa {n} cm bred
+
+{n1} × {n2} cm
+{n1} × {n2} εκ.
+{n1} × {n2} cm
+
+{n1} × {n2} cm + frame
+{n1} × {n2} εκ. + κορνίζα
+{n1} × {n2} cm + ram
+
+Zoomed view
+Μεγεθυμένη προβολή
+Förstorad vy
+
+Close
+Κλείσιμο
+Stäng
+
+Tap to zoom · drag to move
+Πατήστε για ζουμ · σύρετε για μετακίνηση
+Tryck för att zooma · dra för att flytta
+
+# ---------------- cart & checkout ----------------
+Your cart is empty.
+Το καλάθι σας είναι άδειο.
+Din varukorg är tom.
+
+Browse prints
+Δείτε τα χαρακτικά
+Bläddra bland grafiken
+
+Ship to
+Αποστολή σε
+Skicka till
+
+Choose a region
+Επιλέξτε περιοχή
+Välj region
+
+Sweden
+Σουηδία
+Sverige
+
+European Union
+Ευρωπαϊκή Ένωση
+Europeiska unionen
+
+Rest of the world
+Υπόλοιπος κόσμος
+Resten av världen
+
+Subtotal
+Μερικό σύνολο
+Delsumma
+
+Shipping
+Αποστολή
+Frakt
+
+Total
+Σύνολο
+Totalt
+
+Nothing is charged yet. Alex confirms availability and sends a secure payment link.
+Δεν χρεώνεται τίποτα ακόμα. Ο Alex επιβεβαιώνει τη διαθεσιμότητα και στέλνει ασφαλές link πληρωμής.
+Inget debiteras än. Alex bekräftar tillgängligheten och skickar en säker betallänk.
+
+Request order
+Αίτημα παραγγελίας
+Skicka förfrågan
+
+Remove
+Αφαίρεση
+Ta bort
+
+Decrease
+Μείωση
+Minska
+
+Increase
+Αύξηση
+Öka
+
+Qty {n}
+Ποσ. {n}
+Antal {n}
+
+Your order
+Η παραγγελία σας
+Din beställning
+
+Nearly there
+Σχεδόν τελειώσαμε
+Nästan klart
+
+Send your selection and shipping address. Alex will confirm availability and reply with a secure payment link. Nothing is charged now.
+Στείλτε την επιλογή σας και τη διεύθυνση αποστολής. Ο Alex θα επιβεβαιώσει τη διαθεσιμότητα και θα απαντήσει με ασφαλές link πληρωμής. Δεν χρεώνεται τίποτα τώρα.
+Skicka ditt urval och din leveransadress. Alex bekräftar tillgängligheten och svarar med en säker betallänk. Inget debiteras nu.
+
+Full name
+Ονοματεπώνυμο
+Fullständigt namn
+
+Email
+Email
+E-post
+
+Phone (optional)
+Τηλέφωνο (προαιρετικό)
+Telefon (valfritt)
+
+Address
+Διεύθυνση
+Adress
+
+City
+Πόλη
+Ort
+
+Postcode
+Ταχ. κώδικας
+Postnummer
+
+Country
+Χώρα
+Land
+
+Notes (optional)
+Σημειώσεις (προαιρετικό)
+Meddelande (valfritt)
+
+A dedication, a delivery date, questions about framing...
+Μια αφιέρωση, μια ημερομηνία παράδοσης, ερωτήσεις για την κορνίζα...
+En dedikation, ett leveransdatum, frågor om inramning...
+
+I have read the
+Έχω διαβάσει τους
+Jag har läst
+
+terms of sale
+όρους πώλησης
+köpvillkoren
+
+and
+και τις
+och
+
+shipping &amp; returns
+αποστολές &amp; επιστροφές
+frakt &amp; returer
+
+shipping & returns
+αποστολές & επιστροφές
+frakt & returer
+
+Send order request
+Αποστολή αιτήματος
+Skicka beställningsförfrågan
+
+Choose where to ship to
+Επιλέξτε πού θα γίνει η αποστολή
+Välj vart vi ska skicka
+
+Your email app should open with the message ready to send. If it doesn't, write to
+Η εφαρμογή email σας θα ανοίξει με το μήνυμα έτοιμο. Αν δεν ανοίξει, γράψτε στο
+Din e-postapp bör öppnas med meddelandet klart att skicka. Om den inte gör det, skriv till
+
+Thank you. Your message is on its way — you'll hear back by email.
+Ευχαριστούμε. Το μήνυμά σας στάλθηκε· θα λάβετε απάντηση με email.
+Tack. Ditt meddelande är på väg — du får svar via e-post.
+
+Something went wrong. Please write to
+Κάτι πήγε στραβά. Γράψτε στο
+Något gick fel. Skriv till
+
+instead.
+εναλλακτικά.
+i stället.
+
+# ---------------- about ----------------
+Greek visual artist and art educator, based in Stockholm. He has worked as an artist since 2010, with printmaking at the centre of his practice: woodcut, drypoint and monotype, alongside painting, book illustration and murals.
+Έλληνας εικαστικός και εκπαιδευτικός εικαστικών, με έδρα τη Στοκχόλμη. Δουλεύει ως καλλιτέχνης από το 2010, με κέντρο της δουλειάς του τη χαρακτική: ξυλογραφία, ξηρά χάραξη και μονοτυπία, μαζί με ζωγραφική, εικονογράφηση βιβλίων και τοιχογραφίες.
+Grekisk bildkonstnär och bildpedagog, baserad i Stockholm. Han har arbetat som konstnär sedan 2010 med grafiken i centrum: träsnitt, torrnål och monotypi, vid sidan av måleri, bokillustration och väggmålningar.
+
+For ten years he taught visual arts to children in Patras, at the Lyceum of Greek Women, teaching painting techniques and art history and organising exhibitions of his students' work.
+Για δέκα χρόνια δίδαξε εικαστικά σε παιδιά στην Πάτρα, στο Λύκειο Ελληνίδων, διδάσκοντας τεχνικές ζωγραφικής και ιστορία της τέχνης και οργανώνοντας εκθέσεις με έργα των μαθητών του.
+I tio år undervisade han barn i bild i Patras, vid Grekiska kvinnors lyceum, i måleritekniker och konsthistoria, och ordnade utställningar med elevernas verk.
+
+He holds a master's degree in Art in Education from the University of Nicosia. In 2023 he showed a series of monotypes in an exhibition in Patras.
+Είναι κάτοχος μεταπτυχιακού στην Τέχνη στην Εκπαίδευση από το Πανεπιστήμιο Λευκωσίας. Το 2023 παρουσίασε μια σειρά μονοτυπιών σε έκθεση στην Πάτρα.
+Han har en master i konst i utbildning från University of Nicosia. 2023 visade han en serie monotypier på en utställning i Patras.
+
+Exhibitions
+Εκθέσεις
+Utställningar
+
+<span>2023</span><span>Monotypes, exhibition, Patras</span>
+<span>2023</span><span>Μονοτυπίες, έκθεση, Πάτρα</span>
+<span>2023</span><span>Monotypier, utställning, Patras</span>
+
+Education
+Σπουδές
+Utbildning
+
+<span>2020</span><span>MA, Art in Education, University of Nicosia</span>
+<span>2020</span><span>Μεταπτυχιακό, Τέχνη στην Εκπαίδευση, Πανεπιστήμιο Λευκωσίας</span>
+<span>2020</span><span>Master, konst i utbildning, University of Nicosia</span>
+
+<span>2012</span><span>BEd, Preschool Education, University of Patras</span>
+<span>2012</span><span>Πτυχίο, Παιδαγωγικό Τμήμα Προσχολικής Εκπαίδευσης, Πανεπιστήμιο Πατρών</span>
+<span>2012</span><span>Kandidatexamen, förskolepedagogik, University of Patras</span>
+
+Workshops
+Εργαστήρια
+Workshops
+
+<em>mikroi CHARAKTES</em> (Little Printmakers) is his mobile printmaking workshop for children. Each session introduces one printmaking technique and lets children work with its materials, beyond brush, paint and pencil, to make an original print of their own. Started in Greece, it moved with him to Stockholm in 2025. <a href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+<em>μικροί ΧΑΡΑΚΤΕΣ</em>: το κινητό εργαστήρι χαρακτικής του για παιδιά. Κάθε συνάντηση γνωρίζει στα παιδιά μία τεχνική χαρακτικής και τα αφήνει να δουλέψουν με τα υλικά της, πέρα από το πινέλο, την μπογιά και το μολύβι, για να φτιάξουν το δικό τους πρωτότυπο χαρακτικό. Ξεκίνησε στην Ελλάδα και το 2025 ήρθε μαζί του στη Στοκχόλμη. <a href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+<em>mikroi CHARAKTES</em> (Små grafiker) är hans mobila grafikverkstad för barn. Varje tillfälle introducerar en grafisk teknik och låter barnen arbeta med dess material, bortom pensel, färg och penna, för att göra ett eget originaltryck. Den startade i Grekland och följde med honom till Stockholm 2025. <a href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+
+<span>2025</span><span>mikroi CHARAKTES, Tinos Cultural Foundation, Tinos</span>
+<span>2025</span><span>μικροί ΧΑΡΑΚΤΕΣ, Ίδρυμα Τηνιακού Πολιτισμού, Τήνος</span>
+<span>2025</span><span>mikroi CHARAKTES, Tinos kulturstiftelse, Tinos</span>
+
+Teaching
+Διδασκαλία
+Undervisning
+
+<span>2009–19</span><span>Visual arts teacher, Lyceum of Greek Women, Patras</span>
+<span>2009–19</span><span>Εκπαιδευτικός εικαστικών, Λύκειο Ελληνίδων, Πάτρα</span>
+<span>2009–19</span><span>Bildlärare, Grekiska kvinnors lyceum, Patras</span>
+
+Contact
+Επικοινωνία
+Kontakt
+
+Commissions, questions, studio visits
+Παραγγελίες, ερωτήσεις, επισκέψεις στο εργαστήριο
+Beställningar, frågor, ateljébesök
+
+For commissions, collaborations, or a question about a work. Replies by email.
+Για παραγγελίες έργων, συνεργασίες ή μια ερώτηση για κάποιο έργο. Οι απαντήσεις έρχονται με email.
+För beställningar, samarbeten eller en fråga om ett verk. Svar via e-post.
+
+Name
+Όνομα
+Namn
+
+Commission
+Παραγγελία έργου
+Beställning
+
+Workshop for children
+Εργαστήρι για παιδιά
+Workshop för barn
+
+A specific work
+Ένα συγκεκριμένο έργο
+Ett specifikt verk
+
+Exhibition or collaboration
+Έκθεση ή συνεργασία
+Utställning eller samarbete
+
+Something else
+Κάτι άλλο
+Något annat
+
+Message
+Μήνυμα
+Meddelande
+
+Send message
+Αποστολή μηνύματος
+Skicka meddelande
+
+Portrait photo to come
+Η φωτογραφία έρχεται
+Porträtt kommer
+
+Old town · Woodcut, 2025
+Old town · Ξυλογραφία, 2025
+Old town · Träsnitt, 2025
+
+# ---------------- 404 ----------------
+This sheet<br><em>wasn't printed.</em>
+Αυτό το φύλλο<br><em>δεν τυπώθηκε.</em>
+Det här arket<br><em>trycktes aldrig.</em>
+
+The page you are looking for doesn't exist, or it moved.
+Η σελίδα που ψάχνετε δεν υπάρχει ή μετακινήθηκε.
+Sidan du letar efter finns inte, eller har flyttats.
+
+<a class="btn" href="/AlexPrints/">Back to the studio</a><a class="btn ghost" href="/AlexPrints/works.html">See the works</a>
+<a class="btn" href="/AlexPrints/">Πίσω στο εργαστήριο</a><a class="btn ghost" href="/AlexPrints/works.html">Δείτε τα έργα</a>
+<a class="btn" href="/AlexPrints/">Tillbaka till ateljén</a><a class="btn ghost" href="/AlexPrints/works.html">Se verken</a>
+
+# ---------------- page titles & descriptions ----------------
+AlexPrints — Prints and paintings by Alex Fragoulis
+AlexPrints — Χαρακτικά και ζωγραφική του Alex Fragoulis
+AlexPrints — Grafik och måleri av Alex Fragoulis
+
+Woodcuts, drypoints, monotypes and paintings by Alex Fragoulis, Greek artist based in Stockholm. Printed by hand in small editions.
+Ξυλογραφίες, ξηρές χαράξεις, μονοτυπίες και ζωγραφική του Alex Fragoulis, Έλληνα καλλιτέχνη στη Στοκχόλμη. Τυπωμένα στο χέρι σε μικρές εκδόσεις.
+Träsnitt, torrnålsgravyrer, monotypier och måleri av Alex Fragoulis, grekisk konstnär i Stockholm. Tryckta för hand i små upplagor.
+
+Not found · Alex Fragoulis
+Δεν βρέθηκε · Alex Fragoulis
+Hittades inte · Alex Fragoulis
+
+# ---------------- legal: shared ----------------
+Draft. The parts <span class="todo">marked like this</span> need Alex's details before the shop opens.
+Πρόχειρο. Τα σημεία <span class="todo">σημειωμένα έτσι</span> χρειάζονται τα στοιχεία του Alex πριν ανοίξει το κατάστημα.
+Utkast. Delarna <span class="todo">markerade så här</span> behöver Alex uppgifter innan butiken öppnar.
+
+# ---------------- legal: shipping ----------------
+Shipping &amp;<br><em>returns</em>
+Αποστολές &amp;<br><em>επιστροφές</em>
+Frakt &amp;<br><em>returer</em>
+
+How works are packed and sent, what it costs, and what to do if something is not right.
+Πώς συσκευάζονται και αποστέλλονται τα έργα, πόσο κοστίζει, και τι να κάνετε αν κάτι δεν είναι σωστό.
+Hur verken packas och skickas, vad det kostar och vad du gör om något inte stämmer.
+
+Packing
+Συσκευασία
+Förpackning
+
+Prints are packed flat between rigid boards, or rolled in a sturdy tube for large sheets. Framed works are wrapped and boxed. <span class="todo">Confirm how Alex packs each type.</span>
+Τα χαρακτικά συσκευάζονται επίπεδα ανάμεσα σε σκληρά χαρτόνια ή σε ανθεκτικό σωλήνα για μεγάλα φύλλα. Τα έργα με κορνίζα τυλίγονται και μπαίνουν σε κουτί. <span class="todo">Να επιβεβαιωθεί πώς συσκευάζει ο Alex κάθε τύπο.</span>
+Grafik packas plant mellan styva skivor, eller rullas i ett stadigt rör för stora ark. Inramade verk slås in och packas i kartong. <span class="todo">Bekräfta hur Alex packar varje typ.</span>
+
+Shipping costs
+Κόστος αποστολής
+Fraktkostnader
+
+Shipping is calculated in the cart by region: a price for the first work and a smaller amount for each extra work, plus a surcharge for framed works.
+Το κόστος αποστολής υπολογίζεται στο καλάθι ανά περιοχή: μια τιμή για το πρώτο έργο και ένα μικρότερο ποσό για κάθε επιπλέον έργο, συν επιβάρυνση για έργα με κορνίζα.
+Frakten räknas ut i varukorgen per region: ett pris för det första verket och ett lägre belopp för varje ytterligare verk, plus ett tillägg för inramade verk.
+
+Sweden: <span class="todo">price</span>
+Σουηδία: <span class="todo">τιμή</span>
+Sverige: <span class="todo">pris</span>
+
+European Union: <span class="todo">price</span>
+Ευρωπαϊκή Ένωση: <span class="todo">τιμή</span>
+Europeiska unionen: <span class="todo">pris</span>
+
+Rest of the world: <span class="todo">price</span>
+Υπόλοιπος κόσμος: <span class="todo">τιμή</span>
+Resten av världen: <span class="todo">pris</span>
+
+Orders outside the EU may be subject to import duties and taxes in the destination country, paid by the recipient.
+Για παραγγελίες εκτός ΕΕ μπορεί να υπάρχουν δασμοί και φόροι εισαγωγής στη χώρα προορισμού, που πληρώνει ο παραλήπτης.
+Beställningar utanför EU kan omfattas av tull och importskatt i mottagarlandet, som betalas av mottagaren.
+
+Delivery times
+Χρόνοι παράδοσης
+Leveranstider
+
+Works are usually dispatched within <span class="todo">X working days</span> of payment. Delivery takes <span class="todo">X–Y days</span> within Sweden, <span class="todo">X–Y days</span> within the EU, and <span class="todo">X–Y days</span> elsewhere. You will receive tracking details by email.
+Τα έργα αποστέλλονται συνήθως μέσα σε <span class="todo">Χ εργάσιμες ημέρες</span> από την πληρωμή. Η παράδοση διαρκεί <span class="todo">Χ–Υ ημέρες</span> στη Σουηδία, <span class="todo">Χ–Υ ημέρες</span> στην ΕΕ και <span class="todo">Χ–Υ ημέρες</span> αλλού. Θα λάβετε στοιχεία παρακολούθησης με email.
+Verken skickas normalt inom <span class="todo">X arbetsdagar</span> efter betalning. Leveransen tar <span class="todo">X–Y dagar</span> inom Sverige, <span class="todo">X–Y dagar</span> inom EU och <span class="todo">X–Y dagar</span> till övriga länder. Du får spårningsuppgifter via e-post.
+
+Right of withdrawal
+Δικαίωμα υπαναχώρησης
+Ångerrätt
+
+If you are a consumer in the EU you can withdraw from your purchase within 14 days of receiving it, without giving a reason. Write to <span class="todo">email</span> with your order details. Return the work in its original condition and packaging within 14 days of telling us. <span class="todo">Who pays return shipping: state it here.</span> We refund the amount paid, including the standard delivery cost, within 14 days of receiving the work back.
+Αν είστε καταναλωτής στην ΕΕ, μπορείτε να υπαναχωρήσετε από την αγορά μέσα σε 14 ημέρες από την παραλαβή, χωρίς να δώσετε αιτιολογία. Γράψτε στο <span class="todo">email</span> με τα στοιχεία της παραγγελίας. Επιστρέψτε το έργο στην αρχική του κατάσταση και συσκευασία μέσα σε 14 ημέρες από την ενημέρωσή μας. <span class="todo">Ποιος πληρώνει την επιστροφή: να αναφερθεί εδώ.</span> Επιστρέφουμε το ποσό που πληρώσατε, μαζί με το βασικό κόστος αποστολής, μέσα σε 14 ημέρες από την παραλαβή του έργου.
+Om du är konsument inom EU kan du ångra ditt köp inom 14 dagar från att du tagit emot det, utan att ange skäl. Skriv till <span class="todo">e-post</span> med dina beställningsuppgifter. Returnera verket i ursprungligt skick och förpackning inom 14 dagar från att du meddelat oss. <span class="todo">Vem betalar returfrakten: ange det här.</span> Vi återbetalar det du betalat, inklusive standardfrakten, inom 14 dagar från att vi fått tillbaka verket.
+
+Commissioned or personalised works cannot be returned unless they arrive damaged.
+Έργα κατά παραγγελία ή προσωποποιημένα δεν επιστρέφονται, εκτός αν φτάσουν κατεστραμμένα.
+Beställda eller personligt anpassade verk kan inte returneras om de inte kommer fram skadade.
+
+Damaged in transit
+Ζημιά κατά τη μεταφορά
+Skadat under transport
+
+If a work arrives damaged, photograph the packaging and the work and write to <span class="todo">email</span> within <span class="todo">X days</span>. We will arrange a replacement impression, if one is available, or a full refund.
+Αν ένα έργο φτάσει κατεστραμμένο, φωτογραφίστε τη συσκευασία και το έργο και γράψτε στο <span class="todo">email</span> μέσα σε <span class="todo">Χ ημέρες</span>. Θα στείλουμε άλλο αντίτυπο, αν υπάρχει, ή θα επιστρέψουμε όλο το ποσό.
+Om ett verk kommer fram skadat, fotografera förpackningen och verket och skriv till <span class="todo">e-post</span> inom <span class="todo">X dagar</span>. Vi ordnar ett nytt avdrag om det finns, eller full återbetalning.
+
+How prints are packed and shipped, delivery times, and returns.
+Πώς συσκευάζονται και αποστέλλονται τα χαρακτικά, χρόνοι παράδοσης και επιστροφές.
+Hur grafiken packas och skickas, leveranstider och returer.
+
+# ---------------- legal: terms ----------------
+Terms of <em>sale</em>
+Όροι <em>πώλησης</em>
+<em>Köpvillkor</em>
+
+The terms that apply when you order a work through this site.
+Οι όροι που ισχύουν όταν παραγγέλνετε ένα έργο μέσα από αυτό το site.
+Villkoren som gäller när du beställer ett verk via den här webbplatsen.
+
+Seller
+Πωλητής
+Säljare
+
+<span class="todo">Alex Fragoulis (Alexios Fragkoulis)</span> · <span class="todo">business form and registration number, e.g. enskild firma, org.nr</span> · <span class="todo">address</span> · <span class="todo">email</span>
+<span class="todo">Alex Fragoulis (Αλέξιος Φραγκούλης)</span> · <span class="todo">νομική μορφή και αριθμός μητρώου, π.χ. enskild firma, org.nr</span> · <span class="todo">διεύθυνση</span> · <span class="todo">email</span>
+<span class="todo">Alex Fragoulis (Alexios Fragkoulis)</span> · <span class="todo">företagsform och organisationsnummer, t.ex. enskild firma, org.nr</span> · <span class="todo">adress</span> · <span class="todo">e-post</span>
+
+Ordering
+Παραγγελία
+Beställning
+
+Placing an order request on this site does not create a binding contract and no payment is taken. After receiving your request we confirm availability and the total, including shipping, and send you a secure payment link. The contract is formed when you complete payment.
+Το αίτημα παραγγελίας σε αυτό το site δεν δημιουργεί δεσμευτική σύμβαση και δεν γίνεται χρέωση. Μόλις λάβουμε το αίτημα, επιβεβαιώνουμε τη διαθεσιμότητα και το σύνολο μαζί με τα έξοδα αποστολής, και σας στέλνουμε ασφαλές link πληρωμής. Η σύμβαση ολοκληρώνεται όταν γίνει η πληρωμή.
+En beställningsförfrågan på den här webbplatsen skapar inget bindande avtal och ingen betalning dras. När vi fått din förfrågan bekräftar vi tillgängligheten och totalbeloppet inklusive frakt och skickar en säker betallänk. Avtalet ingås när du genomför betalningen.
+
+Prices and payment
+Τιμές και πληρωμή
+Priser och betalning
+
+Prices are shown in <span class="todo">currency</span> and <span class="todo">include / do not include VAT (moms): confirm with Skatteverket or an accountant</span>. Shipping is added by region and shown before you send your request. Payment is made by <span class="todo">card / Swish / PayPal</span> through <span class="todo">payment provider, e.g. Stripe</span>.
+Οι τιμές εμφανίζονται σε <span class="todo">νόμισμα</span> και <span class="todo">περιλαμβάνουν / δεν περιλαμβάνουν ΦΠΑ (moms): να επιβεβαιωθεί με το Skatteverket ή λογιστή</span>. Τα έξοδα αποστολής προστίθενται ανά περιοχή και εμφανίζονται πριν στείλετε το αίτημα. Η πληρωμή γίνεται με <span class="todo">κάρτα / Swish / PayPal</span> μέσω <span class="todo">παρόχου πληρωμών, π.χ. Stripe</span>.
+Priserna visas i <span class="todo">valuta</span> och <span class="todo">inklusive / exklusive moms: bekräfta med Skatteverket eller en redovisningskonsult</span>. Frakten läggs till per region och visas innan du skickar förfrågan. Betalning sker med <span class="todo">kort / Swish / PayPal</span> via <span class="todo">betalleverantör, t.ex. Stripe</span>.
+
+The works
+Τα έργα
+Verken
+
+Every print is printed by hand. Small variations in inking and paper between impressions of the same edition are part of the process and are not defects. Colours on screen may differ slightly from the work itself.
+Κάθε χαρακτικό τυπώνεται στο χέρι. Μικρές διαφορές στο μελάνωμα και στο χαρτί ανάμεσα σε αντίτυπα της ίδιας έκδοσης είναι μέρος της διαδικασίας και όχι ελαττώματα. Τα χρώματα στην οθόνη μπορεί να διαφέρουν λίγο από το ίδιο το έργο.
+Varje tryck trycks för hand. Små variationer i infärgning och papper mellan avdrag i samma upplaga hör till processen och är inga fel. Färgerna på skärmen kan skilja sig något från verket.
+
+Editions are limited and numbered. Stock shown on the site is updated by hand; if a work sells out before your payment, we refund you in full.
+Οι εκδόσεις είναι περιορισμένες και αριθμημένες. Το απόθεμα στο site ενημερώνεται χειροκίνητα· αν ένα έργο εξαντληθεί πριν από την πληρωμή σας, σας επιστρέφουμε όλο το ποσό.
+Upplagorna är begränsade och numrerade. Lagret på webbplatsen uppdateras för hand; om ett verk tar slut före din betalning får du full återbetalning.
+
+Delivery, withdrawal and returns
+Παράδοση, υπαναχώρηση και επιστροφές
+Leverans, ångerrätt och returer
+
+See <a href="shipping.html">Shipping &amp; returns</a>.
+Δείτε <a href="shipping.html">Αποστολές &amp; επιστροφές</a>.
+Se <a href="shipping.html">Frakt &amp; returer</a>.
+
+Copyright
+Πνευματικά δικαιώματα
+Upphovsrätt
+
+Buying a work gives you ownership of that physical object. Copyright in the image stays with the artist; the work may not be reproduced without permission.
+Με την αγορά αποκτάτε την κυριότητα του φυσικού αντικειμένου. Τα πνευματικά δικαιώματα της εικόνας ανήκουν στον καλλιτέχνη· το έργο δεν αναπαράγεται χωρίς άδεια.
+Köpet ger dig äganderätt till det fysiska objektet. Upphovsrätten till bilden stannar hos konstnären; verket får inte återges utan tillstånd.
+
+Complaints
+Παράπονα
+Reklamationer
+
+Write to <span class="todo">email</span>. If we cannot resolve a complaint together, consumers in Sweden can turn to Allmänna reklamationsnämnden (ARN).
+Γράψτε στο <span class="todo">email</span>. Αν δεν μπορέσουμε να λύσουμε ένα παράπονο μαζί, οι καταναλωτές στη Σουηδία μπορούν να απευθυνθούν στο Allmänna reklamationsnämnden (ARN).
+Skriv till <span class="todo">e-post</span>. Om vi inte kan lösa en reklamation tillsammans kan konsumenter i Sverige vända sig till Allmänna reklamationsnämnden (ARN).
+
+Terms of sale for prints and paintings bought from AlexPrints.
+Όροι πώλησης για χαρακτικά και έργα ζωγραφικής από το AlexPrints.
+Köpvillkor för grafik och måleri från AlexPrints.
+
+# ---------------- legal: privacy ----------------
+<em>Privacy</em>
+<em>Απόρρητο</em>
+<em>Integritet</em>
+
+What we collect, why, and what you can ask us to do with it.
+Τι συλλέγουμε, γιατί, και τι μπορείτε να μας ζητήσετε να κάνουμε με αυτά.
+Vad vi samlar in, varför och vad du kan be oss göra med det.
+
+Who is responsible
+Υπεύθυνος
+Personuppgiftsansvarig
+
+<span class="todo">Alex Fragoulis</span>, <span class="todo">address</span>, <span class="todo">email</span>, is responsible for the personal data handled through this site.
+Ο <span class="todo">Alex Fragoulis</span>, <span class="todo">διεύθυνση</span>, <span class="todo">email</span>, είναι υπεύθυνος για τα προσωπικά δεδομένα που διαχειρίζεται αυτό το site.
+<span class="todo">Alex Fragoulis</span>, <span class="todo">adress</span>, <span class="todo">e-post</span>, är ansvarig för de personuppgifter som hanteras via webbplatsen.
+
+What we collect
+Τι συλλέγουμε
+Vad vi samlar in
+
+<strong>Order requests:</strong> name, email, phone (optional), shipping address and the works you chose. Used to answer your request, arrange payment and ship the order. Legal basis: taking steps towards a contract with you.
+<strong>Αιτήματα παραγγελίας:</strong> όνομα, email, τηλέφωνο (προαιρετικό), διεύθυνση αποστολής και τα έργα που επιλέξατε. Χρησιμοποιούνται για να απαντήσουμε, να κανονίσουμε την πληρωμή και να στείλουμε την παραγγελία. Νομική βάση: ενέργειες για τη σύναψη σύμβασης μαζί σας.
+<strong>Beställningsförfrågningar:</strong> namn, e-post, telefon (valfritt), leveransadress och de verk du valt. Används för att besvara förfrågan, ordna betalning och skicka beställningen. Rättslig grund: åtgärder inför ett avtal med dig.
+
+<strong>Contact form:</strong> name, email and your message, to reply to you. Legal basis: legitimate interest in answering enquiries.
+<strong>Φόρμα επικοινωνίας:</strong> όνομα, email και το μήνυμά σας, για να σας απαντήσουμε. Νομική βάση: έννομο συμφέρον να απαντάμε σε ερωτήματα.
+<strong>Kontaktformulär:</strong> namn, e-post och ditt meddelande, för att kunna svara dig. Rättslig grund: berättigat intresse av att besvara frågor.
+
+<strong>Payments:</strong> handled by <span class="todo">payment provider</span>; we do not see or store your card details.
+<strong>Πληρωμές:</strong> γίνονται μέσω <span class="todo">παρόχου πληρωμών</span>· δεν βλέπουμε ούτε αποθηκεύουμε τα στοιχεία της κάρτας σας.
+<strong>Betalningar:</strong> hanteras av <span class="todo">betalleverantör</span>; vi ser inte och sparar inte dina kortuppgifter.
+
+Order records are kept for as long as Swedish bookkeeping law requires <span class="todo">confirm period</span>. Other messages are deleted when they are no longer needed.
+Τα στοιχεία παραγγελιών φυλάσσονται όσο απαιτεί η σουηδική λογιστική νομοθεσία <span class="todo">να επιβεβαιωθεί η περίοδος</span>. Τα υπόλοιπα μηνύματα διαγράφονται όταν δεν χρειάζονται πια.
+Beställningsuppgifter sparas så länge bokföringslagen kräver <span class="todo">bekräfta period</span>. Övriga meddelanden raderas när de inte längre behövs.
+
+Your browser
+Ο browser σας
+Din webbläsare
+
+The site uses no tracking or advertising cookies. Your cart, shipping region and display choices are stored in your own browser (local storage) and never sent to us until you submit a form.
+Το site δεν χρησιμοποιεί cookies παρακολούθησης ή διαφήμισης. Το καλάθι, η περιοχή αποστολής και οι επιλογές εμφάνισης αποθηκεύονται στον δικό σας browser (local storage) και δεν μας στέλνονται, μέχρι να υποβάλετε μια φόρμα.
+Webbplatsen använder inga spårnings- eller reklamcookies. Din varukorg, fraktregion och dina visningsval sparas i din egen webbläsare (local storage) och skickas aldrig till oss förrän du skickar ett formulär.
+
+Services we use
+Υπηρεσίες που χρησιμοποιούμε
+Tjänster vi använder
+
+GitHub Pages hosts the site and may log visitors' IP addresses for security.
+Το GitHub Pages φιλοξενεί το site και μπορεί να καταγράφει διευθύνσεις IP για λόγους ασφαλείας.
+GitHub Pages driftar webbplatsen och kan logga besökares IP-adresser av säkerhetsskäl.
+
+Google Fonts and jsDelivr deliver fonts and a script; your browser contacts their servers to load them.
+Τα Google Fonts και jsDelivr παρέχουν γραμματοσειρές και ένα script· ο browser σας επικοινωνεί με τους servers τους για να τα φορτώσει.
+Google Fonts och jsDelivr levererar typsnitt och ett skript; din webbläsare kontaktar deras servrar för att hämta dem.
+
+<span class="todo">Form service, e.g. Formspree</span> receives the forms and forwards them by email.
+Η <span class="todo">υπηρεσία φορμών, π.χ. Formspree</span> λαμβάνει τις φόρμες και τις προωθεί με email.
+<span class="todo">Formulärtjänst, t.ex. Formspree</span> tar emot formulären och vidarebefordrar dem via e-post.
+
+<span class="todo">Payment provider, e.g. Stripe</span> processes payments.
+Ο <span class="todo">πάροχος πληρωμών, π.χ. Stripe</span> επεξεργάζεται τις πληρωμές.
+<span class="todo">Betalleverantör, t.ex. Stripe</span> hanterar betalningarna.
+
+Your rights
+Τα δικαιώματά σας
+Dina rättigheter
+
+You can ask for a copy of your data, have it corrected or deleted, or object to how it is used, by writing to <span class="todo">email</span>. You can also complain to the Swedish Authority for Privacy Protection (IMY).
+Μπορείτε να ζητήσετε αντίγραφο των δεδομένων σας, διόρθωση ή διαγραφή τους, ή να αντιταχθείτε στη χρήση τους, γράφοντας στο <span class="todo">email</span>. Μπορείτε επίσης να υποβάλετε καταγγελία στη σουηδική Αρχή Προστασίας Δεδομένων (IMY).
+Du kan begära en kopia av dina uppgifter, få dem rättade eller raderade, eller invända mot hur de används, genom att skriva till <span class="todo">e-post</span>. Du kan också klaga hos Integritetsskyddsmyndigheten (IMY).
+
+What personal data AlexPrints collects and how it is used.
+Ποια προσωπικά δεδομένα συλλέγει το AlexPrints και πώς χρησιμοποιούνται.
+Vilka personuppgifter AlexPrints samlar in och hur de används.
+
+# ---------------- palette preview tool ----------------
+Choose a colour palette
+Επιλογή χρωματικής παλέτας
+Välj färgpalett
+
+Palettes
+Παλέτες
+Paletter
+
+{n} options
+{n} επιλογές
+{n} alternativ
+
+Colours: {x}
+Χρώματα: {x}
+Färger: {x}
+
+Preview only. Your choice is remembered in this browser; tell us which one to keep.
+Μόνο για προεπισκόπηση. Η επιλογή σας μένει σε αυτόν τον browser· πείτε μας ποια θα κρατήσουμε.
+Endast förhandsvisning. Ditt val sparas i den här webbläsaren; säg vilken vi ska behålla.
