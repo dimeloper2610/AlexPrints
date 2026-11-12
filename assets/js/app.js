@@ -26,7 +26,7 @@
   function status(w) {
     const n = stock(w);
     if (n <= 0) return { key: "sold", label: "Sold" };
-    if (w.edition && n <= 3) return { key: "low", label: `${n} left` };
+    if (w.edition && w.edition.available != null && n <= 3) return { key: "low", label: `${n} left` };
     return { key: "ok", label: "Available" };
   }
   const buyable = (w) => stock(w) > 0 && w.price != null;

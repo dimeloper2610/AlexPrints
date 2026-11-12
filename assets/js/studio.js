@@ -70,10 +70,45 @@
       const cur = $$("[data-step]", root).findIndex((b) => b.getAttribute("aria-pressed") === "true");
       set((cur + 1) % 3, true);
     });
-    if (!reduce) onView(m, () => {
-      timers.push(setTimeout(() => set(1), 900));
-      timers.push(setTimeout(() => set(2), 3200));
-    }, 0.5);
+    if (reduce) return;
+
+    // Scroll-scrubbed version: the section is pinned and scrolling carves, inks and pulls.
+    root.classList.add("scrub");
+    const card = $(".matrix-card", root), inked = $(".inked", root), roller = $(".roller", root), gloss = $(".gloss", root);
+    const bar = document.createElement("div");
+    bar.className = "scrub-bar"; bar.innerHTML = "<i></i>";
+    $(".matrix-steps", root).after(bar);
+    const clamp = (v) => Math.max(0, Math.min(1, v));
+    let lastStep = -1;
+    function update() {
+      const span = root.offsetHeight - innerHeight;
+      const p = clamp((scrollY - root.offsetTop) / (span || 1));
+      const ink = clamp((p - 0.16) / 0.34), flip = clamp((p - 0.62) / 0.24);
+      inked.style.clipPath = `inset(0 0 0 ${100 - ink * 100}%)`;
+      roller.style.left = `${ink * 100}%`;
+      roller.style.transform = "translateX(-50%)";
+      roller.style.opacity = ink > 0 && ink < 1 ? 1 : 0;
+      gloss.style.opacity = ink;
+      card.style.transform = `rotateY(${flip * 180}deg)`;
+      bar.firstChild.style.transform = `scaleX(${p})`;
+      const step = p < 0.16 ? 0 : p < 0.6 ? 1 : 2;
+      if (step !== lastStep) {
+        lastStep = step;
+        $$("[data-step]", root).forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.step === step)));
+        cap.textContent = caps[step];
+      }
+    }
+    const targets = [0.05, 0.45, 0.95];
+    $$("[data-step]", root).forEach((b) => b.addEventListener("click", (e) => {
+      e.stopImmediatePropagation();
+      const y = root.offsetTop + targets[+b.dataset.step] * (root.offsetHeight - innerHeight);
+      if (window.AP_LENIS) window.AP_LENIS.scrollTo(y, { duration: 1.4 }); else scrollTo({ top: y, behavior: "smooth" });
+    }, true));
+    $(".matrix-card", root).addEventListener("click", (e) => e.stopImmediatePropagation(), true);
+    let ticking = false;
+    addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
+    addEventListener("resize", update);
+    update();
   }
 
   // ---------- cross-sections ----------

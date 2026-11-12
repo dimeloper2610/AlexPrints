@@ -22,3 +22,12 @@ The cart is stored in the visitor's browser. "Request order" sends the selection
 ```bash
 ruby -run -e httpd . -p 4322
 ```
+
+## Scripts
+
+- `assets/js/app.js`: header, footer, cart, shop and work pages
+- `assets/js/studio.js`: printmaking modules (block-to-print scroll scene, ink cross-sections, tool marks, edition fan)
+- `assets/js/ink.js`: WebGL hero, the featured woodblock that visitors ink and print themselves
+- `assets/js/motion.js`: smooth scroll (Lenis, from jsDelivr), follower cursor, rolling labels, page transitions
+
+All motion turns off when the visitor's device asks for reduced motion.
