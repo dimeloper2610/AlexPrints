@@ -499,7 +499,7 @@ section { padding: clamp(72px, 11vw, 160px) 0; position: relative; }
 .footer-cta { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; padding-bottom: clamp(40px, 6vw, 80px); border-bottom: 1px solid var(--band-rule); margin-bottom: 40px; }
 .footer-big { font-family: var(--display); font-size: clamp(3rem, 9vw, 8.5rem); line-height: .88; letter-spacing: -.03em; margin: 0; }
 .footer-big em { color: var(--red); }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; }
 .footer-grid h4 { font-family: var(--mono); font-weight: 400; font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; color: var(--band-dim); margin: 0 0 12px; }
 .footer-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; font-size: .92rem; }
 .footer-grid a { text-decoration: none; }
@@ -643,3 +643,18 @@ html.leaving::before { content: ""; position: fixed; inset: 0; z-index: 1000; ba
 .scrub-bar i { background: var(--band-accent, var(--red)); }
 [data-palette="cobalt"] { --band-accent: #ffd23f; }
 [data-palette="ochre"] { --band-accent: #f4efe2; }
+
+/* shop: shipping & checkout */
+.zone { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 14px; }
+.zone .select { min-width: 12em; }
+.total-row.sub { font-size: .9rem; color: var(--ink-2); margin-bottom: 4px; }
+.check { display: flex; gap: 10px; align-items: flex-start; font-size: .9rem; color: var(--ink-2); }
+.check input { accent-color: var(--red); margin-top: 3px; }
+
+/* legal pages */
+.legal { max-width: 46em; padding-bottom: clamp(64px, 10vw, 140px); }
+.legal h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin: 48px 0 14px; }
+.legal p, .legal li { color: var(--ink-2); }
+.legal ul { padding-left: 1.2em; }
+.legal .todo { background: color-mix(in srgb, var(--red) 14%, transparent); color: var(--ink); padding: 0 .3em; border-radius: 3px; }
+.draft-note { border: 1px solid var(--red); border-radius: 12px; padding: 14px 16px; font-size: .9rem; margin-bottom: 8px; }

@@ -19,9 +19,38 @@
   const isIntaglio = (w) => T[w.technique] && T[w.technique].family === "Intaglio";
 
   // ---------- availability ----------
+  const MAX = C.maxStock || 10;
   function stock(w) {
-    if (w.edition) return w.edition.available == null ? 1 : w.edition.available; // null = not stated yet
+    if (w.edition) return w.edition.available == null ? 1 : Math.min(MAX, w.edition.available); // null = not stated yet
     return w.available ? 1 : 0;
+  }
+
+  // ---------- shipping ----------
+  const ZONES = (C.shipping && C.shipping.zones) || [];
+  const zone = {
+    get() { const z = store.get("ap-zone", ""); return ZONES.find((x) => x.id === z) || null; },
+    set(id) { store.set("ap-zone", id); renderCart(); }
+  };
+  function shipping() {
+    const z = zone.get();
+    if (!z || !cart.items.length) return null;
+    const n = cart.count(), framed = cart.items.filter((i) => i.framed).reduce((a, i) => a + i.qty, 0);
+    return z.first + z.extra * Math.max(0, n - 1) + framed * ((C.shipping && C.shipping.framedSurcharge) || 0);
+  }
+  function zoneSelect(id) {
+    const z = zone.get();
+    return `<label class="zone"><span class="mono">Ship to</span>
+      <select class="select" data-zone id="${id}" required>
+        <option value="" ${z ? "" : "selected"} disabled>Choose a region</option>
+        ${ZONES.map((x) => `<option value="${x.id}" ${z && z.id === x.id ? "selected" : ""}>${esc(x.name)}</option>`).join("")}
+      </select></label>`;
+  }
+  function totalsHTML() {
+    const sh = shipping();
+    return `
+      <div class="total-row sub"><span>Subtotal</span><span class="mono">${money(cart.total())}</span></div>
+      <div class="total-row sub"><span>Shipping</span><span class="mono">${sh == null ? "Choose a region" : money(sh)}</span></div>
+      <div class="total-row"><span>Total</span><strong>${money(cart.total() + (sh || 0))}</strong></div>`;
   }
   function status(w) {
     const n = stock(w);
@@ -128,6 +157,14 @@
                 ${C.instagram ? `<li><a href="${esc(C.instagram)}" rel="noopener">Instagram</a></li>` : ""}
               </ul>
             </div>
+            <div>
+              <h4>Help</h4>
+              <ul>
+                <li><a href="shipping.html">Shipping &amp; returns</a></li>
+                <li><a href="terms.html">Terms of sale</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+              </ul>
+            </div>
           </div>
           <div class="footer-bottom mono">
             <span>&copy; ${year} ${esc(C.siteName)}</span>
@@ -175,8 +212,9 @@
     } else {
       lines.innerHTML = cart.items.map((i) => lineHTML(i)).join("");
       foot.innerHTML = `
-        <div class="total-row"><span>Subtotal</span><strong>${money(cart.total())}</strong></div>
-        <p class="small">Shipping is quoted with your order confirmation. Nothing is charged yet.</p>
+        ${zoneSelect("zone-drawer")}
+        ${totalsHTML()}
+        <p class="small">Nothing is charged yet. Alex confirms availability and sends a secure payment link.</p>
         <a class="btn block" href="checkout.html">Request order</a>`;
     }
     if (page === "checkout") renderCheckout();
@@ -222,6 +260,7 @@
       const rm = e.target.closest("[data-remove]");
       if (rm) cart.setQty(rm.dataset.remove, 0);
     });
+    document.addEventListener("change", (e) => { if (e.target.matches("[data-zone]")) zone.set(e.target.value); });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") { openCart(false); closeLightbox(); document.body.classList.remove("menu-open"); }
     });
@@ -556,7 +595,7 @@
 
     const tally = w.edition
       ? `<div class="edition">
-          <div class="edition-head"><span class="mono">Edition of ${w.edition.size}</span><span class="mono">${w.edition.available == null ? "Ask for availability" : `${w.edition.available} available`}</span></div>
+          <div class="edition-head"><span class="mono">Edition of ${w.edition.size}</span><span class="mono">${w.edition.available == null ? "Ask for availability" : `${stock(w)} in stock`}</span></div>
           <div class="tally anim" aria-hidden="true">${Array.from({ length: w.edition.size }, (_, i) => `<i class="${i < w.edition.size - (w.edition.available ?? w.edition.size) ? "sold" : ""}" style="animation-delay:${i * 18}ms"></i>`).join("")}</div>
         </div>`
       : "";
@@ -570,7 +609,7 @@
 
     const askBody = `Hello ${C.artist},\n\nI'm interested in "${w.title}" (${t.name}, ${w.year}).\n\n`;
     let actions;
-    if (canBuy) actions = `<button class="btn block" type="button" id="add">Add to cart</button><a class="btn ghost block" href="${mailto(`About: ${w.title}`, askBody)}">Ask a question</a>`;
+    if (canBuy) actions = `<button class="btn block" type="button" id="add">Add to cart</button>${w.paymentLink ? `<a class="btn ghost block" href="${esc(w.paymentLink)}" rel="noopener">Buy now · card or wallet</a>` : ""}<a class="btn ghost block" href="${mailto(`About: ${w.title}`, askBody)}">Ask a question</a>`;
     else if (sold) actions = `<a class="btn block" href="${mailto(`Waitlist: ${w.title}`, askBody + "Please let me know if an impression becomes available, or about similar works.\n")}">Ask about similar works</a>`;
     else actions = `<a class="btn block" href="${mailto(`Price enquiry: ${w.title}`, askBody)}">Enquire about price</a>`;
 
@@ -733,8 +772,9 @@
     box.innerHTML = `
       <h2>Your order</h2>
       ${cart.items.map((i) => lineHTML(i, true)).join("")}
-      <div class="total-row" style="margin-top:20px"><span>Subtotal</span><strong>${money(cart.total())}</strong></div>
-      <p class="small">Plus shipping, quoted by email.</p>`;
+      <div style="margin-top:20px">${zoneSelect("zone-checkout")}</div>
+      ${totalsHTML()}
+      <p class="small"><a href="shipping.html">Shipping &amp; returns</a></p>`;
   }
 
   function send(form, data, fallbackMailto, statusEl) {
@@ -758,17 +798,21 @@
     f.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!cart.items.length) return;
+      const z = zone.get();
+      if (!z) { const sel = $("#zone-checkout"); sel.focus(); toast("Choose where to ship to"); return; }
       const d = Object.fromEntries(new FormData(f));
+      if (d._gotcha) return; // bots fill hidden fields
+      const sh = shipping();
       const lines = cart.items.map((i) => {
         const w = byId(i.id);
         return `- ${w.title} (${techName(w)}${i.framed ? ", framed" : ""}) × ${i.qty} — ${money(cart.unit(i) * i.qty)}`;
       });
       const body = [
-        `Order request`, ``, ...lines, ``, `Subtotal: ${money(cart.total())}`, ``,
+        `Order request`, ``, ...lines, ``, `Subtotal: ${money(cart.total())}`, `Shipping (${z.name}): ${money(sh)}`, `Total: ${money(cart.total() + sh)}`, ``,
         `Name: ${d.name}`, `Email: ${d.email}`, `Phone: ${d.phone || "-"}`,
         `Ship to: ${d.address}, ${d.city} ${d.postcode}, ${d.country}`, ``, d.notes ? `Notes: ${d.notes}` : ""
       ].join("\n");
-      send(f, { ...d, items: lines, subtotal: cart.total() }, mailto(`Order request — ${d.name}`, body), $("#order-status"))
+      send(f, { _subject: `Order request: ${d.name}`, ...d, items: lines.join("\n"), subtotal: money(cart.total()), shipping: `${money(sh)} (${z.name})`, total: money(cart.total() + sh) }, mailto(`Order request — ${d.name}`, body), $("#order-status"))
         .then((ok) => { if (ok) cart.clear(); });
     });
   }

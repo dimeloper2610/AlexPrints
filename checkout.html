@@ -21,7 +21,7 @@
       <div class="hero-top"><span class="eyebrow"><span class="reg"><i></i></span> AlexPrints</span><span class="eyebrow">Alex Fragoulis</span></div>
       <span class="eyebrow">Order request</span>
       <h1>Nearly there</h1>
-      <p class="lede">Send your selection and shipping address. Alex will confirm availability, add the shipping cost and reply with a secure payment link. Nothing is charged now.</p>
+      <p class="lede">Send your selection and shipping address. Alex will confirm availability and reply with a secure payment link. Nothing is charged now.</p>
     </div>
   </div>
   <div class="wrap checkout-grid" style="padding-bottom:80px">
@@ -38,6 +38,8 @@
       </div>
       <div class="field"><label for="o-country">Country</label><input id="o-country" name="country" required autocomplete="country-name"></div>
       <div class="field"><label for="o-notes">Notes (optional)</label><textarea id="o-notes" name="notes" placeholder="A dedication, a delivery date, questions about framing..."></textarea></div>
+      <label class="check"><input type="checkbox" name="terms" required> I have read the <a href="terms.html">terms of sale</a> and <a href="shipping.html">shipping &amp; returns</a>.</label>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sr-only" aria-hidden="true">
       <div><button class="btn" type="submit">Send order request</button></div>
       <div class="form-status" id="order-status" role="status"></div>
     </form>

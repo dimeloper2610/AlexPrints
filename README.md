@@ -31,3 +31,15 @@ ruby -run -e httpd . -p 4322
 - `assets/js/motion.js`: smooth scroll (Lenis, from jsDelivr), follower cursor, rolling labels, page transitions
 
 All motion turns off when the visitor's device asks for reduced motion.
+
+## Shop setup checklist
+
+**Stock and prices.** Every work has a fixed `price`. For editions, `edition.available` is the stock (capped at `maxStock`, 10). Lower it by hand in `data.js` when something sells.
+
+**Shipping.** Edit `AP_CONFIG.shipping` in `data.js`: price for the first work and each extra work per region, plus a framed surcharge. The cart adds it automatically.
+
+**Order form by email service (recommended).** Create a free form at formspree.io, then set `AP_CONFIG.formEndpoint` to its URL (`https://formspree.io/f/xxxxxxx`). Orders and contact messages then arrive by email without opening the visitor's mail app. A hidden `_gotcha` field filters bots.
+
+**Direct card payments (optional).** In Stripe, create a Payment Link per work (collect shipping address, limit the number of payments to the stock) and paste it into the work's `paymentLink`. The work page then shows "Buy now".
+
+**Legal pages.** `shipping.html`, `terms.html`, `privacy.html` are drafts. Fill in everything highlighted before opening the shop.

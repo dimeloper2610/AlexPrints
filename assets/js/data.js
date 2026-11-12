@@ -15,7 +15,19 @@ window.AP_CONFIG = {
   locale: "en-IE",
   // Optional: a Formspree / Getform endpoint. When empty, the order form opens an email instead.
   formEndpoint: "",
-  framingPrice: 90,
+  framingPrice: 90, // TODO: confirm with Alex
+  maxStock: 10, // stock per work is capped at this for now
+
+  // Shipping, per order: price for the first work + each extra work, plus a surcharge per framed work.
+  // TODO: replace the example numbers with Alex's real rates.
+  shipping: {
+    zones: [
+      { id: "se", name: "Sweden", first: 12, extra: 4 },
+      { id: "eu", name: "European Union", first: 18, extra: 5 },
+      { id: "world", name: "Rest of the world", first: 30, extra: 8 }
+    ],
+    framedSurcharge: 15
+  },
   previewNotice: true // shows "sample content" banner until real works are in
 };
 
@@ -72,9 +84,12 @@ window.AP_CATEGORIES = {
   - category: print | painting | proof
   - technique: key from AP_TECHNIQUES
   - imageSize / sheetSize: [width, height] in cm (sheet = full paper, prints only)
-  - edition: { size, available } for editioned prints; null for unique works
+  - edition: { size, available } for editioned prints; `available` is the stock you can sell
+    right now (capped at AP_CONFIG.maxStock). Lower it by hand when something sells.
+    null for unique works
   - available: for unique works (paintings, monotypes, proofs)
-  - price: in AP_CONFIG.currency; null = price on request
+  - price: in AP_CONFIG.currency (fixed price); null = price on request
+  - paymentLink: optional Stripe Payment Link (https://buy.stripe.com/...) for a direct "Buy now"
   - frameable: offer the framing option
   - art: placeholder settings, ignored once `image` is set
 */
@@ -88,8 +103,9 @@ window.AP_WORKS = [
     imageSize: null, // TODO: image size in cm
     sheetSize: null, // TODO: sheet size in cm
     paper: null, // TODO
-    edition: { size: 10, available: null }, // TODO: how many are left
-    price: null, // TODO: price; null shows "Price on request"
+    edition: { size: 10, available: 10 }, // TODO: confirm how many are left
+    price: null, // TODO: fixed price from Alex (until then it shows "Price on request")
+    paymentLink: "", // TODO: Stripe Payment Link, optional
     frameable: false,
     featured: true,
     image: null,
