@@ -432,6 +432,12 @@ section { padding: clamp(64px, 10vw, 140px) 0; }
 .tech .mono { display: block; margin-top: 4px; }
 
 /* about / forms */
+.about-side { position: sticky; top: calc(var(--header-h) + 32px); display: grid; gap: 40px; }
+.portrait-img { width: 150px; height: 150px; object-fit: cover; border-radius: 2px; filter: saturate(.85); }
+.about-work { display: grid; gap: 12px; text-decoration: none; }
+.about-work .sheet { transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.about-work:hover .sheet { transform: translateY(-4px); }
+@media (max-width: 820px) { .about-side { position: static; gap: 0; } .about-work { display: none; } .portrait-img { width: 112px; height: 112px; } }
 .portrait { background: var(--paper-2); aspect-ratio: 4/5; display: flex; align-items: center; justify-content: center; color: var(--ink-3); }
 .cv { list-style: none; padding: 0; margin: 0; }
 .cv li { display: grid; grid-template-columns: 5em 1fr; gap: 16px; padding: 12px 0; border-top: 1px solid var(--rule); font-size: .94rem; }
