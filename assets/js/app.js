@@ -20,7 +20,7 @@
 
   // ---------- availability ----------
   function stock(w) {
-    if (w.edition) return w.edition.available;
+    if (w.edition) return w.edition.available == null ? 1 : w.edition.available; // null = not stated yet
     return w.available ? 1 : 0;
   }
   function status(w) {
@@ -349,7 +349,7 @@
         newest: (a, b) => b.year - a.year,
         "price-asc": (a, b) => (a.price ?? 1e9) - (b.price ?? 1e9),
         "price-desc": (a, b) => (b.price ?? -1) - (a.price ?? -1),
-        size: (a, b) => b.imageSize[0] * b.imageSize[1] - a.imageSize[0] * a.imageSize[1]
+        size: (a, b) => (b.imageSize ? b.imageSize[0] * b.imageSize[1] : 0) - (a.imageSize ? a.imageSize[0] * a.imageSize[1] : 0)
       };
       list = list.slice().sort(sorters[state.sort] || sorters.newest);
 
@@ -499,7 +499,7 @@
 
     const specs = [
       ["Technique", `<abbr title="${esc(t.short)}">${esc(t.name)}</abbr>${t.family && t.family !== "Painting" ? ` <span class="mono">· ${t.family}</span>` : ""}`],
-      [w.category === "painting" ? "Size" : "Image", cm(w.imageSize)],
+      w.imageSize ? [w.category === "painting" ? "Size" : "Image", cm(w.imageSize)] : null,
       w.sheetSize ? ["Sheet", cm(w.sheetSize)] : null,
       w.paper ? [w.category === "painting" ? "Support" : "Paper", esc(w.paper)] : null,
       ["Edition", w.edition ? `${w.edition.size} impressions` : w.category === "proof" ? "Outside the edition, unique" : "Unique"],
@@ -509,8 +509,8 @@
 
     const tally = w.edition
       ? `<div class="edition">
-          <div class="edition-head"><span class="mono">Edition of ${w.edition.size}</span><span class="mono">${w.edition.available} available</span></div>
-          <div class="tally anim" aria-hidden="true">${Array.from({ length: w.edition.size }, (_, i) => `<i class="${i < w.edition.size - w.edition.available ? "sold" : ""}" style="animation-delay:${i * 18}ms"></i>`).join("")}</div>
+          <div class="edition-head"><span class="mono">Edition of ${w.edition.size}</span><span class="mono">${w.edition.available == null ? "Ask for availability" : `${w.edition.available} available`}</span></div>
+          <div class="tally anim" aria-hidden="true">${Array.from({ length: w.edition.size }, (_, i) => `<i class="${i < w.edition.size - (w.edition.available ?? w.edition.size) ? "sold" : ""}" style="animation-delay:${i * 18}ms"></i>`).join("")}</div>
         </div>`
       : "";
 
@@ -532,9 +532,9 @@
         <div class="crumbs mono"><a href="works.html?category=${w.category}">${cat.name}</a> / <a href="works.html?technique=${w.technique}">${esc(t.name)}</a></div>
         <div class="work-grid">
           <div class="viewer">
-            <div class="stage fit" id="stage" style="--r:${ART.ratio(w)}">${ART.media(w, { eager: true })}<div class="room"></div></div>
+            <div class="stage fit${ART.ratio(w) > 1.6 ? " wide" : ""}" id="stage" style="--r:${ART.ratio(w)}">${ART.media(w, { eager: true })}<div class="room"></div></div>
             <div class="viewer-tools">
-              <div class="seg" role="group" aria-label="View">
+              <div class="seg"${w.imageSize ? "" : " hidden"} role="group" aria-label="View">
                 <button type="button" data-view="art" aria-pressed="true">Artwork</button>
                 <button type="button" data-view="room" aria-pressed="false">To scale</button>
               </div>
@@ -544,7 +544,7 @@
           <div class="work-info">
             <span class="eyebrow">${cat.singular} · ${esc(t.name)}</span>
             <h1>${esc(w.title)}</h1>
-            <div class="sub mono">${esc(t.name)}, ${w.year} · ${cm(w.imageSize)}</div>
+            <div class="sub mono">${esc(t.name)}, ${w.year}${w.imageSize ? ` · ${cm(w.imageSize)}` : ""}</div>
             <div class="price-row">
               <span class="price" id="price">${sold ? "Sold" : w.price == null ? "Price on request" : money(w.price)}</span>
               <span class="tag ${st.key === "ok" ? "" : st.key}">${st.key === "ok" ? (w.edition ? "In stock" : "Available") : st.label}</span>
@@ -557,7 +557,7 @@
             <div class="notes">
               ${w.category !== "painting" ? `<p>${isIntaglio(w) ? "Printed from the plate on a hand-turned etching press. Look for the plate mark pressed into the paper around the image." : t.family === "Relief" ? "Printed from the carved block. Small variations in inking make each impression slightly different." : "A single impression from a painted plate. It cannot be repeated."}</p>` : ""}
               <p>Shipped ${w.category === "painting" ? "wrapped and boxed" : "flat between boards, or rolled for large sheets"}. Shipping is quoted with your order.</p>
-              <p>Not sure about size? Switch to “To scale” to see it above a sofa.</p>
+              ${w.imageSize ? `<p>Not sure about size? Switch to “To scale” to see it above a sofa.</p>` : ""}
             </div>
           </div>
         </div>

@@ -80,6 +80,25 @@ window.AP_CATEGORIES = {
 */
 window.AP_WORKS = [
   {
+    id: "old-town",
+    title: "Old town",
+    category: "print",
+    technique: "woodcut",
+    year: 2025,
+    imageSize: null, // TODO: image size in cm
+    sheetSize: null, // TODO: sheet size in cm
+    paper: null, // TODO
+    edition: { size: 10, available: null }, // TODO: how many are left
+    price: null, // TODO: price; null shows "Price on request"
+    frameable: false,
+    featured: true,
+    image: null,
+    // From Instagram, posted as three parts of one panorama. Replace with a full-resolution photo of the print.
+    images: ["assets/img/works/old-town-1.jpg", "assets/img/works/old-town-2.jpg", "assets/img/works/old-town-3.jpg"],
+    ratio: 1440 / 640,
+    description: "Neoclassical houses of the old town of Patras under a dark, cloudy sky. Carved in wood and printed by hand, in a limited edition of 10."
+  },
+  {
     id: "untitled-i",
     title: "Untitled I",
     category: "print",

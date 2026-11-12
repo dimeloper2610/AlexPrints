@@ -148,6 +148,8 @@ em.red, .red { color: var(--red); font-style: italic; }
 }
 .sheet svg, .sheet img { width: 100%; height: auto; }
 .sheet.photo { background: none; }
+.strip { display: flex; }
+.strip img { flex: 1 1 0; min-width: 0; width: 0; }
 .canvas-work { box-shadow: 0 1px 1px rgba(0,0,0,.08), 6px 10px 22px -10px rgba(40,32,20,.45); }
 
 /* fit a sheet inside a box of height --fit-h, keeping its ratio --r */
@@ -468,3 +470,6 @@ section { padding: clamp(64px, 10vw, 140px) 0; }
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
 .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+[hidden] { display: none !important; }
+.stage.wide { min-height: 0; }

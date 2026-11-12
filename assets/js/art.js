@@ -275,6 +275,10 @@
   function media(work, opts) {
     opts = opts || {};
     const cls = work.category === "painting" ? "canvas-work" : "sheet";
+    if (work.images) {
+      // several photos shown side by side as one piece (e.g. a panorama posted in parts)
+      return `<div class="${cls} photo"><div class="strip">${work.images.map((src, i) => `<img src="${esc(src)}" alt="${esc(work.title)}${work.images.length > 1 ? `, part ${i + 1} of ${work.images.length}` : ""}" loading="${opts.eager ? "eager" : "lazy"}" decoding="async">`).join("")}</div></div>`;
+    }
     if (work.image) {
       return `<div class="${cls} photo"><img src="${esc(work.image)}" alt="${esc(work.title)}" loading="${opts.eager ? "eager" : "lazy"}" decoding="async"></div>`;
     }
@@ -283,6 +287,7 @@
 
   // Aspect ratio of the full visual (sheet for prints, canvas for paintings).
   function ratio(work) {
+    if (work.ratio) return work.ratio;
     const s = work.category === "painting" || !work.sheetSize ? work.imageSize : work.sheetSize;
     return s[0] / s[1];
   }
