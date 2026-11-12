@@ -220,12 +220,24 @@
     if (page === "checkout") renderCheckout();
   }
 
+  let lastFocus = null;
   function openCart(open) {
+    if (open === document.body.classList.contains("cart-open")) return;
     document.body.classList.toggle("cart-open", open);
     if (open) $(".toast").classList.remove("on");
     $(".drawer").setAttribute("aria-hidden", String(!open));
-    if (open) $(".drawer .icon-btn").focus();
+    if (open) { lastFocus = document.activeElement; $(".drawer .icon-btn").focus(); }
+    else if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
+  // keep Tab inside the open drawer
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab" || !document.body.classList.contains("cart-open")) return;
+    const f = $$(".drawer a, .drawer button, .drawer select").filter((el) => !el.disabled && el.offsetParent);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
 
   let toastTimer;
   function toast(msg, action) {
@@ -691,6 +703,47 @@
         toast(`${w.title} added to cart`, { label: "View cart", fn: () => openCart(true) });
       }
     });
+
+    // previous / next work (wraps around), also on the arrow keys
+    const idx = W.indexOf(w), prev = W[(idx - 1 + W.length) % W.length], next = W[(idx + 1) % W.length];
+    $("#work").insertAdjacentHTML("beforeend", `
+      <nav class="wrap pn" aria-label="More works">
+        <a class="pn-link" href="${workUrl(prev)}" rel="prev"><span class="mono">Previous</span><strong>${esc(prev.title)}</strong></a>
+        <a class="pn-link next" href="${workUrl(next)}" rel="next"><span class="mono">Next</span><strong>${esc(next.title)}</strong></a>
+      </nav>`);
+    document.addEventListener("keydown", (e) => {
+      if (e.target.closest("input, textarea, select") || document.querySelector(".lightbox.on") || document.body.classList.contains("cart-open")) return;
+      if (e.key === "ArrowLeft") $(".pn-link[rel=prev]").click();
+      if (e.key === "ArrowRight") $(".pn-link[rel=next]").click();
+    });
+
+    // a buy bar pinned to the bottom on phones once the main button scrolls away
+    const mainBtn = $(".buy-actions .btn");
+    if (mainBtn) {
+      document.body.insertAdjacentHTML("beforeend", `
+        <div class="buybar" aria-hidden="true">
+          <div><strong>${esc(w.title)}</strong><span class="mono" id="buybar-price">${$("#price").textContent}</span></div>
+          <button class="btn" type="button" tabindex="-1">${canBuy ? "Add to cart" : sold ? "Ask about it" : "Enquire"}</button>
+        </div>`);
+      const bar = $(".buybar");
+      $("button", bar).addEventListener("click", () => mainBtn.click());
+      new IntersectionObserver(([en]) => bar.classList.toggle("on", !en.isIntersecting && en.boundingClientRect.top < 120), { rootMargin: "-90px 0px 0px 0px" }).observe(mainBtn);
+      $$('input[name="frame"]').forEach((r) => r.addEventListener("change", () => ($("#buybar-price").textContent = $("#price").textContent)));
+    }
+
+    // structured data for search engines
+    const ld = {
+      "@context": "https://schema.org", "@type": "VisualArtwork", name: w.title,
+      artform: cat.singular, artMedium: t.name, dateCreated: String(w.year),
+      creator: { "@type": "Person", name: "Alex Fragoulis" },
+      image: new URL(w.images ? w.images[0] : w.image || "assets/img/works/old-town-2.jpg", location.href).href,
+      description: w.description
+    };
+    if (w.imageSize) { ld.width = { "@type": "Distance", name: `${w.imageSize[0]} cm` }; ld.height = { "@type": "Distance", name: `${w.imageSize[1]} cm` }; }
+    if (w.edition) ld.artEdition = String(w.edition.size);
+    if (w.price != null) ld.offers = { "@type": "Offer", price: w.price, priceCurrency: C.currency, availability: stock(w) > 0 ? "https://schema.org/InStock" : "https://schema.org/SoldOut", url: location.href };
+    const sd = document.createElement("script"); sd.type = "application/ld+json"; sd.textContent = JSON.stringify(ld); document.head.appendChild(sd);
+    const md = document.querySelector('meta[name="description"]'); if (md && w.description) md.setAttribute("content", w.description.slice(0, 160));
 
     const related = W.filter((x) => x !== w && (x.technique === w.technique || x.category === w.category))
       .sort((a, b) => (b.technique === w.technique) - (a.technique === w.technique)).slice(0, 4);

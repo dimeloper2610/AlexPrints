@@ -76,7 +76,23 @@
     requestAnimationFrame(loop);
   }
 
-  // ---------- ink-wipe page transitions ----------
+  // ---------- detail loupe on work cards: zoom into the paper where the pointer is ----------
+  if (fine && !reduce) {
+    document.addEventListener("pointermove", (e) => {
+      const box = e.target.closest && e.target.closest(".card-media, .rail-item .rm");
+      document.querySelectorAll(".zoomed-card").forEach((b) => { if (b !== box) b.classList.remove("zoomed-card"); });
+      if (!box) return;
+      const art = box.querySelector(".sheet, .canvas-work");
+      if (!art) return;
+      const r = art.getBoundingClientRect();
+      const x = Math.max(0, Math.min(100, ((e.clientX - r.left) / r.width) * 100));
+      const y = Math.max(0, Math.min(100, ((e.clientY - r.top) / r.height) * 100));
+      art.style.transformOrigin = `${x}% ${y}%`;
+      box.classList.add("zoomed-card");
+    }, { passive: true });
+  }
+
+  // ---------- page transitions ----------
   if (!reduce) {
     document.addEventListener("click", (e) => {
       const a = e.target.closest("a");
@@ -88,7 +104,7 @@
       e.preventDefault();
       try { sessionStorage.setItem("ap-pt", "1"); } catch (err) {}
       document.documentElement.classList.add("leaving");
-      setTimeout(() => (location.href = url.href), 480);
+      setTimeout(() => (location.href = url.href), 520);
     });
     // coming back via the back button restores the page from cache with the wipe still on
     addEventListener("pageshow", (e) => { if (e.persisted) document.documentElement.classList.remove("leaving"); });

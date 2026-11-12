@@ -226,6 +226,21 @@
     last = p;
   });
   stage.addEventListener("pointerdown", (e) => { last = local(e); });
+  // keyboard: arrows roll the brayer, Enter or P pulls a print
+  stage.tabIndex = 0;
+  stage.setAttribute("aria-label", "Woodblock. Use the arrow keys to roll ink, Enter to pull a print.");
+  const kb = { x: 0.5, y: 0.5 };
+  stage.addEventListener("keydown", (e) => {
+    const d = { ArrowLeft: [-0.06, 0], ArrowRight: [0.06, 0], ArrowUp: [0, -0.08], ArrowDown: [0, 0.08] }[e.key];
+    if (d) {
+      e.preventDefault();
+      const nx = Math.max(0, Math.min(1, kb.x + d[0])), ny = Math.max(0, Math.min(1, kb.y + d[1]));
+      if (!pulled) roll(kb.x, kb.y, nx, ny, 0.35);
+      kb.x = nx; kb.y = ny; light.tx = nx; light.ty = ny; hovering = true;
+      hint.classList.add("off");
+    } else if (e.key === "Enter" || e.key.toLowerCase() === "p") { e.preventDefault(); pullBtn.click(); }
+  });
+  stage.addEventListener("blur", () => { hovering = false; });
   stage.addEventListener("pointerleave", () => { hovering = false; last = null; });
 
   function setPulled(on) {

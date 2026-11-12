@@ -43,3 +43,7 @@ All motion turns off when the visitor's device asks for reduced motion.
 **Direct card payments (optional).** In Stripe, create a Payment Link per work (collect shipping address, limit the number of payments to the stock) and paste it into the work's `paymentLink`. The work page then shows "Buy now".
 
 **Legal pages.** `shipping.html`, `terms.html`, `privacy.html` are drafts. Fill in everything highlighted before opening the shop.
+
+## Before each deploy
+
+Run `scripts/bump-version.sh` so browsers load the new CSS and JS instead of cached copies. If a custom domain is added later, update the URLs in `sitemap.xml`, `robots.txt`, the `og:`/canonical tags and the `<base>` in `404.html`.
