@@ -228,6 +228,60 @@
     renderCart();
   }
 
+  // ---------- palette picker (preview tool) ----------
+  const PALETTES = [
+    ["", "Atelier", "Warm paper, black ink, vermilion", ["#efebe3", "#121110", "#d4402a", "#121110"]],
+    ["indigo", "Indigo", "Cool paper, sumi navy, indigo", ["#ecebe6", "#141a2e", "#2f50b5", "#141a2e"]],
+    ["washi", "Washi", "Kozo paper, sepia ink, amber", ["#f3ebdb", "#2a2017", "#b46a22", "#2a2017"]],
+    ["sage", "Sage", "Studio green, terracotta", ["#e7eae0", "#18211b", "#c4532d", "#22322a"]],
+    ["gallery", "Gallery", "Stark white, pure black, signal red", ["#f7f7f5", "#0a0a0a", "#e3001b", "#0a0a0a"]],
+    ["oxblood", "Oxblood", "Blush paper, deep red bands", ["#f1e9e3", "#1f1414", "#8c1d26", "#3b1519"]],
+    ["cobalt", "Cobalt", "Bold blue bands, yellow accents", ["#f1f0ec", "#111114", "#2b3dff", "#2b3dff"]],
+    ["ochre", "Ochre", "Cream with saturated ochre", ["#f4efe2", "#1d1a14", "#d9a21b", "#d9a21b"]],
+    ["night", "Night press", "Dark: charcoal and orange", ["#131210", "#ede7db", "#ff5a36", "#22201c"]],
+    ["graphite", "Graphite", "Dark: cool grey and blue", ["#15171a", "#e5e8eb", "#7fb0ff", "#0c0d0f"]],
+    ["umber", "Umber", "Dark: brown and gold", ["#1b1511", "#f0e5d4", "#e2a356", "#2b2119"]]
+  ];
+  function palettePicker() {
+    const forced = params.has("palette");
+    if (!C.previewNotice && !forced) return;
+    const cur = () => document.documentElement.getAttribute("data-palette") || "";
+    const set = (k) => {
+      if (k) document.documentElement.setAttribute("data-palette", k); else document.documentElement.removeAttribute("data-palette");
+      try { k ? localStorage.setItem("ap-palette", k) : localStorage.removeItem("ap-palette"); } catch (e) {}
+      render();
+    };
+    const wrap = document.createElement("div");
+    wrap.className = "pal";
+    document.body.appendChild(wrap);
+    function render() {
+      const p = PALETTES.find((x) => x[0] === cur()) || PALETTES[0];
+      wrap.innerHTML = `
+        <button class="pal-btn" type="button" aria-expanded="${document.body.classList.contains("pal-open")}" aria-controls="pal-panel">
+          <span class="dots">${p[3].slice(0, 3).map((c) => `<i style="background:${c}"></i>`).join("")}</span>Colours: ${p[1]}
+        </button>
+        <div class="pal-panel" id="pal-panel" role="dialog" aria-label="Choose a colour palette">
+          <div class="pal-head"><strong>Palettes</strong><span class="mono">${PALETTES.length} options</span></div>
+          ${PALETTES.map(([k, n, d, sw], i) => `
+            <button class="pal-opt" type="button" data-pal="${k}" aria-pressed="${k === cur()}">
+              <span class="pal-sw">${sw.map((c) => `<i style="background:${c}"></i>`).join("")}</span>
+              <span><b>${n}</b><small>${d}</small></span>
+              <span class="mono">${String(i + 1).padStart(2, "0")}</span>
+            </button>`).join("")}
+          <div class="pal-foot">Preview only. Your choice is remembered in this browser; tell us which one to keep.</div>
+        </div>`;
+    }
+    wrap.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (e.target.closest(".pal-btn")) { document.body.classList.toggle("pal-open"); render(); return; }
+      const o = e.target.closest("[data-pal]");
+      if (o) set(o.dataset.pal);
+    });
+    document.addEventListener("click", (e) => { if (!e.target.closest(".pal")) document.body.classList.remove("pal-open"); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") document.body.classList.remove("pal-open"); });
+    render();
+  }
+
   // ---------- reveal on scroll ----------
   function reveal() {
     const els = $$(".reveal");
@@ -721,6 +775,7 @@
 
   // ---------- boot ----------
   bindChrome();
+  palettePicker();
   ({ home: initHome, works: initWorks, work: initWork, process: initProcess, about: initAbout, checkout: initCheckout }[page] || (() => {}))();
   reveal();
 })();
