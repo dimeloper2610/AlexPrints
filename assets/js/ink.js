@@ -17,16 +17,15 @@
   const srcs = work.images || [work.image];
   const RATIO = work.ratio || 1.5;
   const touch = matchMedia("(pointer: coarse)").matches;
-  // on narrow screens show a taller crop from the centre of the image
-  const DISP = innerWidth < 700 ? Math.min(RATIO, 1.15) : RATIO;
-  const SX = DISP / RATIO, OX = (1 - SX) / 2;
+  // the stage size comes from CSS; the image is cropped to cover it (see crop())
+  let DISP = RATIO, SX = 1, OX = 0, SY = 1, OY = 0;
 
   // ---------- markup ----------
   host.classList.add("go");
   host.innerHTML = `
     <div class="press-bed ink-bed">
       <span class="corner tl reg"><i></i></span><span class="corner tr reg"><i></i></span><span class="corner bl reg"><i></i></span><span class="corner br reg"><i></i></span>
-      <div class="ink-stage" style="aspect-ratio:${DISP}" data-cursor="ink">
+      <div class="ink-stage" data-cursor="ink">
         <div class="ink-hud top">
           <span class="mono" id="ink-mode">The block · mirrored</span>
           <span class="mono">Ink <b id="ink-pct">0</b>%</span>
@@ -54,6 +53,10 @@
   const pullBtn = host.querySelector("#ink-pull"), resetBtn = host.querySelector("#ink-reset");
 
   // ---------- ink mask (2D canvas, uploaded as a texture) ----------
+  {
+    const r0 = stage.getBoundingClientRect();
+    if (r0.width && r0.height) DISP = r0.width / r0.height;
+  }
   const MW = 1024, MH = Math.round(MW / DISP);
   const mask = document.createElement("canvas");
   mask.width = MW; mask.height = MH;
@@ -73,7 +76,7 @@
     mx.restore();
     maskDirty = true;
   }
-  const probe = document.createElement("canvas"); probe.width = 64; probe.height = Math.round(64 / DISP);
+  const probe = document.createElement("canvas"); probe.width = 64; probe.height = Math.max(8, Math.round(64 / DISP));
   const px = probe.getContext("2d", { willReadFrequently: true });
   function coverage() {
     px.drawImage(mask, 0, 0, probe.width, probe.height);
@@ -92,9 +95,9 @@
     uniform vec2 uTx;
     uniform vec2 uLight;
     uniform float uPeel, uAspect, uTime;
-    uniform vec2 uView;
+    uniform vec4 uView;
     float lum(vec2 uv){ vec3 c = texture2D(uImg, uv).rgb; return dot(c, vec3(.299,.587,.114)); }
-    float hgt(vec2 uv){ return smoothstep(.30, .70, 1.0 - lum(vec2(uView.x + uv.x * uView.y, uv.y))); }
+    float hgt(vec2 uv){ return smoothstep(.30, .70, 1.0 - lum(vec2(uView.x + uv.x * uView.y, uView.z + uv.y * uView.w))); }
     float hb(vec2 s){ return hgt(vec2(1.0 - s.x, s.y)); }           // block is the mirror of the print
     float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
     float noise(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f);
@@ -180,8 +183,7 @@
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, tImg);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, art);
-      gl.uniform2f(uTx, 1.2 / art.width / SX, 1.2 / art.height);
-      gl.uniform2f(uView, OX, SX);
+      crop();
       ready = true;
       intro();
     })
@@ -189,6 +191,14 @@
 
   // ---------- sizing ----------
   let aspect = RATIO;
+  function crop() {
+    const a = aspect;
+    if (a < RATIO) { SX = a / RATIO; OX = (1 - SX) / 2; SY = 1; OY = 0; }
+    else { SY = RATIO / a; OY = (1 - SY) / 2; SX = 1; OX = 0; }
+    if (typeof art === "undefined" || !art.width) return;
+    gl.uniform2f(uTx, 1.2 / art.width / SX, 1.2 / art.height / SY);
+    gl.uniform4f(uView, OX, SX, OY, SY);
+  }
   function size() {
     const r = stage.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -196,6 +206,7 @@
     cv.height = Math.max(2, Math.round(r.height * dpr));
     aspect = r.width / r.height;
     gl.viewport(0, 0, cv.width, cv.height);
+    crop();
   }
   size();
   new ResizeObserver(size).observe(stage);

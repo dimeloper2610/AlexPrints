@@ -26,7 +26,7 @@
     root.innerHTML = `
       <div class="wrap matrix-wrap">
         <div>
-          <span class="eyebrow"><b>01</b> The matrix</span>
+          <span class="eyebrow"><b>02</b>The matrix</span>
           <h2>Every print starts <em>backwards.</em></h2>
           <p class="lede" style="margin-top:20px">The image is cut into the block as a mirror of itself. Ink sits only on what is left uncut, and the paper pressed onto it turns the picture the right way round.</p>
           <ol class="matrix-steps">
@@ -339,6 +339,68 @@
       </div>`).join("")}</div>`;
   }
 
-  const MODS = { matrix, xsec, tools, fan };
+  // ---------- statement: words light up with scroll ----------
+  function words(root) {
+    const p = $("p", root);
+    p.innerHTML = p.textContent.trim().split(/\s+/).map((w) => `<span class="w">${w}</span>`).join(" ");
+    if (reduce) return;
+    const ws = $$(".w", p);
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const r = p.getBoundingClientRect(), vh = innerHeight;
+      const t = Math.max(0, Math.min(1, (vh * 0.85 - r.top) / (r.height + vh * 0.35)));
+      const n = Math.round(t * ws.length);
+      ws.forEach((w, i) => w.classList.toggle("on", i < n));
+    };
+    addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+  }
+
+  // ---------- rail: works on a horizontal track, pinned and scrubbed on wide screens ----------
+  function rail(root) {
+    const AP = window.AP, ART = window.AP_ART;
+    const real = W.filter((w) => w.images || w.image);
+    const list = real.concat(W.filter((w) => !real.includes(w) && w.category !== "painting"), W.filter((w) => !real.includes(w) && w.category === "painting"));
+    root.innerHTML = `
+      <div class="rail-pin">
+        <div class="wrap rail-head">
+          <div><span class="eyebrow"><b>01</b>Selected works</span><h2>Prints &amp; works</h2></div>
+          <a class="link-arrow" href="works.html">All works</a>
+        </div>
+        <div class="rail-track">${list.map((w, i) => {
+          const st = AP.status(w);
+          return `<a class="rail-item" href="${AP.workUrl(w)}" data-cursor="view">
+            <div class="rm"><span class="ri mono">${String(i + 1).padStart(2, "0")}</span>${ART.media(w)}</div>
+            <div class="rb"><span class="rt">${w.title}</span><span class="mono">${st.key === "sold" ? "Sold" : AP.priceLabel(w)}</span></div>
+            <div class="mono">${AP.techName(w)} · ${w.year}${w.edition ? ` · Ed. ${w.edition.size}` : ""}</div>
+          </a>`;
+        }).join("")}</div>
+        <div class="rail-progress"><i></i></div>
+      </div>`;
+    const track = $(".rail-track", root), bar = $(".rail-progress i", root);
+    const pinned = () => !reduce && innerWidth > 860;
+    function layout() {
+      if (!pinned()) { root.classList.add("static"); root.style.height = ""; track.style.transform = ""; return; }
+      root.classList.remove("static");
+      const dist = Math.max(0, track.scrollWidth - innerWidth);
+      root.style.height = `${innerHeight + dist}px`;
+      update();
+    }
+    function update() {
+      if (!pinned()) return;
+      const dist = Math.max(0, track.scrollWidth - innerWidth);
+      const p = Math.max(0, Math.min(1, (scrollY - root.offsetTop) / (dist || 1)));
+      track.style.transform = `translate3d(${-p * dist}px,0,0)`;
+      bar.style.transform = `scaleX(${p})`;
+    }
+    let ticking = false;
+    addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(() => { ticking = false; update(); }); } }, { passive: true });
+    addEventListener("resize", layout);
+    addEventListener("load", layout);
+    layout();
+  }
+
+  const MODS = { matrix, xsec, tools, fan, words, rail };
   $$("[data-module]").forEach((el) => MODS[el.dataset.module] && MODS[el.dataset.module](el));
 })();

@@ -269,7 +269,8 @@
 
   // ---------- palette picker (preview tool) ----------
   const PALETTES = [
-    ["", "Atelier", "Warm paper, black ink, vermilion", ["#efebe3", "#121110", "#d4402a", "#121110"]],
+    ["", "Studio", "Dark: near-black, white, signal orange", ["#0b0b0c", "#f2f1ee", "#ff5a2e", "#141416"]],
+    ["atelier", "Atelier", "Warm paper, black ink, vermilion", ["#efebe3", "#121110", "#d4402a", "#121110"]],
     ["indigo", "Indigo", "Cool paper, sumi navy, indigo", ["#ecebe6", "#141a2e", "#2f50b5", "#141a2e"]],
     ["washi", "Washi", "Kozo paper, sepia ink, amber", ["#f3ebdb", "#2a2017", "#b46a22", "#2a2017"]],
     ["sage", "Sage", "Studio green, terracotta", ["#e7eae0", "#18211b", "#c4532d", "#22322a"]],
@@ -381,9 +382,9 @@
 
     const real = W.filter((w) => w.images || w.image);
     const rest = prints.filter((w) => !real.includes(w)).sort((a, b) => (stock(b) > 0) - (stock(a) > 0));
-    $("#featured").innerHTML = real.concat(rest).slice(0, 4).map(card).join("");
+    if ($("#featured")) $("#featured").innerHTML = real.concat(rest).slice(0, 4).map(card).join("");
 
-    $("#marquee").innerHTML = (() => {
+    if ($("#marquee")) $("#marquee").innerHTML = (() => {
       const words = ["Woodcut", "Cut by hand", "Drypoint", "Signed in pencil", "Monotype", "One of one", "Linocut", "Numbered editions", "Stockholm", "Patras"];
       const set = words.map((w) => `<span>${w}</span>`).join("");
       return `<div class="marquee-track" aria-hidden="true">${set}${set}</div>`;
@@ -816,6 +817,8 @@
         .then((ok) => { if (ok) cart.clear(); });
     });
   }
+
+  window.AP = { money, workUrl, techName, status, stock, priceLabel };
 
   // ---------- boot ----------
   bindChrome();
