@@ -175,7 +175,7 @@
       <div class="drawer-backdrop" data-close-cart></div>
       <aside class="drawer" aria-label="Cart" aria-hidden="true">
         <div class="drawer-head"><h2>Cart</h2><button class="icon-btn" type="button" data-close-cart>Close</button></div>
-        <div class="drawer-body" id="cart-lines"></div>
+        <div class="drawer-body" id="cart-lines" data-lenis-prevent></div>
         <div class="drawer-foot" id="cart-foot"></div>
       </aside>
       <div class="toast" role="status" aria-live="polite"></div>`;
@@ -299,7 +299,7 @@
         <button class="pal-btn" type="button" aria-expanded="${document.body.classList.contains("pal-open")}" aria-controls="pal-panel">
           <span class="dots">${p[3].slice(0, 3).map((c) => `<i style="background:${c}"></i>`).join("")}</span>Colours: ${p[1]}
         </button>
-        <div class="pal-panel" id="pal-panel" role="dialog" aria-label="Choose a colour palette">
+        <div class="pal-panel" id="pal-panel" data-lenis-prevent role="dialog" aria-label="Choose a colour palette">
           <div class="pal-head"><strong>Palettes</strong><span class="mono">${PALETTES.length} options</span></div>
           ${PALETTES.map(([k, n, d, sw], i) => `
             <button class="pal-opt" type="button" data-pal="${k}" aria-pressed="${k === cur()}">

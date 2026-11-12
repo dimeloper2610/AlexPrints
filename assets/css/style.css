@@ -624,7 +624,7 @@ html.leaving::before { content: ""; position: fixed; inset: 0; z-index: 1000; ba
 .pal-btn .dots { display: inline-flex; }
 .pal-btn .dots i { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--ink); margin-left: -6px; }
 .pal-btn .dots i:first-child { margin-left: 0; }
-.pal-panel { position: fixed; left: 16px; bottom: 66px; z-index: 121; width: min(340px, calc(100vw - 32px)); max-height: min(70vh, 620px); overflow: auto; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 18px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); padding: 10px; opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .25s, transform .25s, visibility .25s; }
+.pal-panel { overscroll-behavior: contain; position: fixed; left: 16px; bottom: 66px; z-index: 121; width: min(340px, calc(100vw - 32px)); max-height: min(70vh, 620px); overflow: auto; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 18px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.45); padding: 10px; opacity: 0; visibility: hidden; transform: translateY(8px); transition: opacity .25s, transform .25s, visibility .25s; }
 .pal-open .pal-panel { opacity: 1; visibility: visible; transform: none; }
 .pal-head { display: flex; justify-content: space-between; align-items: baseline; padding: 8px 10px 10px; }
 .pal-head strong { font: 400 1.5rem/1 var(--display); }
