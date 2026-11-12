@@ -126,7 +126,7 @@
           </div>
           <div class="footer-bottom mono">
             <span>&copy; ${year} ${esc(C.siteName)}</span>
-            <span>All works printed by hand</span>
+            <span>Stockholm · Printed by hand</span>
           </div>
         </div>
       </footer>

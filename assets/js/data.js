@@ -8,9 +8,9 @@
 
 window.AP_CONFIG = {
   siteName: "AlexPrints",
-  artist: "Alex",
+  artist: "Alex Fragoulis",
   email: "hello@alexprints.example", // TODO: real address
-  instagram: "", // e.g. "https://instagram.com/..."
+  instagram: "https://www.instagram.com/alexfragoulis_prints/",
   currency: "EUR",
   locale: "en-IE",
   // Optional: a Formspree / Getform endpoint. When empty, the order form opens an email instead.
@@ -29,7 +29,7 @@ window.AP_TECHNIQUES = {
   drypoint: {
     name: "Drypoint",
     family: "Intaglio",
-    short: "Lines scratched directly into the plate with a steel needle. The raised burr holds ink and gives a soft, velvety line.",
+    short: "Lines scratched directly into a metal or plexiglass plate with a steel needle. The raised burr holds ink and gives a soft, velvety line.",
     look: "Warm, slightly blurred lines. Editions are small because the burr wears down."
   },
   aquatint: {
