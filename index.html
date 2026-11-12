@@ -5,39 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AlexPrints — Prints and paintings by Alex Fragoulis</title>
 <meta name="description" content="Woodcuts, drypoints, monotypes and paintings by Alex Fragoulis, Greek artist based in Stockholm. Printed by hand in small editions.">
-<meta name="theme-color" content="#f3efe6">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23f3efe6'/><rect x='7' y='6' width='18' height='20' fill='none' stroke='%231b1a17' stroke-width='1.5'/><rect x='11' y='10' width='10' height='9' fill='%23b0372a'/></svg>">
+<meta name="theme-color" content="#efebe3">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23d4402a'/><text x='16' y='21' text-anchor='middle' font-family='monospace' font-size='12' fill='%23f9f7f2'>AF</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-page="home">
 <main>
-  <section class="hero">
+  <section class="press-hero">
     <div class="wrap">
-      <div class="reveal">
-        <span class="eyebrow">Printmaker &amp; painter</span>
-        <h1>Prints pulled <em>by hand</em>, one sheet at a time.</h1>
-        <p class="lede">Woodcuts, drypoints and monotypes by Alex Fragoulis, a Greek artist based in Stockholm. Small numbered editions, alongside original paintings, each one printed by hand and signed in pencil.</p>
+      <div class="hero-top">
+        <span class="eyebrow"><span class="reg"><i></i></span> Alex Fragoulis, printmaker</span>
+        <span class="eyebrow">Woodcut / Drypoint / Monotype</span>
+        <span class="eyebrow">Stockholm — Patras</span>
+      </div>
+      <h1 class="hero-title" aria-label="Carved, inked and pressed.">
+        <span class="ln" aria-hidden="true"><span>Carved,</span></span>
+        <span class="ln" aria-hidden="true"><span><em>inked</em> and</span></span>
+        <span class="ln" aria-hidden="true"><span>pressed.</span></span>
+      </h1>
+      <div class="hero-sub">
+        <p class="lede">Original woodcuts, drypoints and monotypes by Alex Fragoulis. Cut by hand, printed one sheet at a time, in small numbered editions.</p>
         <div class="hero-cta">
-          <a class="btn" href="works.html?category=print">Browse prints</a>
-          <a class="btn ghost" href="process.html">How they're made</a>
+          <a class="btn" href="works.html?category=print">Shop prints <span class="arr">&rarr;</span></a>
+          <a class="btn ghost" href="#matrix">How a print is made</a>
         </div>
       </div>
-      <div class="hero-art reveal" id="hero-art"></div>
     </div>
+    <figure class="press" id="press"></figure>
   </section>
 
   <div class="marquee" id="marquee"></div>
 
-  <section>
+  <section class="dark-band" id="matrix" data-module="matrix"></section>
+
+  <section id="ink">
     <div class="wrap">
       <div class="section-head">
-        <div><span class="eyebrow">Latest editions</span><h2>New on the press</h2></div>
-        <a class="link-arrow" href="works.html?category=print">All prints</a>
+        <div><span class="eyebrow"><b>02</b> Where the ink sits</span><h2>Three ways to<br>hold <em>ink</em>.</h2></div>
+        <p class="lede" style="max-width:26em">Every printmaking technique is a different answer to one question: where on the matrix does the ink go? Pick one and watch it print.</p>
       </div>
-      <div class="grid cols-4" id="featured"></div>
+      <div data-module="xsec"></div>
     </div>
   </section>
 
@@ -46,43 +56,65 @@
   <section>
     <div class="wrap">
       <div class="section-head">
-        <div><span class="eyebrow">Techniques</span><h2>Three ways to make a print</h2></div>
-        <a class="link-arrow" href="process.html#techniques">About the process</a>
+        <div><span class="eyebrow"><b>03</b> Tools and marks</span><h2>Every tool leaves<br>its own <em>line</em>.</h2></div>
+        <a class="link-arrow" href="process.html">More on the process</a>
       </div>
-      <div class="families" id="families"></div>
+      <div data-module="tools"></div>
     </div>
   </section>
 
-  <section class="dark-band" id="paintings">
-    <div class="wrap split">
-      <div id="painting-art" class="reveal"></div>
-      <div class="reveal">
-        <span class="eyebrow">Paintings</span>
-        <h2>Away from the press</h2>
-        <p class="lede" style="margin-top:20px">Oils, acrylics and watercolours. Unique works, often starting from the same drawings as the prints.</p>
-        <div class="hero-cta"><a class="btn" href="works.html?category=painting">See paintings</a></div>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow"><b>04</b> In the shop</span><h2>Prints &amp; works</h2></div>
+        <a class="link-arrow" href="works.html">All works</a>
+      </div>
+      <div class="grid cols-4" id="featured"></div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section>
+    <div class="wrap edition-wrap">
+      <div>
+        <span class="eyebrow"><b>05</b> The edition</span>
+        <h2>Ten sheets.<br>Each one <em>numbered</em>.</h2>
+        <p class="lede" style="margin-top:20px">An edition is the set of identical impressions pulled from one block or plate. Each sheet is signed and numbered in pencil, in the margin, by hand.</p>
+        <dl class="edition-terms">
+          <div><dt>4/10</dt><dd>The fourth sheet of an edition of ten.</dd></div>
+          <div><dt>A.P.</dt><dd>Artist's proof. A few kept outside the edition, the same as the edition prints.</dd></div>
+          <div><dt>T.P.</dt><dd>Trial proof. Pulled while the block was still being cut.</dd></div>
+        </dl>
+      </div>
+      <div data-module="fan"></div>
+    </div>
+  </section>
+
+  <section class="dark-band">
+    <div class="wrap workshop">
+      <div>
+        <span class="eyebrow"><b>06</b> Workshops</span>
+        <h2>mikroi <em>CHARAKTES</em></h2>
+      </div>
+      <div>
+        <p class="lede">A mobile printmaking workshop for children. Each session introduces one technique and lets children work with its tools and materials, beyond brush and pencil, to make an original print of their own. Run in Greece, and since 2025 in Stockholm.</p>
+        <div class="hero-cta" style="margin-top:28px">
+          <a class="btn" href="about.html#contact">Book a workshop</a>
+          <a class="btn ghost" href="https://www.instagram.com/mikroixaraktes/" rel="noopener">@mikroixaraktes</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <div class="section-head"><div><span class="eyebrow">Collecting</span><h2>Buying a print</h2></div></div>
+      <div class="section-head"><div><span class="eyebrow"><b>07</b> Buying a print</span><h2>From the studio<br>to your wall</h2></div></div>
       <div class="collect">
-        <div class="reveal"><span class="num">01</span><h3>Small editions</h3><p>Each edition is limited and numbered. When it's gone, the plate or block is retired.</p></div>
-        <div class="reveal"><span class="num">02</span><h3>Signed in pencil</h3><p>Every impression is signed, titled and numbered by hand in the margin.</p></div>
-        <div class="reveal"><span class="num">03</span><h3>Framed or not</h3><p>Most prints can be ordered framed. Choose on the work's page.</p></div>
-        <div class="reveal"><span class="num">04</span><h3>Order request</h3><p>Send your selection. You'll get a confirmation with shipping and a payment link. Nothing is charged upfront.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="dark-band">
-    <div class="wrap split">
-      <div class="reveal"><span class="eyebrow">Commissions</span><h2>Something specific in mind?</h2></div>
-      <div class="reveal">
-        <p class="lede">Commissioned prints, ex libris, and editions for studios or publishers. Write with a few words about the idea.</p>
-        <div class="hero-cta"><a class="btn" href="about.html#contact">Get in touch</a></div>
+        <div class="reveal"><span class="num">01</span><h3>Small editions</h3><p>Each edition is limited and numbered by hand.</p></div>
+        <div class="reveal"><span class="num">02</span><h3>Signed in pencil</h3><p>Every impression is signed, titled and numbered in the margin.</p></div>
+        <div class="reveal"><span class="num">03</span><h3>Ask anything</h3><p>Size, paper, framing: every work page has a direct line to the artist.</p></div>
+        <div class="reveal"><span class="num">04</span><h3>Order request</h3><p>Send your selection, get a reply with shipping and a payment link. Nothing is charged upfront.</p></div>
       </div>
     </div>
   </section>
@@ -90,5 +122,6 @@
 <script src="assets/js/data.js"></script>
 <script src="assets/js/art.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/studio.js"></script>
 </body>
 </html>

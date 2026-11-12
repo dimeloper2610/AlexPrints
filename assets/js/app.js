@@ -78,7 +78,7 @@
       ${C.previewNotice ? `<div class="preview-note">Preview — sample works, names and prices</div>` : ""}
       <header class="site-header">
         <div class="wrap">
-          <a class="logo" href="index.html">Alex<span>Prints</span></a>
+          <a class="logo" href="index.html"><span class="stamp" aria-hidden="true">AF</span>Alex<span>Prints</span></a>
           <nav class="nav" id="nav" aria-label="Main">
             <a href="works.html?category=print"${cur("works", "print")}>Prints</a>
             <a href="works.html?category=painting"${cur("works", "painting")}>Paintings</a>
@@ -99,9 +99,14 @@
     return `
       <footer class="site-footer">
         <div class="wrap">
+          <div class="footer-cta">
+            <p class="footer-big">Ask about<br>a <em>print</em>.</p>
+            <a class="btn" href="mailto:${esc(C.email)}">Write to Alex <span class="arr">&rarr;</span></a>
+          </div>
           <div class="footer-grid">
             <div>
-              <p class="footer-big">Hand-pulled prints<br>and paintings by ${esc(C.artist)}.</p>
+              <h4>${esc(C.artist)}</h4>
+              <p>Woodcuts, drypoints and monotypes, cut and printed by hand. Based in Stockholm.</p>
               <a class="link-arrow" href="mailto:${esc(C.email)}">${esc(C.email)}</a>
             </div>
             <div>
@@ -260,46 +265,33 @@
   // ---------- home ----------
   function initHome() {
     const prints = W.filter((w) => w.category === "print");
-    const hero = prints.find((w) => w.featured) || prints[0];
-    $("#hero-art").innerHTML = `
-      <a href="${workUrl(hero)}" aria-label="${esc(hero.title)}">${ART.media(hero, { eager: true })}</a>
-      <div class="hero-caption mono"><a href="${workUrl(hero)}">${esc(hero.title)}</a><span>${esc(techName(hero))}, ${hero.year}</span></div>`;
+    const hero = prints.find((w) => w.featured && (w.images || w.image)) || prints.find((w) => w.featured) || prints[0];
+    const press = $("#press");
+    press.innerHTML = `
+      <div class="press-bed">
+        <span class="corner tl reg"><i></i></span><span class="corner tr reg"><i></i></span><span class="corner bl reg"><i></i></span><span class="corner br reg"><i></i></span>
+        <a class="press-sheet" href="${workUrl(hero)}" aria-label="${esc(hero.title)}" style="display:block">
+          <div class="press-print">${ART.media(hero, { eager: true, inscribe: false }).replace(/class="sheet[^"]*"/, 'class="press-media"')}</div>
+          <div class="roller" aria-hidden="true"></div>
+        </a>
+      </div>
+      <figcaption class="press-meta">
+        <strong>${esc(hero.title)}</strong>
+        <span class="mono">${esc(techName(hero))}, ${hero.year}</span>
+        <span class="mono">${hero.edition ? `Edition of ${hero.edition.size}` : "Unique"}</span>
+        <a class="link-arrow" href="${workUrl(hero)}">View the print</a>
+      </figcaption>`;
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { press.classList.add("go"); io.disconnect(); } }), { threshold: 0.3 });
+      io.observe(press);
+    } else press.classList.add("go");
 
-    const featured = prints.filter((w) => w.featured && w !== hero).slice(0, 4);
-    const fill = prints.filter((w) => !featured.includes(w) && w !== hero).sort((a, b) => (stock(b) > 0) - (stock(a) > 0));
-    $("#featured").innerHTML = featured.concat(fill).slice(0, 4).map(card).join("");
+    const real = W.filter((w) => w.images || w.image);
+    const rest = prints.filter((w) => !real.includes(w)).sort((a, b) => (stock(b) > 0) - (stock(a) > 0));
+    $("#featured").innerHTML = real.concat(rest).slice(0, 4).map(card).join("");
 
-    const fams = {
-      Relief: ["linocut", "woodcut"],
-      Intaglio: ["etching", "drypoint", "aquatint"],
-      Planographic: ["monotype"]
-    };
-    const blurb = {
-      Relief: "Carved blocks. The surface that remains takes the ink.",
-      Intaglio: "Lines below the surface of a metal plate, pressed out under a heavy roller.",
-      Planographic: "Ink painted on a flat plate and printed once. No two alike."
-    };
-    $("#families").innerHTML = Object.keys(fams).map((fam, n) => {
-      const sample = W.find((w) => fams[fam].includes(w.technique) && w.category !== "painting") ||
-        { title: fam, category: "print", technique: fams[fam][0], imageSize: [20, 24], sheetSize: [28, 34], art: { seed: n + 5 } };
-      return `
-        <div class="family reveal">
-          <span class="eyebrow">${String(n + 1).padStart(2, "0")} — ${fam}</span>
-          <h3>${fams[fam].map((t) => T[t].name).join(", ")}</h3>
-          <div class="art fit" style="--r:${ART.ratio(sample)}">${ART.media(sample, { inscribe: false })}</div>
-          <p>${blurb[fam]}</p>
-          <ul>${fams[fam].map((t) => `<li><a class="chip" href="works.html?technique=${t}">${T[t].name}</a></li>`).join("")}</ul>
-        </div>`;
-    }).join("");
-
-    const p = W.filter((w) => w.category === "painting");
-    if (p.length) {
-      $("#painting-art").innerHTML = `<div class="card-media is-painting">${ART.media(p[0])}</div>`;
-    } else {
-      $("#paintings").remove();
-    }
     $("#marquee").innerHTML = (() => {
-      const words = ["Etching", "No. 1/20", "Linocut", "Pulled by hand", "Woodcut", "Signed in pencil", "Drypoint", "Small editions", "Aquatint", "Printed on cotton paper", "Monotype", "One of one"];
+      const words = ["Woodcut", "Cut by hand", "Drypoint", "Signed in pencil", "Monotype", "One of one", "Linocut", "Numbered editions", "Stockholm", "Patras"];
       const set = words.map((w) => `<span>${w}</span>`).join("");
       return `<div class="marquee-track" aria-hidden="true">${set}${set}</div>`;
     })();
@@ -476,7 +468,7 @@
       inner.appendChild(clone);
     });
     stage.addEventListener("mousemove", (e) => {
-      if (!src || stage.classList.contains("room-mode")) return;
+      if (!src || stage.classList.contains("room-mode") || stage.classList.contains("block-mode")) { lens.classList.remove("on"); return; }
       const r = src.getBoundingClientRect(), s = stage.getBoundingClientRect();
       const x = e.clientX - r.left, y = e.clientY - r.top;
       const inside = x >= 0 && y >= 0 && x <= r.width && y <= r.height;
@@ -496,6 +488,7 @@
     const t = T[w.technique] || { name: w.technique, short: "" };
     const sold = st.key === "sold";
     const canBuy = buyable(w);
+    const hasBlock = !!(w.images || w.image) && T[w.technique] && T[w.technique].family === "Relief";
 
     const specs = [
       ["Technique", `<abbr title="${esc(t.short)}">${esc(t.name)}</abbr>${t.family && t.family !== "Painting" ? ` <span class="mono">· ${t.family}</span>` : ""}`],
@@ -532,11 +525,12 @@
         <div class="crumbs mono"><a href="works.html?category=${w.category}">${cat.name}</a> / <a href="works.html?technique=${w.technique}">${esc(t.name)}</a></div>
         <div class="work-grid">
           <div class="viewer">
-            <div class="stage fit${ART.ratio(w) > 1.6 ? " wide" : ""}" id="stage" style="--r:${ART.ratio(w)}">${ART.media(w, { eager: true })}<div class="room"></div></div>
+            <div class="stage fit${ART.ratio(w) > 1.6 ? " wide" : ""}" id="stage" style="--r:${ART.ratio(w)}">${ART.media(w, { eager: true })}${hasBlock ? `<div class="blockview" aria-label="The block, mirrored (illustration)"><div class="flip">${w.images ? `<div class="strip">${w.images.map((src) => `<img src="${esc(src)}" alt="">`).join("")}</div>` : `<img src="${esc(w.image)}" alt="">`}</div></div>` : ""}<div class="room"></div></div>
             <div class="viewer-tools">
-              <div class="seg"${w.imageSize ? "" : " hidden"} role="group" aria-label="View">
+              <div class="seg"${w.imageSize || hasBlock ? "" : " hidden"} role="group" aria-label="View">
                 <button type="button" data-view="art" aria-pressed="true">Artwork</button>
-                <button type="button" data-view="room" aria-pressed="false">To scale</button>
+                ${hasBlock ? `<button type="button" data-view="block" aria-pressed="false">The block</button>` : ""}
+                ${w.imageSize ? `<button type="button" data-view="room" aria-pressed="false">To scale</button>` : ""}
               </div>
               <span class="hint" id="hint"></span>
             </div>
@@ -569,7 +563,7 @@
     hint.textContent = fine ? "Hover to look closer · click to enlarge" : "Tap to enlarge";
     loupe(stage);
     stage.addEventListener("click", (e) => {
-      if (stage.classList.contains("room-mode")) return;
+      if (stage.classList.contains("room-mode") || stage.classList.contains("block-mode")) return;
       const src = $(".sheet, .canvas-work", stage);
       const r = src.getBoundingClientRect();
       const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom;
@@ -582,11 +576,12 @@
     function setView(v) {
       const isRoom = v === "room";
       $$("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === v)));
+      stage.classList.toggle("block-mode", v === "block");
       stage.classList.toggle("room-mode", isRoom);
       room.classList.toggle("on", isRoom);
       $(".sheet, .canvas-work", stage).style.display = isRoom ? "none" : "";
       if (isRoom) room.innerHTML = roomSVG(w, framedNow(), stage.clientWidth / stage.clientHeight);
-      hint.textContent = isRoom ? "Shown to scale" : fine ? "Hover to look closer · click to enlarge" : "Tap to enlarge";
+      hint.textContent = isRoom ? "Shown to scale" : v === "block" ? "The block: mirrored, inked on the uncut surface (illustration)" : fine ? "Hover to look closer · click to enlarge" : "Tap to enlarge";
     }
     $$("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
 
