@@ -841,3 +841,33 @@ html.intro::after {
 }
 @keyframes block-print { to { clip-path: inset(0 0 0 100%); } }
 @keyframes roller-pass { from { left: 0; } to { left: 100%; } }
+
+/* intro v2: the site itself is the clean block.
+   Layer 1 (html::before) turns the live page into a pale, low-contrast relief;
+   layer 2 (body::before) multiplies wood over it; the roller (html::after) passes
+   and both layers are cut away behind it, leaving the inked, live page. */
+html.intro::before {
+  background: none;
+  -webkit-backdrop-filter: grayscale(1) invert(1) contrast(.3) brightness(1.24);
+  backdrop-filter: grayscale(1) invert(1) contrast(.3) brightness(1.24);
+  box-shadow: none;
+  animation: block-print 1.7s cubic-bezier(.65, 0, .25, 1) .7s forwards;
+}
+html.intro body::before {
+  display: block; content: ""; position: fixed; inset: 0; z-index: 1001; pointer-events: none; opacity: 1;
+  mix-blend-mode: multiply;
+  background:
+    repeating-linear-gradient(93deg, rgba(90,52,20,0) 0 9px, rgba(90,52,20,.16) 9px 10px, rgba(90,52,20,0) 10px 19px),
+    repeating-linear-gradient(88deg, rgba(255,230,190,0) 0 28px, rgba(255,230,190,.12) 28px 33px, rgba(255,230,190,0) 33px 52px),
+    linear-gradient(160deg, #e0b483, #c4935f 55%, #ad7e4e);
+  box-shadow: inset 0 0 160px rgba(60, 30, 8, .45);
+  clip-path: inset(0 0 0 0);
+  animation: block-print 1.7s cubic-bezier(.65, 0, .25, 1) .7s forwards;
+}
+html.intro::after {
+  z-index: 1002;
+  animation: roller-pass 1.7s cubic-bezier(.65, 0, .25, 1) .7s forwards, fade-out .25s ease 2.35s forwards;
+}
+/* the headline rises as the roller reaches it */
+html.intro .h3-head h1 .ln > span { animation-delay: 1.15s; }
+html.intro .h3-head h1 .ln:nth-child(2) > span { animation-delay: 1.3s; }
