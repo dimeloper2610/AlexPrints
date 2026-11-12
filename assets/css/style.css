@@ -815,3 +815,29 @@ html.intro::after { font-family: var(--display); font-weight: 500; letter-spacin
 .rail.static .rail-item:last-child { margin-right: var(--gutter); }
 .rail.static .rail-track { scroll-padding-inline: var(--gutter); }
 [data-page="about"] main > section:first-child { padding-top: calc(var(--header-h) + 48px) !important; }
+
+/* first-visit intro: the page is a clean woodblock (name carved in mirror),
+   an ink roller passes over it and the live site is printed behind it */
+html.intro::before {
+  content: ""; position: fixed; inset: 0; z-index: 1000; pointer-events: none;
+  background:
+    url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 320'%3E%3Cg transform='translate(1200 0) scale(-1 1)' font-family='Helvetica Neue, Helvetica, Arial, sans-serif' font-weight='700' font-size='230' letter-spacing='-12' text-anchor='middle'%3E%3Ctext x='602' y='242' fill='rgba(255,236,205,0.38)'%3EAlexPrints%3C/text%3E%3Ctext x='598' y='238' fill='rgba(58,30,10,0.62)'%3EAlexPrints%3C/text%3E%3Ctext x='600' y='240' fill='rgba(120,74,38,0.55)'%3EAlexPrints%3C/text%3E%3C/g%3E%3C/svg%3E") center / min(78vw, 1100px) auto no-repeat,
+    repeating-linear-gradient(93deg, rgba(90,52,20,0) 0 9px, rgba(90,52,20,.14) 9px 10px, rgba(90,52,20,0) 10px 19px),
+    repeating-linear-gradient(88deg, rgba(255,230,190,0) 0 28px, rgba(255,230,190,.12) 28px 33px, rgba(255,230,190,0) 33px 52px),
+    linear-gradient(160deg, #d6ab7a, #bb8b5c 55%, #a87a4c);
+  box-shadow: inset 0 0 140px rgba(60, 30, 8, .5);
+  clip-path: inset(0 0 0 0);
+  transform: none;
+  animation: block-print 1.6s cubic-bezier(.65, 0, .25, 1) .5s forwards;
+}
+html.intro::after {
+  content: ""; position: fixed; top: -6vh; bottom: -6vh; left: 0; z-index: 1001; pointer-events: none;
+  width: clamp(54px, 6vw, 96px); border-radius: 999px;
+  background: linear-gradient(90deg, #050505 0%, #3a3835 30%, #8a857c 46%, #2a2826 62%, #050505 100%);
+  box-shadow: 16px 0 34px rgba(0, 0, 0, .5);
+  transform: translateX(-50%);
+  counter-reset: none; font: inherit;
+  animation: roller-pass 1.6s cubic-bezier(.65, 0, .25, 1) .5s forwards, fade-out .25s ease 2.05s forwards;
+}
+@keyframes block-print { to { clip-path: inset(0 0 0 100%); } }
+@keyframes roller-pass { from { left: 0; } to { left: 100%; } }
