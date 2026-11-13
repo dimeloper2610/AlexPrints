@@ -112,6 +112,7 @@ window.AP_WORKS = [
     // From Instagram, posted as three parts of one panorama. Replace with a full-resolution photo of the print.
     images: ["assets/img/works/old-town-1.jpg", "assets/img/works/old-town-2.jpg", "assets/img/works/old-town-3.jpg"],
     ratio: 1440 / 640,
+    heroTrim: [17 / 1440, 74 / 640, 1435 / 1440, 569 / 640], // the carved image inside the photos, without the paper margins
     description: "Neoclassical houses of the old town of Patras under a dark, cloudy sky. Carved in wood and printed by hand, in a limited edition of 10."
   },
   {

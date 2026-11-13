@@ -15,7 +15,9 @@
   if (!gl) return;
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const srcs = work.images || [work.image];
-  const RATIO = work.ratio || 1.5;
+  const TRIM = work.heroTrim || [0, 0, 1, 1];
+  // aspect of the visible (trimmed) image
+  const RATIO = (work.ratio || 1.5) * (TRIM[2] - TRIM[0]) / (TRIM[3] - TRIM[1]);
   const touch = matchMedia("(pointer: coarse)").matches;
   // the stage size comes from CSS; the image is cropped to cover it (see crop())
   let DISP = RATIO, SX = 1, OX = 0, SY = 1, OY = 0;
@@ -176,10 +178,16 @@
   Promise.all(srcs.map((src) => new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = src; })))
     .then((imgs) => {
       const h = imgs[0].naturalHeight, w = imgs.reduce((a, i) => a + i.naturalWidth * (h / i.naturalHeight), 0);
-      art.width = Math.round(w); art.height = h;
-      const c = art.getContext("2d");
+      const full = document.createElement("canvas");
+      full.width = Math.round(w); full.height = h;
+      const fc = full.getContext("2d");
       let x = 0;
-      imgs.forEach((i) => { const iw = i.naturalWidth * (h / i.naturalHeight); c.drawImage(i, x, 0, iw, h); x += iw; });
+      imgs.forEach((i) => { const iw = i.naturalWidth * (h / i.naturalHeight); fc.drawImage(i, x, 0, iw, h); x += iw; });
+      // keep only the carved image, not the paper margins around it
+      const sx = Math.round(full.width * TRIM[0]), sy = Math.round(h * TRIM[1]);
+      const sw = Math.round(full.width * (TRIM[2] - TRIM[0])), sh = Math.round(h * (TRIM[3] - TRIM[1]));
+      art.width = sw; art.height = sh;
+      art.getContext("2d").drawImage(full, sx, sy, sw, sh, 0, 0, sw, sh);
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, tImg);
       gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, art);
