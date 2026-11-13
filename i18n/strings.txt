@@ -153,9 +153,9 @@ Prints & works
 Χαρακτικά & έργα
 Grafik & verk
 
-<b>02</b>The matrix
-<b>02</b>Η μήτρα
-<b>02</b>Tryckformen
+<b>03</b>The matrix
+<b>03</b>Η μήτρα
+<b>03</b>Tryckformen
 
 Every print starts <em>backwards.</em>
 Κάθε χαρακτικό ξεκινά <em>ανάποδα.</em>
@@ -209,9 +209,9 @@ Blocket, spegelvänt
 {x}, λεπτομέρεια
 {x}, detalj
 
-<b>03</b>Where the ink sits
-<b>03</b>Πού κάθεται το μελάνι
-<b>03</b>Var färgen sitter
+<b>02</b>Where the ink sits
+<b>02</b>Πού κάθεται το μελάνι
+<b>02</b>Var färgen sitter
 
 Three ways to<br>hold <em>ink</em>.
 Τρεις τρόποι να<br>κρατηθεί το <em>μελάνι</em>.

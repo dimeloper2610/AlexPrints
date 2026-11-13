@@ -26,7 +26,7 @@
     root.innerHTML = `
       <div class="wrap matrix-wrap">
         <div>
-          <span class="eyebrow"><b>02</b>The matrix</span>
+          <span class="eyebrow"><b>03</b>The matrix</span>
           <h2>Every print starts <em>backwards.</em></h2>
           <p class="lede" style="margin-top:20px">The image is cut into the block as a mirror of itself. Ink sits only on what is left uncut, and the paper pressed onto it turns the picture the right way round.</p>
           <ol class="matrix-steps">
