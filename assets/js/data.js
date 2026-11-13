@@ -332,7 +332,7 @@ window.AP_WORKS = [
     frameable: false,
     featured: false,
     image: "assets/img/works/linocut/male-portrait.jpg",
-    ratio: 0.8,
+    ratio: 0.6734,
     source: "https://www.instagram.com/p/CIFmJvog1HH/",
     description: "A small linocut portrait."
   },
@@ -737,6 +737,26 @@ window.AP_WORKS = [
     description: "No. 2 of the 2023 monotype series. Unique."
   },
   {
+    id: "mosquitoes",
+    series: "In colour",
+    title: "Mosquitoes",
+    category: "print",
+    technique: "monotype",
+    year: 2023,
+    imageSize: [30, 42],
+    sheetSize: null,
+    paper: null,
+    edition: null,
+    available: null,
+    price: null,
+    frameable: false,
+    featured: false,
+    image: "assets/img/works/monotype/mosquitoes.jpg",
+    ratio: 1.0,
+    source: "https://www.instagram.com/p/CuPWRmXoB6p/",
+    description: "No. 3 of the 2023 monotype series. Unique."
+  },
+  {
     id: "karl",
     series: "In colour",
     title: "Karl",
@@ -995,26 +1015,6 @@ window.AP_WORKS = [
     ratio: 1.0,
     source: "https://www.instagram.com/p/CvANIwmoGID/",
     description: "No. 16 of the 2023 monotype series. Unique."
-  },
-  {
-    id: "mosquitoes",
-    series: "In black and white",
-    title: "Mosquitoes",
-    category: "print",
-    technique: "monotype",
-    year: 2023,
-    imageSize: [30, 42],
-    sheetSize: null,
-    paper: null,
-    edition: null,
-    available: null,
-    price: null,
-    frameable: false,
-    featured: false,
-    image: "assets/img/works/monotype/mosquitoes.jpg",
-    ratio: 1.0,
-    source: "https://www.instagram.com/p/CuPWRmXoB6p/",
-    description: "No. 3 of the 2023 monotype series. Unique."
   },
   {
     id: "the-poets-hill",
