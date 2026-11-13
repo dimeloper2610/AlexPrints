@@ -1259,7 +1259,7 @@ window.AP_EVENTS = [
     title: "mikroi CHARAKTES at the Tinos Cultural Foundation",
     place: "Tinos",
     text: "Two days of the children's printmaking workshop on Tinos, as part of the foundation's activities for children and teenagers.",
-    images: ["assets/img/events/workshop-tinos-2025-1.jpg", "assets/img/events/workshop-tinos-2025-2.jpg", "assets/img/events/workshop-tinos-2025-3.jpg", "assets/img/events/workshop-tinos-2025-4.jpg"],
+    images: ["assets/img/events/workshop-tinos-2025-1.jpg", "assets/img/events/workshop-tinos-2025-2.jpg", "assets/img/events/workshop-tinos-2025-3.jpg"],
     source: "https://www.instagram.com/p/DOAtmI-DIqe/"
   },
   {
@@ -1281,8 +1281,19 @@ window.AP_EVENTS = [
     title: "Open-air workshop at Krini, Patras",
     place: "Krini, Patras",
     text: "An open-air mikroi CHARAKTES workshop, in collaboration with Polyedro.",
-    images: ["assets/img/events/workshop-krini-2025-1.jpg", "assets/img/events/workshop-krini-2025-2.jpg"],
+    images: ["assets/img/events/workshop-krini-2025-2.jpg", "assets/img/events/workshop-krini-2025-3.jpg", "assets/img/events/workshop-krini-2025-4.jpg"],
     source: "https://www.instagram.com/p/DMz3QFXM1qS/"
+  },
+  {
+    id: "strani-hill-2025",
+    start: "2025-05",
+    end: null,
+    kind: "workshop",
+    title: "Exhibition and workshop on Strani Hill",
+    place: "Strani Hill, Zakynthos",
+    text: "The children's prints were shown, with an open workshop, on the hill where Dionysios Solomos wrote the Hymn to Liberty, as part of the Xenopouleios library's children's festival.",
+    images: ["assets/img/events/strani-hill-2025-1.jpg", "assets/img/events/strani-hill-2025-2.jpg", "assets/img/events/strani-hill-2025-3.jpg"],
+    source: "https://www.instagram.com/p/DJ1E3LqIhZ0/"
   },
   {
     id: "lagadakia-2025",
@@ -1331,13 +1342,13 @@ window.AP_EVENTS = [
   {
     id: "workshop-library-2024",
     start: "2024-11",
-    end: null,
+    end: "2025-04",
     kind: "workshop",
     title: "mikroi CHARAKTES at the Xenopouleios Children's Library",
     place: "Xenopouleios Children's Library",
-    text: "A series of workshops where each session starts from a book: children made monotypes, collagraphs and their own images.",
-    images: ["assets/img/events/workshop-library-2024-1.jpg", "assets/img/events/workshop-library-2024-2.jpg", "assets/img/events/workshop-library-2024-3.jpg", "assets/img/events/workshop-library-2024-4.jpg"],
-    source: "https://www.instagram.com/p/DCCnhG1OrmK/"
+    text: "Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.",
+    images: ["assets/img/events/workshop-library-2024-1.jpg", "assets/img/events/workshop-library-2024-2.jpg", "assets/img/events/workshop-library-2024-3.jpg", "assets/img/events/workshop-library-2024-4.jpg", "assets/img/events/workshop-library-2024-5.jpg", "assets/img/events/workshop-library-2024-6.jpg"],
+    source: "https://www.instagram.com/mikroixaraktes/"
   },
   {
     id: "polyedro-2023",

@@ -877,7 +877,7 @@
 
   // ---------- exhibitions & workshops ----------
   function initExhibitions() {
-    const E = window.AP_EVENTS || [];
+    const E = (window.AP_EVENTS || []).slice().sort((a, b) => (b.start > a.start ? 1 : b.start < a.start ? -1 : 0));
     const months = (d) => {
       const [y, m, day] = d.split("-").map(Number);
       const loc = (window.I18N && window.I18N.langs[window.I18N.lang].locale) || "en-IE";

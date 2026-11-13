@@ -562,7 +562,11 @@ window.AP_I18N = {
 "Tragedy": "Τραγωδία",
 "Music": "Μουσική",
 "Epea pteroenta": "Έπεα πτερόεντα",
-"Hellas 2022": "Ελλάδα 2022"
+"Hellas 2022": "Ελλάδα 2022",
+"Exhibition and workshop on Strani Hill": "Έκθεση και εργαστήρι στον Λόφο του Στράνη",
+"Strani Hill, Zakynthos": "Λόφος του Στράνη, Ζάκυνθος",
+"The children's prints were shown, with an open workshop, on the hill where Dionysios Solomos wrote the Hymn to Liberty, as part of the Xenopouleios library's children's festival.": "Τα χαρακτικά των παιδιών εκτέθηκαν, μαζί με ανοιχτό εργαστήρι, στον λόφο όπου ο Διονύσιος Σολωμός έγραψε τον Ύμνο εις την Ελευθερίαν, στο πλαίσιο του παιδικού φεστιβάλ της Ξενοπουλείου Παιδικής Βιβλιοθήκης.",
+"Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.": "Έξι εργαστήρια, το καθένα με αφορμή ένα βιβλίο από τα ράφια της βιβλιοθήκης: μονοτυπία, κολαγραφία, τυπώματα και μοτίβα με πατάτα, υψιτυπία με πλαστελίνη και μονοτυπία σε γυαλί."
 },
 "sv": {
 "Prints": "Grafik",
@@ -1126,6 +1130,10 @@ window.AP_I18N = {
 "Tragedy": "Tragedy",
 "Music": "Music",
 "Epea pteroenta": "Epea pteroenta",
-"Hellas 2022": "Hellas 2022"
+"Hellas 2022": "Hellas 2022",
+"Exhibition and workshop on Strani Hill": "Utställning och workshop på Stranikullen",
+"Strani Hill, Zakynthos": "Stranikullen, Zakynthos",
+"The children's prints were shown, with an open workshop, on the hill where Dionysios Solomos wrote the Hymn to Liberty, as part of the Xenopouleios library's children's festival.": "Barnens grafik visades, tillsammans med en öppen workshop, på kullen där Dionysios Solomos skrev Hymn till friheten, som en del av Xenopouleios barnbiblioteks barnfestival.",
+"Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.": "Sex workshops som var och en utgår från en bok på bibliotekets hyllor: monotypi, kollagrafi, potatistryck och mönster, högtryck med modellera och monotypi på glas."
 }
 };
