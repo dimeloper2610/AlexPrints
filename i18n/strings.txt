@@ -233,9 +233,9 @@ More on the process
 Περισσότερα για τη διαδικασία
 Mer om processen
 
-<b>05</b>The edition
-<b>05</b>Η έκδοση
-<b>05</b>Upplagan
+<b>04</b>The edition
+<b>04</b>Η έκδοση
+<b>04</b>Upplagan
 
 Ten sheets.<br>Each one <em>numbered</em>.
 Δέκα φύλλα.<br>Το καθένα <em>αριθμημένο</em>.
@@ -261,9 +261,9 @@ An edition of {n}
 Έκδοση {n} αντιτύπων
 En upplaga om {n}
 
-<b>06</b>Workshops
-<b>06</b>Εργαστήρια
-<b>06</b>Workshops
+<b>05</b>Workshops
+<b>05</b>Εργαστήρια
+<b>05</b>Workshops
 
 mikroi <em>CHARAKTES</em>
 μικροί <em>ΧΑΡΑΚΤΕΣ</em>
@@ -281,9 +281,9 @@ Book a workshop
 Κλείστε εργαστήρι
 Boka en workshop
 
-<b>07</b>Buying a print
-<b>07</b>Αγορά χαρακτικού
-<b>07</b>Att köpa ett tryck
+<b>06</b>Buying a print
+<b>06</b>Αγορά χαρακτικού
+<b>06</b>Att köpa ett tryck
 
 From the studio<br>to your wall
 Από το εργαστήριο<br>στον τοίχο σας
