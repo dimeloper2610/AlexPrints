@@ -923,3 +923,8 @@ html.pt::after { left: 0; animation: roller-pass .7s cubic-bezier(.65,0,.25,1) .
 .lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 @media (max-width: 420px) { .lang button { padding: 6px 7px; font-size: .66rem; } .cart-btn { padding-left: 12px; } }
 html[lang="el"] .h3-head h1, html[lang="sv"] .h3-head h1 { max-width: 14ch; font-size: clamp(2.8rem, 7.2vw, 8rem); }
+/* hero woodblock: edge to edge, no frame */
+.press { padding: 0; }
+.ink-stage { border-radius: 0; border: 0; box-shadow: none; }
+.ink-bed, .press-bed { border: 0; box-shadow: none; }
+.press-meta { padding-left: var(--gutter); padding-right: var(--gutter); }
