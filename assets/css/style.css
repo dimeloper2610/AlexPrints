@@ -949,3 +949,21 @@ html[lang="el"] .h3-head h1, html[lang="sv"] .h3-head h1 { max-width: 14ch; font
   .menu-btn { width: 40px; height: 40px; flex: none; }
   .lang button { padding: 6px 6px; }
 }
+
+/* exhibitions & workshops */
+#events { padding-bottom: clamp(64px, 10vw, 140px); }
+.ev { display: grid; grid-template-columns: 12rem minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 48px); padding: clamp(28px, 4vw, 56px) 0; border-top: 1px solid var(--rule); align-items: start; }
+.ev-meta { display: grid; gap: 8px; padding-top: 8px; }
+.ev-kind { color: var(--red); }
+.ev h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); }
+.ev-place { color: var(--ink-2); margin: 10px 0 16px; }
+.ev .lede { font-size: 1rem; margin-bottom: 18px; }
+.ev-imgs { display: grid; gap: 6px; grid-template-columns: 1fr 1fr; }
+.ev-imgs.n1 { grid-template-columns: 1fr; }
+.ev-imgs.n3 .ev-img:first-child { grid-row: span 2; }
+.ev-img { padding: 0; border: 0; background: var(--paper-2); border-radius: 12px; overflow: hidden; cursor: zoom-in; aspect-ratio: 4 / 3; }
+.ev-imgs.n1 .ev-img { aspect-ratio: 16 / 10; }
+.ev-imgs.n3 .ev-img:first-child { aspect-ratio: auto; }
+.ev-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
+.ev-img:hover img { transform: scale(1.04); }
+@media (max-width: 1000px) { .ev { grid-template-columns: 1fr; } .ev-meta { grid-auto-flow: column; justify-content: start; gap: 16px; } }

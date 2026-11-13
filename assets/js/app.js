@@ -22,7 +22,7 @@
   const MAX = C.maxStock || 10;
   function stock(w) {
     if (w.edition) return w.edition.available == null ? 1 : Math.min(MAX, w.edition.available); // null = not stated yet
-    return w.available ? 1 : 0;
+    return w.available === false ? 0 : 1; // unique works: unknown counts as "ask"
   }
 
   // ---------- shipping ----------
@@ -55,6 +55,7 @@
   function status(w) {
     const n = stock(w);
     if (n <= 0) return { key: "sold", label: "Sold" };
+    if ((w.edition && w.edition.available == null) || (!w.edition && w.available == null)) return { key: "ask", label: "Ask for availability" };
     if (w.edition && w.edition.available != null && n <= 3) return { key: "low", label: `${n} left` };
     return { key: "ok", label: "Available" };
   }
@@ -104,13 +105,13 @@
     const cat = params.get("category");
     const cur = (p, c) => (page === p && (c === undefined || c === cat) ? ' aria-current="page"' : "");
     return `
-      ${C.previewNotice ? `<div class="preview-note">Preview — sample works, names and prices</div>` : ""}
+      ${C.previewNotice ? `<div class="preview-note">Preview — prices and availability to be confirmed</div>` : ""}
       <header class="site-header">
         <div class="wrap">
           <a class="logo" href="index.html"><span class="stamp" aria-hidden="true">AF</span>Alex<span>Prints</span></a>
           <nav class="nav" id="nav" aria-label="Main">
             <a href="works.html?category=print"${cur("works", "print")}>Prints</a>
-            <a href="works.html?category=painting"${cur("works", "painting")}>Paintings</a>
+            <a href="exhibitions.html"${cur("exhibitions")}>Exhibitions</a>
             <a href="works.html"${cur("works", null)}>All works</a>
             <a href="process.html"${cur("process")}>Process</a>
             <a href="about.html"${cur("about")}>About</a>
@@ -142,7 +143,7 @@
               <h4>Works</h4>
               <ul>
                 <li><a href="works.html?category=print">Prints</a></li>
-                <li><a href="works.html?category=painting">Paintings</a></li>
+
                 <li><a href="works.html?category=proof">Proofs &amp; studies</a></li>
                 <li><a href="works.html?available=1">Available now</a></li>
               </ul>
@@ -150,6 +151,7 @@
             <div>
               <h4>Studio</h4>
               <ul>
+                <li><a href="exhibitions.html">Exhibitions &amp; workshops</a></li>
                 <li><a href="process.html">Process</a></li>
                 <li><a href="process.html#read">Reading a print</a></li>
                 <li><a href="about.html">About</a></li>
@@ -351,7 +353,7 @@
   }
   function card(w) {
     const st = status(w);
-    const tag = st.key === "ok" ? "" : `<span class="tag ${st.key}">${st.label}</span>`;
+    const tag = st.key === "ok" || st.key === "ask" ? "" : `<span class="tag ${st.key}">${st.label}</span>`;
     return `
       <a class="card reveal" href="${workUrl(w)}">
         <div class="card-media${w.category === "painting" ? " is-painting" : ""}">
@@ -430,7 +432,7 @@
       $("#works-lede").textContent = l;
       document.title = `${h} — ${C.siteName}`;
 
-      catChips.innerHTML = [["all", "All"]].concat(Object.entries(CAT).map(([k, v]) => [k, v.name]))
+      catChips.innerHTML = [["all", "All"]].concat(Object.entries(CAT).filter(([k]) => W.some((w) => w.category === k)).map(([k, v]) => [k, v.name]))
         .map(([k, n]) => `<button class="chip" type="button" data-cat="${k}" aria-pressed="${state.category === k}">${n}</button>`).join("");
 
       const pool = W.filter((w) => state.category === "all" || w.category === state.category);
@@ -647,7 +649,7 @@
             <div class="sub mono">${esc(t.name)}, ${w.year}${w.imageSize ? ` · ${cm(w.imageSize)}` : ""}</div>
             <div class="price-row">
               <span class="price" id="price">${sold ? "Sold" : w.price == null ? "Price on request" : money(w.price)}</span>
-              <span class="tag ${st.key === "ok" ? "" : st.key}">${st.key === "ok" ? (w.edition ? "In stock" : "Available") : st.label}</span>
+              <span class="tag ${st.key === "ok" || st.key === "ask" ? "" : st.key}">${st.key === "ok" ? (w.edition ? "In stock" : "Available") : st.label}</span>
             </div>
             ${tally}
             ${options}
@@ -873,9 +875,46 @@
 
   window.AP = { money, workUrl, techName, status, stock, priceLabel };
 
+  // ---------- exhibitions & workshops ----------
+  function initExhibitions() {
+    const E = window.AP_EVENTS || [];
+    const months = (d) => {
+      const [y, m, day] = d.split("-").map(Number);
+      const loc = (window.I18N && window.I18N.langs[window.I18N.lang].locale) || "en-IE";
+      return new Intl.DateTimeFormat(loc, day ? { day: "numeric", month: "long", year: "numeric" } : { month: "long", year: "numeric" }).format(new Date(y, (m || 1) - 1, day || 1));
+    };
+    const kinds = { exhibition: "Exhibition", workshop: "Workshop", selection: "Selection" };
+    const box = $("#events");
+    const render = (kind) => {
+      const list = E.filter((e) => kind === "all" || e.kind === kind);
+      box.innerHTML = list.map((e, n) => `
+        <article class="ev reveal${n % 2 ? " alt" : ""}" id="${esc(e.id)}">
+          <div class="ev-meta">
+            <span class="mono ev-kind">${kinds[e.kind] || e.kind}</span>
+            <span class="mono">${months(e.start)}${e.end ? ` – ${months(e.end)}` : ""}</span>
+          </div>
+          <div class="ev-body">
+            <h2>${esc(e.title)}</h2>
+            ${e.place ? `<p class="ev-place">${esc(e.place)}</p>` : ""}
+            <p class="lede">${esc(e.text)}</p>
+            <a class="link-arrow" href="${esc(e.source)}" rel="noopener">Instagram</a>
+          </div>
+          <div class="ev-imgs n${Math.min(e.images.length, 4)}">${e.images.map((src, k) => `<button type="button" class="ev-img" data-src="${esc(src)}" aria-label="${esc(e.title)}, ${k + 1}"><img src="${esc(src)}" alt="" loading="lazy" decoding="async"></button>`).join("")}</div>
+        </article>`).join("");
+      $$("#ev-chips .chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.kind === kind)));
+      reveal();
+    };
+    $("#ev-chips").addEventListener("click", (e) => { const c = e.target.closest("[data-kind]"); if (c) render(c.dataset.kind); });
+    box.addEventListener("click", (e) => {
+      const b = e.target.closest(".ev-img"); if (!b) return;
+      openLightbox({ title: "", category: "print", image: b.dataset.src, ratio: b.querySelector("img").naturalWidth / b.querySelector("img").naturalHeight || 1 });
+    });
+    render("all");
+  }
+
   // ---------- boot ----------
   bindChrome();
   palettePicker();
-  ({ home: initHome, works: initWorks, work: initWork, process: initProcess, about: initAbout, checkout: initCheckout }[page] || (() => {}))();
+  ({ home: initHome, works: initWorks, work: initWork, process: initProcess, about: initAbout, checkout: initCheckout, exhibitions: initExhibitions }[page] || (() => {}))();
   reveal();
 })();

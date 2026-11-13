@@ -1784,3 +1784,492 @@ Färger: {x}
 Preview only. Your choice is remembered in this browser; tell us which one to keep.
 Μόνο για προεπισκόπηση. Η επιλογή σας μένει σε αυτόν τον browser· πείτε μας ποια θα κρατήσουμε.
 Endast förhandsvisning. Ditt val sparas i den här webbläsaren; säg vilken vi ska behålla.
+
+# ---------------- added: real catalogue from Instagram ----------------
+Preview — prices and availability to be confirmed
+Προεπισκόπηση — τιμές και διαθεσιμότητα υπό επιβεβαίωση
+Förhandsvisning — priser och tillgänglighet bekräftas senare
+
+Exhibitions & workshops
+Εκθέσεις & εργαστήρια
+Utställningar & workshops
+
+On the wall,<br><em>at the table.</em>
+Στον τοίχο,<br><em>στο τραπέζι.</em>
+På väggen,<br><em>vid bordet.</em>
+
+Exhibitions, selections and the printmaking workshops he runs for children and adults, newest first.
+Εκθέσεις, διακρίσεις και τα εργαστήρια χαρακτικής που οργανώνει για παιδιά και ενήλικες, από τα πιο πρόσφατα.
+Utställningar, urval och de grafikworkshops han håller för barn och vuxna, nyast först.
+
+Exhibitions, selections and printmaking workshops by Alex Fragoulis.
+Εκθέσεις, διακρίσεις και εργαστήρια χαρακτικής του Alex Fragoulis.
+Utställningar, urval och grafikworkshops av Alex Fragoulis.
+
+Show
+Εμφάνιση
+Visa
+
+Selections
+Διακρίσεις
+Urval
+
+Exhibition
+Έκθεση
+Utställning
+
+Workshop
+Εργαστήριο
+Workshop
+
+Selection
+Διάκριση
+Urval
+
+{x}, {n}
+{x}, {n}
+{x}, {n}
+
+Ink on fabric
+Μελάνι σε ύφασμα
+Bläck på tyg
+
+Plexiglass plate
+Πλάκα πλεξιγκλάς
+Plexiglasplåt
+
+<span>2025</span><span>Summer Narratives, group exhibition, Polyedro, Patras</span>
+<span>2025</span><span>«Αφηγήσεις καλοκαιριού», ομαδική έκθεση, Πολύεδρο, Πάτρα</span>
+<span>2025</span><span>Sommarberättelser, grupputställning, Polyedro, Patras</span>
+
+<span>2025</span><span>Painting and printmaking exhibition with Adrian Blag, Lagadakia, Zakynthos</span>
+<span>2025</span><span>Έκθεση ζωγραφικής και χαρακτικής με τον Adrian Blag, Λαγκαδάκια, Ζάκυνθος</span>
+<span>2025</span><span>Utställning med måleri och grafik med Adrian Blag, Lagadakia, Zakynthos</span>
+
+<span>2025</span><span>Redefinition, G. Xenopoulos Museum</span>
+<span>2025</span><span>«Επαναπροσδιορισμός», Μουσείο Γ. Ξενόπουλου</span>
+<span>2025</span><span>Omdefiniering, G. Xenopoulos museum</span>
+
+<span>2024–25</span><span>Antiparochi 19, solo exhibition, Portokalion</span>
+<span>2024–25</span><span>«Αντιπαροχή 19», ατομική έκθεση, Portokalion</span>
+<span>2024–25</span><span>Antiparochi 19, separatutställning, Portokalion</span>
+
+<span>2023</span><span>Monotypes, solo exhibition, Polyedro, Patras</span>
+<span>2023</span><span>Μονοτυπίες, ατομική έκθεση, Πολύεδρο, Πάτρα</span>
+<span>2023</span><span>Monotypier, separatutställning, Polyedro, Patras</span>
+
+<span>2022</span><span>1st International GCB MiniPrint, Studio Bildende Kunst, Berlin</span>
+<span>2022</span><span>1st International GCB MiniPrint, Studio Bildende Kunst, Βερολίνο</span>
+<span>2022</span><span>1st International GCB MiniPrint, Studio Bildende Kunst, Berlin</span>
+
+<span>2022</span><span>Time of Art gallery, Athens</span>
+<span>2022</span><span>Γκαλερί Time of Art, Αθήνα</span>
+<span>2022</span><span>Time of Art gallery, Aten</span>
+
+<span>2025</span><span>Printmaking in primary education, workshop for teachers</span>
+<span>2025</span><span>«Εφαρμογές χαρακτικής στην πρωτοβάθμια εκπαίδευση», εργαστήριο για εκπαιδευτικούς</span>
+<span>2025</span><span>Grafik i grundskolan, workshop för lärare</span>
+
+<span>2024</span><span>mikroi CHARAKTES, Xenopouleios Children's Library</span>
+<span>2024</span><span>μικροί ΧΑΡΑΚΤΕΣ, Ξενοπούλειος Παιδική Βιβλιοθήκη</span>
+<span>2024</span><span>mikroi CHARAKTES, Xenopouleios barnbibliotek</span>
+
+# events
+mikroi CHARAKTES comes to Stockholm
+Οι μικροί ΧΑΡΑΚΤΕΣ έρχονται στη Στοκχόλμη
+mikroi CHARAKTES kommer till Stockholm
+
+The mobile printmaking workshop for children moved with Alex to Sweden, as Små egenskaperna.
+Το κινητό εργαστήρι χαρακτικής για παιδιά ήρθε μαζί με τον Alex στη Σουηδία, ως «Små egenskaperna».
+Den mobila grafikverkstaden för barn följde med Alex till Sverige, som Små egenskaperna.
+
+Stockholm
+Στοκχόλμη
+Stockholm
+
+mikroi CHARAKTES at the Tinos Cultural Foundation
+Μικροί ΧΑΡΑΚΤΕΣ στο Ίδρυμα Τηνιακού Πολιτισμού
+mikroi CHARAKTES på Tinos kulturstiftelse
+
+Tinos
+Τήνος
+Tinos
+
+Two days of the children's printmaking workshop on Tinos, as part of the foundation's activities for children and teenagers.
+Δύο ημέρες εργαστηρίου χαρακτικής για παιδιά στην Τήνο, στο πλαίσιο των εκπαιδευτικών δράσεων του Ιδρύματος για παιδιά και εφήβους.
+Två dagar av grafikverkstaden för barn på Tinos, inom stiftelsens verksamhet för barn och ungdomar.
+
+Summer Narratives, group exhibition
+«Αφηγήσεις καλοκαιριού», ομαδική έκθεση
+Sommarberättelser, grupputställning
+
+Polyedro gallery, Patras
+Γκαλερί του Πολύεδρου, Πάτρα
+Polyedro galleri, Patras
+
+A group exhibition on the sea, the colours and landscapes of summer, in the centre of Patras.
+Ομαδική έκθεση για τη θάλασσα, τα χρώματα και τα τοπία του καλοκαιριού, στο κέντρο της Πάτρας.
+En grupputställning om havet, sommarens färger och landskap, i centrala Patras.
+
+Open-air workshop at Krini, Patras
+Υπαίθριο εργαστήρι στην Κρήνη Πατρών
+Utomhusworkshop i Krini, Patras
+
+Krini, Patras
+Κρήνη, Πάτρα
+Krini, Patras
+
+An open-air mikroi CHARAKTES workshop, in collaboration with Polyedro.
+Υπαίθριο εργαστήρι των μικρών ΧΑΡΑΚΤΩΝ, σε συνεργασία με το Πολύεδρο.
+En utomhusworkshop med mikroi CHARAKTES, i samarbete med Polyedro.
+
+Painting and printmaking exhibition with Adrian Blag
+Έκθεση ζωγραφικής και χαρακτικής με τον Adrian Blag
+Utställning med måleri och grafik med Adrian Blag
+
+Old village school, Lagadakia, Zakynthos
+Το παλιό σχολείο του χωριού, Λαγκαδάκια, Ζάκυνθος
+Den gamla byskolan, Lagadakia, Zakynthos
+
+The old school of Lagadakia was turned into an art space for a joint exhibition of paintings and prints.
+Το παλιό σχολείο στα Λαγκαδάκια έγινε χώρος τέχνης για μια κοινή έκθεση ζωγραφικής και χαρακτικής.
+Den gamla skolan i Lagadakia blev ett konstrum för en gemensam utställning med måleri och grafik.
+
+Redefinition
+Επαναπροσδιορισμός
+Omdefiniering
+
+G. Xenopoulos Museum
+Μουσείο Γ. Ξενόπουλου
+G. Xenopoulos museum
+
+Monoprints on fabric made from discarded materials, shown as a “room within a room”. Redefining an artwork, redefining the use of materials.
+Μονοτυπίες σε ύφασμα από άχρηστα και πεταμένα υλικά, παρουσιασμένες ως «δωμάτιο μέσα στο δωμάτιο». Επαναπροσδιορίζοντας ένα έργο, επαναπροσδιορίζοντας τη χρήση των υλικών.
+Monotypier på tyg gjorda av kasserat material, visade som ett ”rum i rummet”. Att omdefiniera ett verk, att omdefiniera hur material används.
+
+Printmaking in primary education
+Εφαρμογές χαρακτικής στην πρωτοβάθμια εκπαίδευση
+Grafik i grundskolan
+
+Workshop for teachers
+Εργαστήριο για εκπαιδευτικούς
+Workshop för lärare
+
+A workshop for teachers on bringing printmaking techniques into primary school classrooms.
+Εργαστήριο για εκπαιδευτικούς για το πώς μπαίνουν οι τεχνικές χαρακτικής στην τάξη του δημοτικού.
+En workshop för lärare om hur grafiska tekniker kan användas i grundskolans klassrum.
+
+Antiparochi 19, printmaking exhibition
+«Αντιπαροχή 19», έκθεση χαρακτικής
+Antiparochi 19, grafikutställning
+
+Portokalion
+Portokalion
+Portokalion
+
+A solo exhibition of prints by Alex Fragoulis. Opening on 7 December 2024.
+Ατομική έκθεση χαρακτικής του Αλέξη Φραγκούλη. Εγκαίνια στις 7 Δεκεμβρίου 2024.
+En separatutställning med grafik av Alex Fragoulis. Vernissage den 7 december 2024.
+
+mikroi CHARAKTES at the Xenopouleios Children's Library
+Μικροί ΧΑΡΑΚΤΕΣ στην Ξενοπούλειο Παιδική Βιβλιοθήκη
+mikroi CHARAKTES på Xenopouleios barnbibliotek
+
+Xenopouleios Children's Library
+Ξενοπούλειος Παιδική Βιβλιοθήκη
+Xenopouleios barnbibliotek
+
+A series of workshops where each session starts from a book: children made monotypes, collagraphs and their own images.
+Μια σειρά εργαστηρίων όπου κάθε συνάντηση ξεκινά από ένα βιβλίο: τα παιδιά έφτιαξαν μονοτυπίες, κολαγραφίες και τις δικές τους εικόνες.
+En serie workshops där varje tillfälle utgår från en bok: barnen gjorde monotypier, kollagrafier och egna bilder.
+
+Monotypes, solo exhibition
+Μονοτυπίες, ατομική έκθεση
+Monotypier, separatutställning
+
+Polyedro, Patras
+Πολύεδρο, Πάτρα
+Polyedro, Patras
+
+A solo exhibition of the 2023 series of monotypes.
+Ατομική έκθεση με τη σειρά μονοτυπιών του 2023.
+En separatutställning med monotypiserien från 2023.
+
+Printmaking workshop in the garden
+Εργαστήριο χαρακτικής στον κήπο
+Grafikworkshop i trädgården
+
+An open printmaking workshop in a garden.
+Ένα ανοιχτό εργαστήριο χαρακτικής σε έναν κήπο.
+En öppen grafikworkshop i en trädgård.
+
+1st International GCB MiniPrint
+1st International GCB MiniPrint
+1st International GCB MiniPrint
+
+Studio Bildende Kunst, Berlin
+Studio Bildende Kunst, Βερολίνο
+Studio Bildende Kunst, Berlin
+
+The work “Paperboats” was selected for the first International GCB MiniPrint, organised by Graphik-Collegium Berlin.
+Το έργο «Paperboats» επιλέχθηκε για το πρώτο International GCB MiniPrint, που διοργάνωσε το Graphik-Collegium Berlin.
+Verket ”Paperboats” valdes ut till den första International GCB MiniPrint, arrangerad av Graphik-Collegium Berlin.
+
+Prints at Time of Art gallery
+Χαρακτικά στη γκαλερί Time of Art
+Grafik på Time of Art gallery
+
+Time of Art gallery, Athens
+Γκαλερί Time of Art, Αθήνα
+Time of Art gallery, Aten
+
+A selection of prints shown at the gallery.
+Μια επιλογή χαρακτικών που παρουσιάστηκε στη γκαλερί.
+Ett urval grafik som visades på galleriet.
+
+# work descriptions
+A small linocut portrait.
+Ένα μικρό πορτρέτο σε λινόλεουμ.
+Ett litet porträtt i linoleumsnitt.
+
+A street corner, etched on TetraPak. Edition of 4.
+Μια γωνία δρόμου, χαραγμένη σε TetraPak. Έκδοση 4 αντιτύπων.
+Ett gathörn, etsat på TetraPak. Upplaga om 4.
+
+A wreath of laurel and thorn. Drypoint on plexiglass, edition of 6.
+Στεφάνι από δάφνη και αγκάθια. Ξηρά χάραξη σε πλεξιγκλάς, έκδοση 6 αντιτύπων.
+En krans av lager och törne. Torrnål på plexiglas, upplaga om 6.
+
+After Edgar Allan Poe's poem.
+Εμπνευσμένο από το ποίημα του Έντγκαρ Άλαν Πόε.
+Efter Edgar Allan Poes dikt.
+
+An ex libris dedicated to the actor Thanasis Veggos (1927–2011). Edition of 10.
+Ex libris αφιερωμένο στον ηθοποιό Θανάση Βέγγο (1927–2011). Έκδοση 10 αντιτύπων.
+Ett exlibris tillägnat skådespelaren Thanasis Veggos (1927–2011). Upplaga om 10.
+
+An ex libris dedicated to the singer Flery Dandonaki. Edition of 5.
+Ex libris αφιερωμένο στην τραγουδίστρια Φλέρυ Νταντωνάκη. Έκδοση 5 αντιτύπων.
+Ett exlibris tillägnat sångerskan Flery Dandonaki. Upplaga om 5.
+
+Drypoint on a CD, edition of 6.
+Ξηρά χάραξη σε CD, έκδοση 6 αντιτύπων.
+Torrnål på en cd-skiva, upplaga om 6.
+
+Drypoint on a CD.
+Ξηρά χάραξη σε CD.
+Torrnål på en cd-skiva.
+
+Drypoint on a piece of CD, edition of 6.
+Ξηρά χάραξη σε κομμάτι CD, έκδοση 6 αντιτύπων.
+Torrnål på en bit av en cd-skiva, upplaga om 6.
+
+Drypoint on plexiglass.
+Ξηρά χάραξη σε πλεξιγκλάς.
+Torrnål på plexiglas.
+
+From Project for Cyprus (2021). Edition of 12.
+Από το «Project for Cyprus» (2021). Έκδοση 12 αντιτύπων.
+Från Project for Cyprus (2021). Upplaga om 12.
+
+From Project for Cyprus (2021): Michalis, a young defender of his homeland. Edition of 12.
+Από το «Project for Cyprus» (2021): ο Μιχάλης, ένας νέος υπερασπιστής της πατρίδας του. Έκδοση 12 αντιτύπων.
+Från Project for Cyprus (2021): Michalis, en ung försvarare av sitt hemland. Upplaga om 12.
+
+From Project for Cyprus (2021): memories that come and go, scents of lemon. Edition of 12.
+Από το «Project for Cyprus» (2021): μνήμες που έρχονται και φεύγουν, μυρωδιές λεμονιού. Έκδοση 12 αντιτύπων.
+Från Project for Cyprus (2021): minnen som kommer och går, doft av citron. Upplaga om 12.
+
+From Project for Cyprus (2021): “Cyprus is a crossroads”. Edition of 12.
+Από το «Project for Cyprus» (2021): «Η Κύπρος είναι σταυροδρόμι». Έκδοση 12 αντιτύπων.
+Från Project for Cyprus (2021): ”Cypern är en korsväg”. Upplaga om 12.
+
+From Project for Cyprus, a series of drypoints made in 2021. Edition of 12.
+Από το «Project for Cyprus», μια σειρά ξηρών χαράξεων του 2021. Έκδοση 12 αντιτύπων.
+Från Project for Cyprus, en serie torrnålsgravyrer från 2021. Upplaga om 12.
+
+From the Living Columns project.
+Από το project «Living Columns».
+Från projektet Living Columns.
+
+No. 4 of the Living Columns project.
+Νο 4 του project «Living Columns».
+Nr 4 i projektet Living Columns.
+
+Ink on fabric. From Redefinition. Unique.
+Μελάνι σε ύφασμα. Από τον «Επαναπροσδιορισμό». Μοναδικό.
+Bläck på tyg. Från Omdefiniering. Unikt.
+
+Linocut, with the line “For these we fought”.
+Λινογραφία, με τη φράση «Δι' αυτά πολεμήσαμεν».
+Linoleumsnitt, med raden ”För detta kämpade vi”.
+
+Made for the hundred years since 1922. Woodcut, edition of 22.
+Για τα εκατό χρόνια από το 1922. Ξυλογραφία, έκδοση 22 αντιτύπων.
+Gjord till hundraårsminnet av 1922. Träsnitt, upplaga om 22.
+
+Monoprint, ink on fabric. From Redefinition, works made from discarded materials. Unique.
+Μονοτυπία, μελάνι σε ύφασμα. Από τον «Επαναπροσδιορισμό», έργα από πεταμένα υλικά. Μοναδικό.
+Monotypi, bläck på tyg. Från Omdefiniering, verk gjorda av kasserat material. Unikt.
+
+Monoprint, ink on fabric. From Redefinition. Unique.
+Μονοτυπία, μελάνι σε ύφασμα. Από τον «Επαναπροσδιορισμό». Μοναδικό.
+Monotypi, bläck på tyg. Från Omdefiniering. Unikt.
+
+Neoclassical houses under a black sky. Woodcut in an edition of only 3.
+Νεοκλασικά σπίτια σε μαύρο ουρανό. Ξυλογραφία σε έκδοση μόνο 3 αντιτύπων.
+Nyklassicistiska hus under en svart himmel. Träsnitt i en upplaga om endast 3.
+
+No. 1 of the monotype series shown at Polyedro, Patras, in 2023. Unique.
+Νο 1 της σειράς μονοτυπιών που παρουσιάστηκε στο Πολύεδρο, στην Πάτρα, το 2023. Μοναδικό.
+Nr 1 i monotypiserien som visades på Polyedro i Patras 2023. Unikt.
+
+No. {n} of the 2023 monotype series. Unique.
+Νο {n} της σειράς μονοτυπιών του 2023. Μοναδικό.
+Nr {n} i monotypiserien från 2023. Unikt.
+
+Pain, mourning and how we carry them are different for everyone. A linocut about building a place for them.
+Ο πόνος, το πένθος και ο τρόπος που τα κουβαλάμε είναι διαφορετικά για τον καθένα. Μια λινογραφία για το χτίσιμο ενός τόπου γι' αυτά.
+Smärta, sorg och hur vi bär dem är olika för alla. Ett linoleumsnitt om att bygga en plats åt dem.
+
+The last work of 2024. Woodcut, edition of 12.
+Το τελευταίο έργο του 2024. Ξυλογραφία, έκδοση 12 αντιτύπων.
+Det sista verket från 2024. Träsnitt, upplaga om 12.
+
+The second woodcut of the old houses series. Edition of 10.
+Η δεύτερη ξυλογραφία της σειράς με τα παλιά σπίτια. Έκδοση 10 αντιτύπων.
+Det andra träsnittet i serien om de gamla husen. Upplaga om 10.
+
+Two narrow woodcuts of old neoclassical houses, 12 prints each.
+Δύο στενόμακρες ξυλογραφίες με παλιά νεοκλασικά σπίτια, 12 αντίτυπα η καθεμία.
+Två smala träsnitt av gamla nyklassicistiska hus, 12 avdrag vardera.
+
+Woodcut, edition of 10.
+Ξυλογραφία, έκδοση 10 αντιτύπων.
+Träsnitt, upplaga om 10.
+
+# work titles in Greek (Swedish keeps the English title)
+Birthtown
+Γενέθλια πόλη
+Birthtown
+
+Alley
+Σοκάκι
+Alley
+
+Black sky – Old houses
+Μαύρος ουρανός – Παλιά σπίτια
+Black sky – Old houses
+
+Old houses, part 2
+Παλιά σπίτια, μέρος 2
+Old houses, part 2
+
+Old House 1 & 2
+Παλιό σπίτι 1 & 2
+Old House 1 & 2
+
+The Deposition
+Η Αποκαθήλωση
+The Deposition
+
+The touch
+Το άγγιγμα
+The touch
+
+Raven
+Το κοράκι
+Raven
+
+Male portrait
+Ανδρικό πορτρέτο
+Male portrait
+
+Soldier of Aphaia I
+Στρατιώτης Αφαίας Ι
+Soldier of Aphaia I
+
+Truth
+Αλήθεια
+Truth
+
+Pieces
+Κομμάτια
+Pieces
+
+Roof's Guardians
+Φύλακες στεγών
+Roof's Guardians
+
+Intertwined
+Διαπλεκόμενοι
+Intertwined
+
+Refugees
+Πρόσφυγες
+Refugees
+
+Papaflessa & Korinthou corner
+Παπαφλέσσα και Κορίνθου γωνία
+Papaflessa & Korinthou corner
+
+The poet's hill
+Ο λόφος του ποιητή
+The poet's hill
+
+Birth
+Γέννηση
+Birth
+
+Cypress
+Κυπαρίσσι
+Cypress
+
+Inner wealth
+Εσωτερικός εαυτός
+Inner wealth
+
+It's complicated
+Είναι πολύπλοκο
+It's complicated
+
+Inside out
+Εντός εκτός
+Inside out
+
+Horizon
+Ορίζοντας
+Horizon
+
+Stimulation
+Εκτόνωση
+Stimulation
+
+A question
+Μια ερώτηση
+A question
+
+An answer
+Μια απάντηση
+An answer
+
+The attempt
+Η προσπάθεια
+The attempt
+
+Tragedy
+Τραγωδία
+Tragedy
+
+Music
+Μουσική
+Music
+
+Epea pteroenta
+Έπεα πτερόεντα
+Epea pteroenta
+
+Hellas 2022
+Ελλάδα 2022
+Hellas 2022
+

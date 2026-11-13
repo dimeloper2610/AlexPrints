@@ -361,7 +361,7 @@
   function rail(root) {
     const AP = window.AP, ART = window.AP_ART;
     const real = W.filter((w) => w.images || w.image);
-    const list = real.concat(W.filter((w) => !real.includes(w) && w.category !== "painting"), W.filter((w) => !real.includes(w) && w.category === "painting"));
+    const list = W.filter((w) => w.featured).concat(W.filter((w) => !w.featured)).slice(0, 12);
     root.innerHTML = `
       <div class="rail-pin">
         <div class="wrap rail-head">
