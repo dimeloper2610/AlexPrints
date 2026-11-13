@@ -928,3 +928,24 @@ html[lang="el"] .h3-head h1, html[lang="sv"] .h3-head h1 { max-width: 14ch; font
 .ink-stage { border-radius: 0; border: 0; box-shadow: none; }
 .ink-bed, .press-bed { border: 0; box-shadow: none; }
 .press-meta { padding-left: var(--gutter); padding-right: var(--gutter); }
+/* hero woodblock shows the whole artwork, never cropped */
+.ink-stage { height: auto; min-height: 0; aspect-ratio: var(--ar, 2.25) !important; }
+@media (max-width: 600px) {
+  .ink-actions { position: static; transform: none; width: auto; margin: 14px var(--gutter) 0; justify-content: flex-start; }
+  .ink-actions .btn { background: var(--paper-2); color: var(--ink); border-color: var(--rule); }
+  .ink-actions .btn:first-child { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .ink-hint { top: auto; bottom: 8px; font-size: .56rem; padding: 6px 10px; }
+  .ink-hud .mono { font-size: .54rem; padding: 4px 7px; }
+  .ink-hud.top { top: 6px; left: 6px; right: 6px; }
+}
+/* compact header on phones so logo, languages, cart and menu all fit */
+@media (max-width: 600px) {
+  .site-header .wrap { gap: 8px; }
+  .header-actions { gap: 6px; }
+  .logo { padding: 6px 10px 6px 6px; gap: 8px; font-size: .9rem; }
+  .logo span:not(.stamp) { display: none; }
+  .cart-btn { font-size: 0; gap: 0; padding: 7px; }
+  .cart-btn .cart-count { font-size: .72rem; }
+  .menu-btn { width: 40px; height: 40px; flex: none; }
+  .lang button { padding: 6px 6px; }
+}

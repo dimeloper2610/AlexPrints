@@ -25,7 +25,7 @@
   host.innerHTML = `
     <div class="press-bed ink-bed">
       <span class="corner tl reg"><i></i></span><span class="corner tr reg"><i></i></span><span class="corner bl reg"><i></i></span><span class="corner br reg"><i></i></span>
-      <div class="ink-stage" data-cursor="ink">
+      <div class="ink-stage" data-cursor="ink" style="--ar:${RATIO}">
         <div class="ink-hud top">
           <span class="mono" id="ink-mode">The block · mirrored</span>
           <span class="mono">Ink <b id="ink-pct">0</b>%</span>
