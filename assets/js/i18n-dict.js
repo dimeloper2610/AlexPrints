@@ -566,7 +566,18 @@ window.AP_I18N = {
 "Exhibition and workshop on Strani Hill": "Έκθεση και εργαστήρι στον Λόφο του Στράνη",
 "Strani Hill, Zakynthos": "Λόφος του Στράνη, Ζάκυνθος",
 "The children's prints were shown, with an open workshop, on the hill where Dionysios Solomos wrote the Hymn to Liberty, as part of the Xenopouleios library's children's festival.": "Τα χαρακτικά των παιδιών εκτέθηκαν, μαζί με ανοιχτό εργαστήρι, στον λόφο όπου ο Διονύσιος Σολωμός έγραψε τον Ύμνο εις την Ελευθερίαν, στο πλαίσιο του παιδικού φεστιβάλ της Ξενοπουλείου Παιδικής Βιβλιοθήκης.",
-"Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.": "Έξι εργαστήρια, το καθένα με αφορμή ένα βιβλίο από τα ράφια της βιβλιοθήκης: μονοτυπία, κολαγραφία, τυπώματα και μοτίβα με πατάτα, υψιτυπία με πλαστελίνη και μονοτυπία σε γυαλί."
+"Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.": "Έξι εργαστήρια, το καθένα με αφορμή ένα βιβλίο από τα ράφια της βιβλιοθήκης: μονοτυπία, κολαγραφία, τυπώματα και μοτίβα με πατάτα, υψιτυπία με πλαστελίνη και μονοτυπία σε γυαλί.",
+"Old houses": "Παλιά σπίτια",
+"More woodcuts": "Ακόμα ξυλογραφίες",
+"Living Columns": "Living Columns",
+"Figures and portraits": "Μορφές και πορτρέτα",
+"Ex libris": "Ex libris",
+"Project for Cyprus": "Project for Cyprus",
+"On plexiglass": "Σε πλεξιγκλάς",
+"On CD": "Σε CD",
+"On TetraPak": "Σε TetraPak",
+"In colour": "Έγχρωμες",
+"In black and white": "Ασπρόμαυρες"
 },
 "sv": {
 "Prints": "Grafik",
@@ -1134,6 +1145,17 @@ window.AP_I18N = {
 "Exhibition and workshop on Strani Hill": "Utställning och workshop på Stranikullen",
 "Strani Hill, Zakynthos": "Stranikullen, Zakynthos",
 "The children's prints were shown, with an open workshop, on the hill where Dionysios Solomos wrote the Hymn to Liberty, as part of the Xenopouleios library's children's festival.": "Barnens grafik visades, tillsammans med en öppen workshop, på kullen där Dionysios Solomos skrev Hymn till friheten, som en del av Xenopouleios barnbiblioteks barnfestival.",
-"Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.": "Sex workshops som var och en utgår från en bok på bibliotekets hyllor: monotypi, kollagrafi, potatistryck och mönster, högtryck med modellera och monotypi på glas."
+"Six workshops, each starting from a book on the library's shelves: monotype, collagraph, potato prints and patterns, relief prints with plasticine, and monotype on glass.": "Sex workshops som var och en utgår från en bok på bibliotekets hyllor: monotypi, kollagrafi, potatistryck och mönster, högtryck med modellera och monotypi på glas.",
+"Old houses": "Gamla hus",
+"More woodcuts": "Fler träsnitt",
+"Living Columns": "Living Columns",
+"Figures and portraits": "Figurer och porträtt",
+"Ex libris": "Exlibris",
+"Project for Cyprus": "Project for Cyprus",
+"On plexiglass": "På plexiglas",
+"On CD": "På cd-skiva",
+"On TetraPak": "På TetraPak",
+"In colour": "I färg",
+"In black and white": "I svartvitt"
 }
 };

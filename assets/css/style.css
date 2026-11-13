@@ -967,3 +967,12 @@ html[lang="el"] .h3-head h1, html[lang="sv"] .h3-head h1 { max-width: 14ch; font
 .ev-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s var(--ease); }
 .ev-img:hover img { transform: scale(1.04); }
 @media (max-width: 1000px) { .ev { grid-template-columns: 1fr; } .ev-meta { grid-auto-flow: column; justify-content: start; gap: 16px; } }
+
+/* works grouped by technique and series */
+.wgroup { padding-top: clamp(16px, 2vw, 24px); }
+.wgroup + .wgroup { margin-top: clamp(24px, 4vw, 56px); }
+.wgroup-h { display: flex; align-items: baseline; gap: 16px; border-top: 1px solid var(--rule-strong); padding-top: 14px; margin-bottom: clamp(20px, 3vw, 36px); }
+.wgroup-h h2 { font-size: clamp(1.6rem, 2.8vw, 2.6rem); }
+.wgroup-h .mono:first-child { min-width: 8em; }
+.wgroup-h .mono:last-child { margin-left: auto; }
+@media (max-width: 600px) { .wgroup-h { flex-wrap: wrap; } .wgroup-h .mono:first-child { min-width: 0; width: 100%; } }

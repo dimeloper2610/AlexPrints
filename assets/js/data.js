@@ -96,6 +96,7 @@ window.AP_CATEGORIES = {
 window.AP_WORKS = [
   {
     id: "old-town",
+    series: "Old houses",
     title: "Old town",
     category: "print",
     technique: "woodcut",
@@ -116,45 +117,8 @@ window.AP_WORKS = [
     description: "Neoclassical houses of the old town of Patras under a dark, cloudy sky. Carved in wood and printed by hand, in a limited edition of 10."
   },
   {
-    id: "birthtown",
-    title: "Birthtown",
-    category: "print",
-    technique: "woodcut",
-    year: 2024,
-    imageSize: [38, 48],
-    sheetSize: null,
-    paper: null,
-    edition: {"size": 12, "available": null},
-    available: null,
-    price: null,
-    frameable: false,
-    featured: true,
-    image: "assets/img/works/woodcut/birthtown.jpg",
-    ratio: 1.2355,
-    source: "https://www.instagram.com/p/DFziM41o-Du/",
-    description: "The last work of 2024. Woodcut, edition of 12."
-  },
-  {
-    id: "alley",
-    title: "Alley",
-    category: "print",
-    technique: "woodcut",
-    year: 2024,
-    imageSize: [18, 18],
-    sheetSize: null,
-    paper: null,
-    edition: {"size": 10, "available": null},
-    available: null,
-    price: null,
-    frameable: false,
-    featured: true,
-    image: "assets/img/works/woodcut/alley.jpg",
-    ratio: 1.0,
-    source: "https://www.instagram.com/p/DCM0UR3OqBU/",
-    description: "Woodcut, edition of 10."
-  },
-  {
     id: "black-sky-old-houses",
+    series: "Old houses",
     title: "Black sky – Old houses",
     category: "print",
     technique: "woodcut",
@@ -174,6 +138,7 @@ window.AP_WORKS = [
   },
   {
     id: "old-houses-part-2",
+    series: "Old houses",
     title: "Old houses, part 2",
     category: "print",
     technique: "woodcut",
@@ -193,6 +158,7 @@ window.AP_WORKS = [
   },
   {
     id: "old-house-1-and-2",
+    series: "Old houses",
     title: "Old House 1 & 2",
     category: "print",
     technique: "woodcut",
@@ -211,7 +177,48 @@ window.AP_WORKS = [
     description: "Two narrow woodcuts of old neoclassical houses, 12 prints each."
   },
   {
+    id: "alley",
+    series: "Old houses",
+    title: "Alley",
+    category: "print",
+    technique: "woodcut",
+    year: 2024,
+    imageSize: [18, 18],
+    sheetSize: null,
+    paper: null,
+    edition: {"size": 10, "available": null},
+    available: null,
+    price: null,
+    frameable: false,
+    featured: true,
+    image: "assets/img/works/woodcut/alley.jpg",
+    ratio: 1.0,
+    source: "https://www.instagram.com/p/DCM0UR3OqBU/",
+    description: "Woodcut, edition of 10."
+  },
+  {
+    id: "birthtown",
+    series: "More woodcuts",
+    title: "Birthtown",
+    category: "print",
+    technique: "woodcut",
+    year: 2024,
+    imageSize: [38, 48],
+    sheetSize: null,
+    paper: null,
+    edition: {"size": 12, "available": null},
+    available: null,
+    price: null,
+    frameable: false,
+    featured: true,
+    image: "assets/img/works/woodcut/birthtown.jpg",
+    ratio: 1.2355,
+    source: "https://www.instagram.com/p/DFziM41o-Du/",
+    description: "The last work of 2024. Woodcut, edition of 12."
+  },
+  {
     id: "1922",
+    series: "More woodcuts",
     title: "1922",
     category: "print",
     technique: "woodcut",
@@ -230,26 +237,8 @@ window.AP_WORKS = [
     description: "Made for the hundred years since 1922. Woodcut, edition of 22."
   },
   {
-    id: "personal-mausoleum",
-    title: "Personal Mausoleum",
-    category: "print",
-    technique: "linocut",
-    year: 2023,
-    imageSize: [29.7, 42],
-    sheetSize: null,
-    paper: null,
-    edition: null,
-    available: null,
-    price: null,
-    frameable: false,
-    featured: true,
-    image: "assets/img/works/linocut/personal-mausoleum.jpg",
-    ratio: 1.0,
-    source: "https://www.instagram.com/p/CrLFKFLo___/",
-    description: "Pain, mourning and how we carry them are different for everyone. A linocut about building a place for them."
-  },
-  {
     id: "the-deposition",
+    series: "Living Columns",
     title: "The Deposition",
     category: "print",
     technique: "linocut",
@@ -269,6 +258,7 @@ window.AP_WORKS = [
   },
   {
     id: "the-touch",
+    series: "Living Columns",
     title: "The touch",
     category: "print",
     technique: "linocut",
@@ -287,7 +277,28 @@ window.AP_WORKS = [
     description: "From the Living Columns project."
   },
   {
+    id: "personal-mausoleum",
+    series: "Figures and portraits",
+    title: "Personal Mausoleum",
+    category: "print",
+    technique: "linocut",
+    year: 2023,
+    imageSize: [29.7, 42],
+    sheetSize: null,
+    paper: null,
+    edition: null,
+    available: null,
+    price: null,
+    frameable: false,
+    featured: true,
+    image: "assets/img/works/linocut/personal-mausoleum.jpg",
+    ratio: 1.0,
+    source: "https://www.instagram.com/p/CrLFKFLo___/",
+    description: "Pain, mourning and how we carry them are different for everyone. A linocut about building a place for them."
+  },
+  {
     id: "raven",
+    series: "Figures and portraits",
     title: "Raven",
     category: "print",
     technique: "linocut",
@@ -307,6 +318,7 @@ window.AP_WORKS = [
   },
   {
     id: "male-portrait",
+    series: "Figures and portraits",
     title: "Male portrait",
     category: "print",
     technique: "linocut",
@@ -326,6 +338,7 @@ window.AP_WORKS = [
   },
   {
     id: "soldier-of-aphaia",
+    series: "Figures and portraits",
     title: "Soldier of Aphaia I",
     category: "print",
     technique: "linocut",
@@ -345,6 +358,7 @@ window.AP_WORKS = [
   },
   {
     id: "ex-libris-thou-vou",
+    series: "Ex libris",
     title: "Ex libris “Thou-Vou”",
     category: "print",
     technique: "linocut",
@@ -364,6 +378,7 @@ window.AP_WORKS = [
   },
   {
     id: "ex-libris-flery-dandonaki",
+    series: "Ex libris",
     title: "Ex libris “Flery Dandonaki”",
     category: "print",
     technique: "linocut",
@@ -383,6 +398,7 @@ window.AP_WORKS = [
   },
   {
     id: "gialousa",
+    series: "Project for Cyprus",
     title: "Gialousa",
     category: "print",
     technique: "drypoint",
@@ -396,12 +412,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: true,
     image: "assets/img/works/drypoint/gialousa.jpg",
-    ratio: 0.8,
+    ratio: 0.7794,
     source: "https://www.instagram.com/p/CL6jr6ZlVqm/",
     description: "From Project for Cyprus, a series of drypoints made in 2021. Edition of 12."
   },
   {
     id: "michalis",
+    series: "Project for Cyprus",
     title: "Michalis",
     category: "print",
     technique: "drypoint",
@@ -415,12 +432,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: false,
     image: "assets/img/works/drypoint/michalis.jpg",
-    ratio: 0.8,
+    ratio: 0.7894,
     source: "https://www.instagram.com/p/CMjvXttlkgp/",
     description: "From Project for Cyprus (2021): Michalis, a young defender of his homeland. Edition of 12."
   },
   {
     id: "fragrant-memories",
+    series: "Project for Cyprus",
     title: "Fragrant memories",
     category: "print",
     technique: "drypoint",
@@ -434,12 +452,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: true,
     image: "assets/img/works/drypoint/fragrant-memories.jpg",
-    ratio: 0.8344,
+    ratio: 0.8037,
     source: "https://www.instagram.com/p/CM_uDdusBCa/",
     description: "From Project for Cyprus (2021): memories that come and go, scents of lemon. Edition of 12."
   },
   {
     id: "tastes-memories",
+    series: "Project for Cyprus",
     title: "Tastes / Memories",
     category: "print",
     technique: "drypoint",
@@ -459,6 +478,7 @@ window.AP_WORKS = [
   },
   {
     id: "egg-hope",
+    series: "Project for Cyprus",
     title: "Egg hope",
     category: "print",
     technique: "drypoint",
@@ -478,6 +498,7 @@ window.AP_WORKS = [
   },
   {
     id: "bury-and-leave-them",
+    series: "Project for Cyprus",
     title: "Bury + leave them",
     category: "print",
     technique: "drypoint",
@@ -497,6 +518,7 @@ window.AP_WORKS = [
   },
   {
     id: "the-player",
+    series: "On plexiglass",
     title: "The Player",
     category: "print",
     technique: "drypoint",
@@ -510,12 +532,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: true,
     image: "assets/img/works/drypoint/the-player.jpg",
-    ratio: 0.9094,
+    ratio: 0.7969,
     source: "https://www.instagram.com/p/CXZfHP_I4p8/",
     description: "Drypoint on plexiglass."
   },
   {
     id: "the-dancer",
+    series: "On plexiglass",
     title: "The Dancer",
     category: "print",
     technique: "drypoint",
@@ -529,12 +552,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: false,
     image: "assets/img/works/drypoint/the-dancer.jpg",
-    ratio: 1.0,
+    ratio: 0.7462,
     source: "https://www.instagram.com/p/CVcPRuGIAYT/",
     description: "Drypoint on plexiglass."
   },
   {
     id: "hellas-2022",
+    series: "On plexiglass",
     title: "Hellas 2022",
     category: "print",
     technique: "drypoint",
@@ -548,12 +572,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: false,
     image: "assets/img/works/drypoint/hellas-2022.jpg",
-    ratio: 1.0,
+    ratio: 0.7456,
     source: "https://www.instagram.com/p/Cld0N_8o3Yf/",
     description: "A wreath of laurel and thorn. Drypoint on plexiglass, edition of 6."
   },
   {
     id: "truth",
+    series: "On CD",
     title: "Truth",
     category: "print",
     technique: "drypoint",
@@ -573,6 +598,7 @@ window.AP_WORKS = [
   },
   {
     id: "pieces",
+    series: "On CD",
     title: "Pieces",
     category: "print",
     technique: "drypoint",
@@ -592,6 +618,7 @@ window.AP_WORKS = [
   },
   {
     id: "roofs-guardians",
+    series: "On CD",
     title: "Roof's Guardians",
     category: "print",
     technique: "drypoint",
@@ -611,6 +638,7 @@ window.AP_WORKS = [
   },
   {
     id: "refugees",
+    series: "On CD",
     title: "Refugees",
     category: "print",
     technique: "drypoint",
@@ -624,12 +652,13 @@ window.AP_WORKS = [
     frameable: false,
     featured: false,
     image: "assets/img/works/drypoint/refugees.jpg",
-    ratio: 1.0,
+    ratio: 1.0603,
     source: "https://www.instagram.com/p/CkQ8cq9oS0m/",
     description: "Drypoint on a piece of CD, edition of 6."
   },
   {
     id: "intertwined",
+    series: "On CD",
     title: "Intertwined",
     category: "print",
     technique: "drypoint",
@@ -649,6 +678,7 @@ window.AP_WORKS = [
   },
   {
     id: "papaflessa-and-korinthou",
+    series: "On TetraPak",
     title: "Papaflessa & Korinthou corner",
     category: "print",
     technique: "etching",
@@ -668,6 +698,7 @@ window.AP_WORKS = [
   },
   {
     id: "eddie",
+    series: "In colour",
     title: "Eddie",
     category: "print",
     technique: "monotype",
@@ -687,6 +718,7 @@ window.AP_WORKS = [
   },
   {
     id: "conclusion",
+    series: "In colour",
     title: "Conclusion",
     category: "print",
     technique: "monotype",
@@ -705,26 +737,8 @@ window.AP_WORKS = [
     description: "No. 2 of the 2023 monotype series. Unique."
   },
   {
-    id: "mosquitoes",
-    title: "Mosquitoes",
-    category: "print",
-    technique: "monotype",
-    year: 2023,
-    imageSize: [30, 42],
-    sheetSize: null,
-    paper: null,
-    edition: null,
-    available: null,
-    price: null,
-    frameable: false,
-    featured: false,
-    image: "assets/img/works/monotype/mosquitoes.jpg",
-    ratio: 1.0,
-    source: "https://www.instagram.com/p/CuPWRmXoB6p/",
-    description: "No. 3 of the 2023 monotype series. Unique."
-  },
-  {
     id: "karl",
+    series: "In colour",
     title: "Karl",
     category: "print",
     technique: "monotype",
@@ -744,6 +758,7 @@ window.AP_WORKS = [
   },
   {
     id: "he",
+    series: "In colour",
     title: "He",
     category: "print",
     technique: "monotype",
@@ -763,6 +778,7 @@ window.AP_WORKS = [
   },
   {
     id: "alter-ego",
+    series: "In colour",
     title: "Alter ego",
     category: "print",
     technique: "monotype",
@@ -782,6 +798,7 @@ window.AP_WORKS = [
   },
   {
     id: "orsic",
+    series: "In colour",
     title: "Orsic",
     category: "print",
     technique: "monotype",
@@ -801,6 +818,7 @@ window.AP_WORKS = [
   },
   {
     id: "thule",
+    series: "In colour",
     title: "Thule",
     category: "print",
     technique: "monotype",
@@ -820,6 +838,7 @@ window.AP_WORKS = [
   },
   {
     id: "history-puzzle",
+    series: "In colour",
     title: "History puzzle",
     category: "print",
     technique: "monotype",
@@ -839,6 +858,7 @@ window.AP_WORKS = [
   },
   {
     id: "pursuant-to",
+    series: "In colour",
     title: "Pursuant to",
     category: "print",
     technique: "monotype",
@@ -858,6 +878,7 @@ window.AP_WORKS = [
   },
   {
     id: "war",
+    series: "In colour",
     title: "War",
     category: "print",
     technique: "monotype",
@@ -877,6 +898,7 @@ window.AP_WORKS = [
   },
   {
     id: "cigarette",
+    series: "In colour",
     title: "Cigarette",
     category: "print",
     technique: "monotype",
@@ -896,6 +918,7 @@ window.AP_WORKS = [
   },
   {
     id: "disintegration",
+    series: "In colour",
     title: "Disintegration",
     category: "print",
     technique: "monotype",
@@ -915,6 +938,7 @@ window.AP_WORKS = [
   },
   {
     id: "bell",
+    series: "In colour",
     title: "Bell",
     category: "print",
     technique: "monotype",
@@ -934,6 +958,7 @@ window.AP_WORKS = [
   },
   {
     id: "resting",
+    series: "In colour",
     title: "Resting",
     category: "print",
     technique: "monotype",
@@ -953,6 +978,7 @@ window.AP_WORKS = [
   },
   {
     id: "hope-heart",
+    series: "In colour",
     title: "Hope heart",
     category: "print",
     technique: "monotype",
@@ -971,7 +997,28 @@ window.AP_WORKS = [
     description: "No. 16 of the 2023 monotype series. Unique."
   },
   {
+    id: "mosquitoes",
+    series: "In black and white",
+    title: "Mosquitoes",
+    category: "print",
+    technique: "monotype",
+    year: 2023,
+    imageSize: [30, 42],
+    sheetSize: null,
+    paper: null,
+    edition: null,
+    available: null,
+    price: null,
+    frameable: false,
+    featured: false,
+    image: "assets/img/works/monotype/mosquitoes.jpg",
+    ratio: 1.0,
+    source: "https://www.instagram.com/p/CuPWRmXoB6p/",
+    description: "No. 3 of the 2023 monotype series. Unique."
+  },
+  {
     id: "the-poets-hill",
+    series: "In black and white",
     title: "The poet's hill",
     category: "print",
     technique: "monotype",
@@ -991,6 +1038,7 @@ window.AP_WORKS = [
   },
   {
     id: "birth",
+    series: "In black and white",
     title: "Birth",
     category: "print",
     technique: "monotype",
@@ -1010,6 +1058,7 @@ window.AP_WORKS = [
   },
   {
     id: "cypress",
+    series: "In black and white",
     title: "Cypress",
     category: "print",
     technique: "monotype",
@@ -1029,6 +1078,7 @@ window.AP_WORKS = [
   },
   {
     id: "inner-wealth",
+    series: "In black and white",
     title: "Inner wealth",
     category: "print",
     technique: "monotype",
@@ -1048,6 +1098,7 @@ window.AP_WORKS = [
   },
   {
     id: "its-complicated",
+    series: "In black and white",
     title: "It's complicated",
     category: "print",
     technique: "monotype",
@@ -1067,6 +1118,7 @@ window.AP_WORKS = [
   },
   {
     id: "inside-out",
+    series: "In black and white",
     title: "Inside out",
     category: "print",
     technique: "monotype",
@@ -1086,6 +1138,7 @@ window.AP_WORKS = [
   },
   {
     id: "horizon",
+    series: "In black and white",
     title: "Horizon",
     category: "print",
     technique: "monotype",
@@ -1105,6 +1158,7 @@ window.AP_WORKS = [
   },
   {
     id: "stimulation",
+    series: "In black and white",
     title: "Stimulation",
     category: "print",
     technique: "monotype",
@@ -1124,6 +1178,7 @@ window.AP_WORKS = [
   },
   {
     id: "a-question",
+    series: "In black and white",
     title: "A question",
     category: "print",
     technique: "monotype",
@@ -1143,6 +1198,7 @@ window.AP_WORKS = [
   },
   {
     id: "an-answer",
+    series: "In black and white",
     title: "An answer",
     category: "print",
     technique: "monotype",
@@ -1162,6 +1218,7 @@ window.AP_WORKS = [
   },
   {
     id: "the-attempt",
+    series: "In black and white",
     title: "The attempt",
     category: "print",
     technique: "monotype",
@@ -1181,6 +1238,7 @@ window.AP_WORKS = [
   },
   {
     id: "tragedy",
+    series: "In black and white",
     title: "Tragedy",
     category: "print",
     technique: "monotype",
@@ -1200,6 +1258,7 @@ window.AP_WORKS = [
   },
   {
     id: "music",
+    series: "In black and white",
     title: "Music",
     category: "print",
     technique: "monotype",
@@ -1219,6 +1278,7 @@ window.AP_WORKS = [
   },
   {
     id: "epea-pteroenta",
+    series: "In black and white",
     title: "Epea pteroenta",
     category: "print",
     technique: "monotype",

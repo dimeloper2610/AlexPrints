@@ -451,12 +451,23 @@
         "price-desc": (a, b) => (b.price ?? -1) - (a.price ?? -1),
         size: (a, b) => (b.imageSize ? b.imageSize[0] * b.imageSize[1] : 0) - (a.imageSize ? a.imageSize[0] * a.imageSize[1] : 0)
       };
-      list = list.slice().sort(sorters[state.sort] || sorters.newest);
+      const curated = list.slice();
+      if (state.sort !== "newest") list = list.slice().sort(sorters[state.sort]);
 
       const t = T[state.technique];
       $("#technique-note").innerHTML = t ? `<strong>${t.name}</strong> <span>${esc(t.short)}</span> ${t.look ? `<span>${esc(t.look)}</span>` : ""} <a href="process.html#techniques">More on techniques</a>` : "";
       $("#result-count").textContent = `${list.length} ${list.length === 1 ? "work" : "works"}`;
-      $("#grid").innerHTML = list.length ? list.map(card).join("") : `<p class="empty">Nothing here right now. <a href="works.html">See all works</a></p>`;
+      // group by technique and series, in the curated order of data.js
+      const keyOf = (w) => `${w.technique}|${w.series || ""}`;
+      const order = [...new Set(curated.map(keyOf))];
+      const groups = order.map((k) => ({ k, items: list.filter((w) => keyOf(w) === k) })).filter((g) => g.items.length);
+      $("#grid").innerHTML = list.length ? groups.map(({ k, items }) => {
+        const [tech, series] = k.split("|");
+        return `<section class="wgroup">
+          <div class="wgroup-h"><span class="mono">${esc(T[tech] ? T[tech].name : tech)}</span><h2>${esc(series || (T[tech] ? T[tech].name : tech))}</h2><span class="mono">${items.length} ${items.length === 1 ? "work" : "works"}</span></div>
+          <div class="grid">${items.map(card).join("")}</div>
+        </section>`;
+      }).join("") : `<p class="empty">Nothing here right now. <a href="works.html">See all works</a></p>`;
       $("#avail").checked = state.available;
       $("#sort").value = state.sort;
       reveal();
@@ -760,7 +771,8 @@
 
   // ---------- process ----------
   function initProcess() {
-    const demo = W.find((w) => w.technique === "etching" && w.edition) ||
+    // the diagram needs a drawn sheet with known plate and paper sizes
+    const demo = W.find((w) => w.technique === "etching" && w.edition && w.sheetSize && w.imageSize && !w.image && !w.images) ||
       { title: "Untitled", category: "print", technique: "etching", imageSize: [20, 28], sheetSize: [35, 45], edition: { size: 20, available: 13 }, art: { seed: 11 } };
     const fig = $("#anatomy-fig");
     fig.innerHTML = ART.media(demo);
